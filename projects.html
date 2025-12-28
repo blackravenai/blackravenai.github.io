@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elite Projects - BlackRaven AI</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Floating Navigation -->
+    <nav class="floating-nav">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <div class="logo-icon">
+                    <div class="raven-silhouette"></div>
+                </div>
+                <span class="logo-text">BlackRaven</span>
+                <span class="logo-accent">AI</span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="projects.html" class="nav-link active">Projects</a></li>
+                <li><a href="apply.html" class="nav-link">Apply Now</a></li>
+            </ul>
+            <div class="nav-cta">
+                <a href="apply.html" class="cta-button">
+                    <span>Get Started</span>
+                    <div class="button-glow"></div>
+                </a>
+            </div>
+            <div class="mobile-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="page-hero">
+        <div class="container">
+            <div class="page-hero-content">
+                <h1>Elite Project Portfolio</h1>
+                <p>Showcasing our most innovative and impactful technology solutions that have transformed businesses across industries.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Stats -->
+    <section class="portfolio-stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number" data-target="150">0</div>
+                    <div class="stat-label">Elite Projects</div>
+                    <div class="stat-description">Delivered with precision</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-target="98">0</div>
+                    <div class="stat-label">Success Rate</div>
+                    <div class="stat-description">Client satisfaction</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-target="50">0</div>
+                    <div class="stat-label">Fortune 500</div>
+                    <div class="stat-description">Companies served</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-target="24">0</div>
+                    <div class="stat-label">Hour Support</div>
+                    <div class="stat-description">Always available</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="project-filters">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="ai">AI Integration</button>
+                <button class="filter-btn" data-filter="web">Web Applications</button>
+                <button class="filter-btn" data-filter="mobile">Mobile Apps</button>
+                <button class="filter-btn" data-filter="consulting">Consulting</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Projects -->
+    <section class="featured-projects">
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured Elite Projects</h2>
+                <p>Our most impactful work that has redefined what's possible in technology</p>
+            </div>
+            <div class="projects-grid">
+                <!-- Project 1 - AI Integration -->
+                <div class="project-card featured" data-category="ai">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-tech">
+                                <span class="tech-badge">OpenAI</span>
+                                <span class="tech-badge">LangChain</span>
+                                <span class="tech-badge">Vector DB</span>
+                            </div>
+                            <div class="project-status">Featured</div>
+                        </div>
+                        <div class="project-visual">
+                            <div class="ai-brain-visual">
+                                <div class="neural-core">
+                                    <div class="core-ring ring-1"></div>
+                                    <div class="core-ring ring-2"></div>
+                                    <div class="core-ring ring-3"></div>
+                                    <div class="core-center"></div>
+                                </div>
+                                <div class="data-streams">
+                                    <div class="stream stream-1"></div>
+                                    <div class="stream stream-2"></div>
+                                    <div class="stream stream-3"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Enterprise AI Assistant Platform</h3>
+                            <div class="project-category">AI Integration</div>
+                        </div>
+                        <p class="project-description">
+                            Built a comprehensive AI assistant platform for a Fortune 500 company, handling 95% of customer inquiries automatically while maintaining 99.2% accuracy.
+                        </p>
+                        <div class="project-stats">
+                            <div class="stat">
+                                <span class="stat-value">95%</span>
+                                <span class="stat-label">Auto Resolution</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">40%</span>
+                                <span class="stat-label">Cost Reduction</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">99.2%</span>
+                                <span class="stat-label">Accuracy</span>
+                            </div>
+                        </div>
+                        <div class="project-tech-stack">
+                            <span class="tech-item">OpenAI GPT-4</span>
+                            <span class="tech-item">LangChain</span>
+                            <span class="tech-item">Pinecone</span>
+                            <span class="tech-item">React</span>
+                        </div>
+                        <div class="project-actions">
+                            <button class="btn btn-outline">View Case Study</button>
+                            <button class="btn btn-primary">Live Demo</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 - Web Application -->
+                <div class="project-card featured" data-category="web">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-tech">
+                                <span class="tech-badge">React</span>
+                                <span class="tech-badge">Node.js</span>
+                                <span class="tech-badge">AWS</span>
+                            </div>
+                            <div class="project-status">Featured</div>
+                        </div>
+                        <div class="project-visual">
+                            <div class="dashboard-preview">
+                                <div class="dashboard-header"></div>
+                                <div class="dashboard-chart"></div>
+                                <div class="dashboard-widget"></div>
+                                <div class="dashboard-widget"></div>
+                                <div class="dashboard-widget"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Real-Time Analytics Platform</h3>
+                            <div class="project-category">Web Application</div>
+                        </div>
+                        <p class="project-description">
+                            Developed a real-time business intelligence platform serving 10,000+ users with advanced data visualization and predictive analytics capabilities.
+                        </p>
+                        <div class="project-stats">
+                            <div class="stat">
+                                <span class="stat-value">10K+</span>
+                                <span class="stat-label">Active Users</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">99.9%</span>
+                                <span class="stat-label">Uptime</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">2.1s</span>
+                                <span class="stat-label">Load Time</span>
+                            </div>
+                        </div>
+                        <div class="project-tech-stack">
+                            <span class="tech-item">React</span>
+                            <span class="tech-item">Node.js</span>
+                            <span class="tech-item">MongoDB</span>
+                            <span class="tech-item">AWS</span>
+                        </div>
+                        <div class="project-actions">
+                            <button class="btn btn-outline">View Case Study</button>
+                            <button class="btn btn-primary">Live Demo</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 - Mobile App -->
+                <div class="project-card featured" data-category="mobile">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-tech">
+                                <span class="tech-badge">React Native</span>
+                                <span class="tech-badge">AI/ML</span>
+                                <span class="tech-badge">Firebase</span>
+                            </div>
+                            <div class="project-status">Featured</div>
+                        </div>
+                        <div class="project-visual">
+                            <div class="mobile-preview">
+                                <div class="mobile-screen">
+                                    <div class="mobile-header"></div>
+                                    <div class="mobile-content">
+                                        <div class="mobile-card"></div>
+                                        <div class="mobile-card"></div>
+                                        <div class="mobile-card"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>AI-Powered Health Monitoring App</h3>
+                            <div class="project-category">Mobile Application</div>
+                        </div>
+                        <p class="project-description">
+                            Created an intelligent health monitoring application that provides personalized insights and real-time health tracking for chronic condition management.
+                        </p>
+                        <div class="project-stats">
+                            <div class="stat">
+                                <span class="stat-value">50K+</span>
+                                <span class="stat-label">Downloads</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">4.8</span>
+                                <span class="stat-label">App Rating</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">85%</span>
+                                <span class="stat-label">User Retention</span>
+                            </div>
+                        </div>
+                        <div class="project-tech-stack">
+                            <span class="tech-item">React Native</span>
+                            <span class="tech-item">TensorFlow</span>
+                            <span class="tech-item">Firebase</span>
+                            <span class="tech-item">Python</span>
+                        </div>
+                        <div class="project-actions">
+                            <button class="btn btn-outline">View Case Study</button>
+                            <button class="btn btn-primary">App Store</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 - AI Integration -->
+                <div class="project-card" data-category="ai">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-tech">
+                                <span class="tech-badge">Python</span>
+                                <span class="tech-badge">TensorFlow</span>
+                                <span class="tech-badge">AWS</span>
+                            </div>
+                        </div>
+                        <div class="project-visual">
+                            <div class="ai-brain-small">
+                                <div class="neural-node"></div>
+                                <div class="neural-node"></div>
+                                <div class="neural-node"></div>
+                                <div class="neural-connection"></div>
+                                <div class="neural-connection"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Intelligent Document Processing</h3>
+                            <div class="project-category">AI Integration</div>
+                        </div>
+                        <p class="project-description">
+                            AI-powered system that automatically extracts and processes data from complex documents, reducing processing time by 85%.
+                        </p>
+                        <div class="project-stats">
+                            <div class="stat">
+                                <span class="stat-value">85%</span>
+                                <span class="stat-label">Time Reduction</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">99.2%</span>
+                                <span class="stat-label">Accuracy</span>
+                            </div>
+                        </div>
+                        <div class="project-tech-stack">
+                            <span class="tech-item">Python</span>
+                            <span class="tech-item">TensorFlow</span>
+                            <span class="tech-item">AWS</span>
+                        </div>
+                        <div class="project-actions">
+                            <button class="btn btn-outline">View Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 - Consulting -->
+                <div class="project-card" data-category="consulting">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-tech">
+                                <span class="tech-badge">Strategy</span>
+                                <span class="tech-badge">Cloud</span>
+                                <span class="tech-badge">DevOps</span>
+                            </div>
+                        </div>
+                        <div class="project-visual">
+                            <div class="strategy-visual">
+                                <div class="strategy-node"></div>
+                                <div class="strategy-node"></div>
+                                <div class="strategy-node"></div>
+                                <div class="strategy-connection"></div>
+                                <div class="strategy-connection"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Digital Transformation Strategy</h3>
+                            <div class="project-category">Strategic Consulting</div>
+                        </div>
+                        <p class="project-description">
+                            Comprehensive digital transformation roadmap for Fortune 500 company, resulting in 60% operational efficiency improvement.
+                        </p>
+                        <div class="project-stats">
+                            <div class="stat">
+                                <span class="stat-value">60%</span>
+                                <span class="stat-label">Efficiency Gain</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">$2M+</span>
+                                <span class="stat-label">Cost Savings</span>
+                            </div>
+                        </div>
+                        <div class="project-tech-stack">
+                            <span class="tech-item">Cloud Strategy</span>
+                            <span class="tech-item">DevOps</span>
+                            <span class="tech-item">Security</span>
+                        </div>
+                        <div class="project-actions">
+                            <button class="btn btn-outline">View Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6 - Web Application -->
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-tech">
+                                <span class="tech-badge">Vue.js</span>
+                                <span class="tech-badge">Python</span>
+                                <span class="tech-badge">Docker</span>
+                            </div>
+                        </div>
+                        <div class="project-visual">
+                            <div class="ecommerce-preview">
+                                <div class="product-grid">
+                                    <div class="product-card"></div>
+                                    <div class="product-card"></div>
+                                    <div class="product-card"></div>
+                                    <div class="product-card"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>E-commerce Platform</h3>
+                            <div class="project-category">Web Application</div>
+                        </div>
+                        <p class="project-description">
+                            High-performance e-commerce solution with advanced search, recommendation engine, and seamless payment integration.
+                        </p>
+                        <div class="project-stats">
+                            <div class="stat">
+                                <span class="stat-value">$5M+</span>
+                                <span class="stat-label">Revenue Generated</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">2.1s</span>
+                                <span class="stat-label">Load Time</span>
+                            </div>
+                        </div>
+                        <div class="project-tech-stack">
+                            <span class="tech-item">Vue.js</span>
+                            <span class="tech-item">Python</span>
+                            <span class="tech-item">Docker</span>
+                        </div>
+                        <div class="project-actions">
+                            <button class="btn btn-outline">View Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Client Testimonials -->
+    <section class="client-testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>What Elite Leaders Say</h2>
+                <p>Hear from the visionaries who trust us with their most critical projects</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"BlackRaven AI didn't just build us an application—they built us a competitive advantage. The AI integration they delivered has increased our efficiency by 300%."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <div class="avatar-placeholder">SC</div>
+                        </div>
+                        <div class="author-info">
+                            <h4>Sarah Chen</h4>
+                            <span>CTO, TechCorp Industries</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Working with BlackRaven AI is like having a crystal ball for technology. They predicted our needs before we knew we had them."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <div class="avatar-placeholder">MR</div>
+                        </div>
+                        <div class="author-info">
+                            <h4>Michael Rodriguez</h4>
+                            <span>CEO, HealthTech Solutions</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"The strategic consulting from BlackRaven AI transformed our entire digital infrastructure. We're now 60% more efficient and our competitors can't keep up."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <div class="avatar-placeholder">JW</div>
+                        </div>
+                        <div class="author-info">
+                            <h4>Jennifer Walsh</h4>
+                            <span>VP Operations, GlobalCorp</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="elite-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Create Your Elite Project?</h2>
+                <p>Join the elite companies that trust BlackRaven AI for their most critical technology needs.</p>
+                <div class="cta-actions">
+                    <a href="apply.html" class="btn btn-primary btn-large">
+                        <span>Start Your Project</span>
+                        <div class="btn-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <div class="btn-ripple"></div>
+                    </a>
+                    <a href="services.html" class="btn btn-secondary btn-large">
+                        <span>Explore Services</span>
+                        <div class="btn-icon">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Elite Footer -->
+    <footer class="elite-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <div class="logo-icon">
+                            <div class="raven-silhouette"></div>
+                        </div>
+                        <div class="logo-text">
+                            <span class="logo-main">BlackRaven</span>
+                            <span class="logo-accent">AI</span>
+                        </div>
+                    </div>
+                    <p>Elite technology solutions for the modern enterprise. We don't just build software—we architect the future.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-dribbble"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="services.html">Application Development</a></li>
+                            <li><a href="services.html">AI Integration</a></li>
+                            <li><a href="services.html">Strategic Consulting</a></li>
+                            <li><a href="services.html">Cloud Architecture</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="projects.html">Our Projects</a></li>
+                            <li><a href="apply.html">Get Started</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2025 BlackRaven AI. All rights reserved.</p>
+                    <div class="footer-legal">
+                        <a href="privacy-policy.html">Privacy Policy</a>
+                        <a href="terms-of-service.html">Terms of Service</a>
+                        <a href="cookie-policy.html">Cookie Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
