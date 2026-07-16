@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<meta name="robots" content="index,follow" />
+<title>HAYMAKER — Support</title>
+<meta name="description" content="Support for HAYMAKER by BlackRaven AI LLC." />
+<style>
+  :root{
+    --bg:#0c211a; --surface:#14332a; --text:#efe6d0; --dim:#bdb193;
+    --accent:#f2c14e; --accent2:#e6403a; --border:#2c3d33;
+    --font:'Avenir Next Condensed', 'Roboto Condensed', 'Arial Narrow', system-ui, sans-serif;
+  }
+  *{box-sizing:border-box}
+  html{ -webkit-text-size-adjust:100% }
+  body{
+    margin:0; background:var(--bg); color:var(--text); font-family:var(--font);
+    line-height:1.65; padding:max(env(safe-area-inset-top),24px) 22px calc(64px + env(safe-area-inset-bottom));
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{ max-width:680px; margin:0 auto }
+  header.mast{ display:flex; align-items:center; gap:14px; padding-bottom:22px; margin-bottom:26px; border-bottom:1px solid var(--border) }
+  .mast img{ width:44px; height:44px; border-radius:22%; flex:0 0 auto; background:var(--surface) }
+  .mast .who{ display:flex; flex-direction:column; gap:2px }
+  .mast .app{ font-size:19px; font-weight:700; letter-spacing:.01em }
+  .mast .by{ font-size:12px; color:var(--dim); letter-spacing:.02em }
+  nav.doc{ display:flex; gap:8px; flex-wrap:wrap; margin-bottom:26px; font-size:13px }
+  nav.doc a, nav.doc .on{ padding:6px 12px; border-radius:999px; text-decoration:none; border:1px solid var(--border) }
+  nav.doc a{ color:var(--dim) }
+  nav.doc a:hover{ color:var(--text); border-color:var(--accent) }
+  nav.doc .on{ color:var(--bg); background:var(--accent); border-color:var(--accent); font-weight:600 }
+  h1{ font-size:26px; letter-spacing:.01em; margin:0 0 6px }
+  .updated{ color:var(--dim); font-size:12.5px; margin:0 0 22px }
+  .lead{ font-size:16px; color:var(--text); margin:0 0 8px }
+  section{ margin:24px 0 }
+  h2{ font-size:14px; text-transform:uppercase; letter-spacing:.09em; color:var(--accent); margin:0 0 8px }
+  p{ margin:0 0 12px } ul{ margin:0 0 12px; padding-left:20px } li{ margin:6px 0 }
+  a{ color:var(--accent2); text-decoration:underline; text-underline-offset:2px }
+  code{ font-family:ui-monospace,SFMono-Regular,Menlo,monospace; font-size:.9em; color:var(--dim) }
+  footer{ margin-top:40px; padding-top:20px; border-top:1px solid var(--border); color:var(--dim); font-size:12px; display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap }
+  footer a{ color:var(--dim) }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="mast">
+      <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDI0IDEwMjQiPgogIDxkZWZzPgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJiZyIgeDE9IjAiIHkxPSIwIiB4Mj0iMCIgeTI9IjEiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiMxNjM4MmQiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMDgxNzExIi8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPHJhZGlhbEdyYWRpZW50IGlkPSJsYW1wIiBjeD0iMC41IiBjeT0iMC4yNiIgcj0iMC44Ij4KICAgICAgPHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjZjdlMmFlIiBzdG9wLW9wYWNpdHk9IjAuMzUiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjZjdlMmFlIiBzdG9wLW9wYWNpdHk9IjAiLz4KICAgIDwvcmFkaWFsR3JhZGllbnQ+CiAgICA8cmFkaWFsR3JhZGllbnQgaWQ9ImZ1ciIgY3g9IjAuMzgiIGN5PSIwLjMiIHI9IjEiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNjZjhmNGEiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIwLjYiIHN0b3AtY29sb3I9IiNiMzcwMmYiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjOGE1MjIyIi8+CiAgICA8L3JhZGlhbEdyYWRpZW50PgogICAgPHJhZGlhbEdyYWRpZW50IGlkPSJnbG92ZSIgY3g9IjAuMzYiIGN5PSIwLjMiIHI9IjEiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNmZjZhNWUiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIwLjU1IiBzdG9wLWNvbG9yPSIjZTY0MDNhIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzhhMjQxZiIvPgogICAgPC9yYWRpYWxHcmFkaWVudD4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iY3VmZiIgeDE9IjAiIHkxPSIwIiB4Mj0iMCIgeTI9IjEiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNmZGY2ZTQiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjZDhjYmE2Ii8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJyaW5nIiB4MT0iMCIgeTE9IjAiIHgyPSIwIiB5Mj0iMSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iI2ZmZDk3YSIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNhODdjMjQiLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgPC9kZWZzPgoKICA8cmVjdCB3aWR0aD0iMTAyNCIgaGVpZ2h0PSIxMDI0IiBmaWxsPSJ1cmwoI2JnKSIvPgogIDxyZWN0IHdpZHRoPSIxMDI0IiBoZWlnaHQ9IjEwMjQiIGZpbGw9InVybCgjbGFtcCkiLz4KCiAgPCEtLSByaW5nIHJvcGVzIC0tPgogIDxwYXRoIGQ9Ik0wIDY0MCBRNTEyIDY4OCAxMDI0IDY0MCIgc3Ryb2tlPSIjM2E1YzRjIiBzdHJva2Utd2lkdGg9IjI0IiBmaWxsPSJub25lIi8+CiAgPHBhdGggZD0iTTAgNTIwIFE1MTIgNTYwIDEwMjQgNTIwIiBzdHJva2U9IiM0NzZlNWIiIHN0cm9rZS13aWR0aD0iMTgiIGZpbGw9Im5vbmUiLz4KCiAgPCEtLSBnb2xkIGNoYW1waW9uc2hpcCByaW5nIGJvcmRlciAtLT4KICA8Y2lyY2xlIGN4PSI1MTIiIGN5PSI1MTIiIHI9IjQzMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJ1cmwoI3JpbmcpIiBzdHJva2Utd2lkdGg9IjMwIi8+CiAgPGNpcmNsZSBjeD0iNTEyIiBjeT0iNTEyIiByPSIzOTgiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzA4MTcxMSIgc3Ryb2tlLXdpZHRoPSI4IiBvcGFjaXR5PSIwLjUiLz4KCiAgPCEtLSBpbXBhY3Qgc3RhciBiZWhpbmQgZ2xvdmUgLS0+CiAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNzU2IDMwMCkgc2NhbGUoMS4zNSkiIGZpbGw9IiNmMmMxNGUiIHN0cm9rZT0iIzA4MTcxMSIgc3Ryb2tlLXdpZHRoPSI4Ij4KICAgIDxwYXRoIGQ9Ik0wIC03NCBMMjAgLTIyIEw3NCAtMTggTDMyIDE2IEw0NiA2OCBMMCAzOCBMLTQ2IDY4IEwtMzIgMTYgTC03NCAtMTggTC0yMCAtMjIgWiIvPgogIDwvZz4KCiAgPCEtLSBzcGVlZCBsaW5lcyAtLT4KICA8ZyBzdHJva2U9IiNmMmMxNGUiIHN0cm9rZS13aWR0aD0iMjQiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgb3BhY2l0eT0iMC44NSI+CiAgICA8cGF0aCBkPSJNMTg4IDM1MCBMIDMwMCAzOTIiLz4KICAgIDxwYXRoIGQ9Ik0xNzAgNDcwIEwgMjg2IDQ4NiIvPgogIDwvZz4KCiAgPCEtLSBKT0VZIHRoZSBrYW5nYXJvbyAtLT4KICA8Zz4KICAgIDwhLS0gc2hvdWxkZXJzIC8gY2hlc3QgLS0+CiAgICA8cGF0aCBkPSJNMjMwIDEwMjQgUTI1MCA3NjAgNDUyIDcyNiBRNjYwIDc2MCA2OTAgMTAyNCBaIiBmaWxsPSJ1cmwoI2Z1cikiLz4KICAgIDxwYXRoIGQ9Ik0zNDAgMTAyNCBRMzYwIDgzMCA0NTggODEyIFE1NjAgODMwIDU4MCAxMDI0IFoiIGZpbGw9IiNlOGNmYTAiLz4KCiAgICA8IS0tIGVhcnMgLS0+CiAgICA8Zz4KICAgICAgPGVsbGlwc2UgY3g9IjMzMCIgY3k9IjI1MCIgcng9IjYyIiByeT0iMTUwIiB0cmFuc2Zvcm09InJvdGF0ZSgtMjAgMzMwIDI1MCkiIGZpbGw9InVybCgjZnVyKSIvPgogICAgICA8ZWxsaXBzZSBjeD0iMzM4IiBjeT0iMjY0IiByeD0iMzIiIHJ5PSIxMDIiIHRyYW5zZm9ybT0icm90YXRlKC0yMCAzMzggMjY0KSIgZmlsbD0iI2U4YjU4YSIvPgogICAgICA8ZWxsaXBzZSBjeD0iNTYwIiBjeT0iMjMwIiByeD0iNjIiIHJ5PSIxNTUiIHRyYW5zZm9ybT0icm90YXRlKDE0IDU2MCAyMzApIiBmaWxsPSJ1cmwoI2Z1cikiLz4KICAgICAgPGVsbGlwc2UgY3g9IjU1NCIgY3k9IjI0NiIgcng9IjMyIiByeT0iMTA2IiB0cmFuc2Zvcm09InJvdGF0ZSgxNCA1NTQgMjQ2KSIgZmlsbD0iI2U4YjU4YSIvPgogICAgPC9nPgoKICAgIDwhLS0gaGVhZCAtLT4KICAgIDxlbGxpcHNlIGN4PSI0NTAiIGN5PSI1MDAiIHJ4PSIyMDUiIHJ5PSIxOTIiIGZpbGw9InVybCgjZnVyKSIvPgogICAgPCEtLSBtdXp6bGUgLS0+CiAgICA8ZWxsaXBzZSBjeD0iNDQwIiBjeT0iNTkwIiByeD0iMTQwIiByeT0iMTAyIiBmaWxsPSIjZThjZmEwIi8+CiAgICA8ZWxsaXBzZSBjeD0iNDI4IiBjeT0iNTMwIiByeD0iNjAiIHJ5PSI0MiIgZmlsbD0iIzJiMWQxNCIvPgogICAgPHBhdGggZD0iTTQzMiA1NjYgTDQzMiA2MTgiIHN0cm9rZT0iIzhhNTIyMiIgc3Ryb2tlLXdpZHRoPSIxMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+CiAgICA8IS0tIGRldGVybWluZWQgbW91dGggLS0+CiAgICA8cGF0aCBkPSJNMzcyIDYzNiBRNDM2IDY2NCA1MDQgNjMwIiBzdHJva2U9IiM4YTUyMjIiIHN0cm9rZS13aWR0aD0iMTQiIGZpbGw9Im5vbmUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgoKICAgIDwhLS0gZXllcyArIGJyb3dzIC0tPgogICAgPGVsbGlwc2UgY3g9IjM2OCIgY3k9IjQ0MCIgcng9IjQ0IiByeT0iNTAiIGZpbGw9IiNmZGY4ZWMiLz4KICAgIDxlbGxpcHNlIGN4PSI1MjQiIGN5PSI0MzYiIHJ4PSI0NCIgcnk9IjUwIiBmaWxsPSIjZmRmOGVjIi8+CiAgICA8Y2lyY2xlIGN4PSIzNzgiIGN5PSI0NTAiIHI9IjIwIiBmaWxsPSIjMWExMjBjIi8+CiAgICA8Y2lyY2xlIGN4PSI1MTQiIGN5PSI0NDYiIHI9IjIwIiBmaWxsPSIjMWExMjBjIi8+CiAgICA8cGF0aCBkPSJNMzEyIDM4OCBMNDIwIDQwNiIgc3Ryb2tlPSIjNWMzYTE4IiBzdHJva2Utd2lkdGg9IjI2IiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KICAgIDxwYXRoIGQ9Ik01ODAgMzg0IEw0NzQgNDA0IiBzdHJva2U9IiM1YzNhMTgiIHN0cm9rZS13aWR0aD0iMjYiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgoKICAgIDwhLS0gYnJvdyBzY3VmZiAtLT4KICAgIDxwYXRoIGQ9Ik01NjAgMzQ4IGwyNiAtOCBNNTU2IDM2NiBsMjggLTQiIHN0cm9rZT0iIzhhNTIyMiIgc3Ryb2tlLXdpZHRoPSIxMCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+CiAgPC9nPgoKICA8IS0tIHJhaXNlZCBjb3VudGVyIGdsb3ZlIC0tPgogIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDc1MiA1NjApIj4KICAgIDwhLS0gd3Jpc3Qgd3JhcCAtLT4KICAgIDxyZWN0IHg9Ii05NiIgeT0iOTYiIHdpZHRoPSIxOTIiIGhlaWdodD0iMTgwIiByeD0iNTIiIGZpbGw9InVybCgjY3VmZikiIHRyYW5zZm9ybT0icm90YXRlKC0xNCkiLz4KICAgIDxwYXRoIGQ9Ik0tODQgMTUwIEw5NiAxMDYgTS04MCAxOTYgTDEwMCAxNTIiIHN0cm9rZT0iI2IzYTM3YyIgc3Ryb2tlLXdpZHRoPSIxMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBvcGFjaXR5PSIwLjc1Ii8+CiAgICA8IS0tIGZpc3QgLS0+CiAgICA8Y2lyY2xlIGN4PSIwIiBjeT0iLTI0IiByPSIxNzIiIGZpbGw9InVybCgjZ2xvdmUpIi8+CiAgICA8ZWxsaXBzZSBjeD0iLTEyMiIgY3k9IjQyIiByeD0iNjIiIHJ5PSI4OCIgdHJhbnNmb3JtPSJyb3RhdGUoMjYgLTEyMiA0MikiIGZpbGw9InVybCgjZ2xvdmUpIi8+CiAgICA8cGF0aCBkPSJNLTEwOCAtMTIyIFEwIC0xNzIgMTA4IC0xMjIiIHN0cm9rZT0iIzhhMjQxZiIgc3Ryb2tlLXdpZHRoPSIxNCIgZmlsbD0ibm9uZSIgb3BhY2l0eT0iMC42Ii8+CiAgICA8cGF0aCBkPSJNLTEwMCAtODQgUS0yNCAtMTM4IDcwIC0xMDgiIHN0cm9rZT0iI2ZmZmZmZiIgc3Ryb2tlLXdpZHRoPSIxNiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBmaWxsPSJub25lIiBvcGFjaXR5PSIwLjQiLz4KICA8L2c+Cjwvc3ZnPgo=" alt="" />
+      <div class="who"><span class="app">HAYMAKER</span><span class="by">by BlackRaven AI LLC</span></div>
+    </header>
+    <nav class="doc"><a href="privacy.html">Privacy</a><span class="on">Support</span><a href="terms.html">Terms</a></nav>
+    <main>
+      <h1>Support</h1>
+      <p class="updated">Last updated 2026-07-08</p>
+      <p class="lead">Need help with HAYMAKER? You're in the right place. BlackRaven AI LLC makes HAYMAKER, and we read every message.</p>
+      <section>
+        <h2>Contact us</h2>
+        <p>Email <a href="mailto:support@blackravenai.com?subject=HAYMAKER%20support">support@blackravenai.com</a> and we'll help. We aim to reply within 2–3 business days. To speed things up, tell us your device and OS version and describe what happened.</p>
+      </section>
+      <section>
+        <h2>Common questions</h2>
+        <ul>
+          <li><b>Restore a purchase.</b> Open the shop/store screen in the app and choose "Restore Purchases". Purchases are tied to your app-store account and restore for free on your devices.</li>
+          <li><b>Remove ads.</b> If HAYMAKER offers a remove-ads or premium purchase, buy it once and restore it on your other devices with "Restore Purchases".</li>
+          <li><b>Reset or delete my data.</b> Your progress is stored on your device. Clearing the app's data or uninstalling the app removes it. There is no server-side account to delete.</li>
+          <li><b>Report a bug or request a feature.</b> Email us with what you expected and what happened — screenshots help a lot.</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Privacy &amp; terms</h2>
+        <p>Read our <a href="privacy.html">Privacy Policy</a> and <a href="terms.html">Terms of Service</a>.</p>
+      </section>
+      <section>
+        <h2>App details</h2>
+        <p>HAYMAKER &middot; <code>com.blackravenai.haymaker</code><br>Published by BlackRaven AI LLC.</p>
+      </section>
+    </main>
+    <footer>
+      <span>&copy; 2026 BlackRaven AI LLC</span>
+      <span><a href="privacy.html">Privacy</a> &middot; <a href="support.html">Support</a> &middot; <a href="terms.html">Terms</a></span>
+    </footer>
+  </div>
+</body>
+</html>
