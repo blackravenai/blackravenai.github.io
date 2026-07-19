@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<meta name="robots" content="index,follow" />
+<title>Downcast — Support</title>
+<meta name="description" content="Support for Downcast by BlackRaven AI LLC." />
+<style>
+  :root{
+    --bg:#08090b; --surface:#14161b; --text:#efe7d2; --dim:#b9b19f;
+    --accent:#b8902f; --accent2:#5fa8ff; --border:#39414c;
+    --font:'Avenir Next Condensed', 'Roboto Condensed', 'Arial Narrow', 'Helvetica Neue', system-ui, sans-serif;
+  }
+  *{box-sizing:border-box}
+  html{ -webkit-text-size-adjust:100% }
+  body{
+    margin:0; background:var(--bg); color:var(--text); font-family:var(--font);
+    line-height:1.65; padding:max(env(safe-area-inset-top),24px) 22px calc(64px + env(safe-area-inset-bottom));
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{ max-width:680px; margin:0 auto }
+  header.mast{ display:flex; align-items:center; gap:14px; padding-bottom:22px; margin-bottom:26px; border-bottom:1px solid var(--border) }
+  .mast img{ width:44px; height:44px; border-radius:22%; flex:0 0 auto; background:var(--surface) }
+  .mast .who{ display:flex; flex-direction:column; gap:2px }
+  .mast .app{ font-size:19px; font-weight:700; letter-spacing:.01em }
+  .mast .by{ font-size:12px; color:var(--dim); letter-spacing:.02em }
+  nav.doc{ display:flex; gap:8px; flex-wrap:wrap; margin-bottom:26px; font-size:13px }
+  nav.doc a, nav.doc .on{ padding:6px 12px; border-radius:999px; text-decoration:none; border:1px solid var(--border) }
+  nav.doc a{ color:var(--dim) }
+  nav.doc a:hover{ color:var(--text); border-color:var(--accent) }
+  nav.doc .on{ color:var(--bg); background:var(--accent); border-color:var(--accent); font-weight:600 }
+  h1{ font-size:26px; letter-spacing:.01em; margin:0 0 6px }
+  .updated{ color:var(--dim); font-size:12.5px; margin:0 0 22px }
+  .lead{ font-size:16px; color:var(--text); margin:0 0 8px }
+  section{ margin:24px 0 }
+  h2{ font-size:14px; text-transform:uppercase; letter-spacing:.09em; color:var(--accent); margin:0 0 8px }
+  p{ margin:0 0 12px } ul{ margin:0 0 12px; padding-left:20px } li{ margin:6px 0 }
+  a{ color:var(--accent2); text-decoration:underline; text-underline-offset:2px }
+  code{ font-family:ui-monospace,SFMono-Regular,Menlo,monospace; font-size:.9em; color:var(--dim) }
+  footer{ margin-top:40px; padding-top:20px; border-top:1px solid var(--border); color:var(--dim); font-size:12px; display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap }
+  footer a{ color:var(--dim) }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="mast">
+      <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDI0IDEwMjQiIHdpZHRoPSIxMDI0IiBoZWlnaHQ9IjEwMjQiPgogIDxkZWZzPgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJyb2NrIiB4MT0iMCIgeTE9IjAiIHgyPSIwLjQiIHkyPSIxIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMTcxYTIwIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iMC41NSIgc3RvcC1jb2xvcj0iIzBkMGYxMyIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiMwNjA3MGEiLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9InNoYWZ0IiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMCI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iIzBkMTAxNSIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjAuNSIgc3RvcC1jb2xvcj0iIzAzMDQwNiIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiMwZDEwMTUiLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImJyYXNzIiB4MT0iMC4xIiB5MT0iMCIgeDI9IjAuNyIgeTI9IjEiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNmZmYwYzgiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIwLjMiIHN0b3AtY29sb3I9IiNlMGJkNjYiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIwLjYyIiBzdG9wLWNvbG9yPSIjYjg5MDJmIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzZiNGYxOCIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iaXJvbiIgeDE9IjAiIHkxPSIwIiB4Mj0iMC42IiB5Mj0iMSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iIzViNjQ3MiIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjAuNSIgc3RvcC1jb2xvcj0iIzM5NDE0YyIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiMxYjFmMjYiLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8cmFkaWFsR3JhZGllbnQgaWQ9ImZsYW1lIiBjeD0iMC41IiBjeT0iMC41IiByPSIwLjUiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjAuMTYiIHN0b3AtY29sb3I9IiNkM2U5ZmYiIHN0b3Atb3BhY2l0eT0iMC45NSIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjAuNDIiIHN0b3AtY29sb3I9IiM1ZmE4ZmYiIHN0b3Atb3BhY2l0eT0iMC41NSIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiM1ZmE4ZmYiIHN0b3Atb3BhY2l0eT0iMCIvPgogICAgPC9yYWRpYWxHcmFkaWVudD4KICAgIDxyYWRpYWxHcmFkaWVudCBpZD0ibGFtcHBvb2wiIGN4PSIwLjUiIGN5PSIwLjUiIHI9IjAuNSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iI2VmZTdkMiIgc3RvcC1vcGFjaXR5PSIwLjMwIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iMC41IiBzdG9wLWNvbG9yPSIjYjg5MDJmIiBzdG9wLW9wYWNpdHk9IjAuMTEiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjYjg5MDJmIiBzdG9wLW9wYWNpdHk9IjAiLz4KICAgIDwvcmFkaWFsR3JhZGllbnQ+CiAgICA8cmFkaWFsR3JhZGllbnQgaWQ9InZpZyIgY3g9IjAuNSIgY3k9IjAuNDYiIHI9IjAuNzIiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAuNDUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMCIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMC44MiIvPgogICAgPC9yYWRpYWxHcmFkaWVudD4KICAgIDxmaWx0ZXIgaWQ9InNvZnQiIHg9Ii00MCUiIHk9Ii00MCUiIHdpZHRoPSIxODAlIiBoZWlnaHQ9IjE4MCUiPgogICAgICA8ZmVHYXVzc2lhbkJsdXIgc3RkRGV2aWF0aW9uPSIxOCIvPgogICAgPC9maWx0ZXI+CiAgICA8ZmlsdGVyIGlkPSJzb2Z0MiIgeD0iLTQwJSIgeT0iLTQwJSIgd2lkdGg9IjE4MCUiIGhlaWdodD0iMTgwJSI+CiAgICAgIDxmZUdhdXNzaWFuQmx1ciBzdGREZXZpYXRpb249IjciLz4KICAgIDwvZmlsdGVyPgogIDwvZGVmcz4KCiAgPCEtLSBncm91bmQ6IHRoZSByb2NrIHRoZSBzaGFmdCBpcyBjdXQgdGhyb3VnaCAtLT4KICA8cmVjdCB3aWR0aD0iMTAyNCIgaGVpZ2h0PSIxMDI0IiBmaWxsPSJ1cmwoI3JvY2spIi8+CgogIDwhLS0gdGhlIHNoYWZ0LCBjdXQgZnVsbC1ibGVlZCBkb3duIHRoZSBtaWRkbGUgLS0+CiAgPHJlY3QgeD0iMjg2IiB5PSIwIiB3aWR0aD0iNDUyIiBoZWlnaHQ9IjEwMjQiIGZpbGw9InVybCgjc2hhZnQpIi8+CiAgPCEtLSBndWlkZSByYWlscyAtLT4KICA8cmVjdCB4PSIyODYiIHk9IjAiIHdpZHRoPSIxNiIgaGVpZ2h0PSIxMDI0IiBmaWxsPSIjMmIzMTNiIi8+CiAgPHJlY3QgeD0iNzIyIiB5PSIwIiB3aWR0aD0iMTYiIGhlaWdodD0iMTAyNCIgZmlsbD0iIzJiMzEzYiIvPgogIDxyZWN0IHg9IjI4NiIgeT0iMCIgd2lkdGg9IjUiIGhlaWdodD0iMTAyNCIgZmlsbD0iIzViNjQ3MiIgb3BhY2l0eT0iMC41NSIvPgoKICA8IS0tIGJ1bnRvbnMgYWNyb3NzIHRoZSBzaGFmdCAtLT4KICA8ZyBmaWxsPSIjNmY2ODU3IiBvcGFjaXR5PSIwLjMwIj4KICAgIDxyZWN0IHg9IjMwMiIgeT0iMTI4IiB3aWR0aD0iNDIwIiBoZWlnaHQ9IjEyIi8+CiAgICA8cmVjdCB4PSIzMDIiIHk9IjI2NiIgd2lkdGg9IjQyMCIgaGVpZ2h0PSIxMiIvPgogICAgPHJlY3QgeD0iMzAyIiB5PSI0MDQiIHdpZHRoPSI0MjAiIGhlaWdodD0iMTIiLz4KICAgIDxyZWN0IHg9IjMwMiIgeT0iNTYwIiB3aWR0aD0iNDIwIiBoZWlnaHQ9IjEyIi8+CiAgICA8cmVjdCB4PSIzMDIiIHk9IjcyNiIgd2lkdGg9IjQyMCIgaGVpZ2h0PSIxMiIvPgogIDwvZz4KICA8ZyBmaWxsPSIjMDAwMDAwIiBvcGFjaXR5PSIwLjU1Ij4KICAgIDxyZWN0IHg9IjMwMiIgeT0iMTQwIiB3aWR0aD0iNDIwIiBoZWlnaHQ9IjkiLz4KICAgIDxyZWN0IHg9IjMwMiIgeT0iMjc4IiB3aWR0aD0iNDIwIiBoZWlnaHQ9IjkiLz4KICAgIDxyZWN0IHg9IjMwMiIgeT0iNDE2IiB3aWR0aD0iNDIwIiBoZWlnaHQ9IjkiLz4KICAgIDxyZWN0IHg9IjMwMiIgeT0iNTcyIiB3aWR0aD0iNDIwIiBoZWlnaHQ9IjkiLz4KICAgIDxyZWN0IHg9IjMwMiIgeT0iNzM4IiB3aWR0aD0iNDIwIiBoZWlnaHQ9IjkiLz4KICA8L2c+CgogIDwhLS0gaGVhZGZyYW1lIGxlZ3MgLS0+CiAgPGcgc3Ryb2tlPSJ1cmwoI2lyb24pIiBzdHJva2Utd2lkdGg9IjI2IiBmaWxsPSJub25lIiBzdHJva2UtbGluZWNhcD0icm91bmQiPgogICAgPHBhdGggZD0iTTMwMCAyMzIgTDQ3MCA5NiIvPgogICAgPHBhdGggZD0iTTcyNCAyMzIgTDU1NCA5NiIvPgogIDwvZz4KICA8ZyBzdHJva2U9IiM4ZDk1YTMiIHN0cm9rZS13aWR0aD0iNCIgZmlsbD0ibm9uZSIgb3BhY2l0eT0iMC40Ij4KICAgIDxwYXRoIGQ9Ik0zMDAgMjMyIEw0NzAgOTYiLz4KICAgIDxwYXRoIGQ9Ik03MjQgMjMyIEw1NTQgOTYiLz4KICA8L2c+CgogIDwhLS0gc2hlYXZlIHdoZWVsIG92ZXIgdGhlIHNoYWZ0IC0tPgogIDxjaXJjbGUgY3g9IjUxMiIgY3k9IjkyIiByPSIxMTIiIGZpbGw9IiMxNjFhMjAiLz4KICA8Y2lyY2xlIGN4PSI1MTIiIGN5PSI5MiIgcj0iMTEyIiBmaWxsPSJub25lIiBzdHJva2U9InVybCgjYnJhc3MpIiBzdHJva2Utd2lkdGg9IjIwIi8+CiAgPGNpcmNsZSBjeD0iNTEyIiBjeT0iOTIiIHI9Ijg2IiBmaWxsPSJub25lIiBzdHJva2U9IiMwMDAwMDAiIHN0cm9rZS13aWR0aD0iMTAiIG9wYWNpdHk9IjAuNjUiLz4KICA8ZyBzdHJva2U9InVybCgjaXJvbikiIHN0cm9rZS13aWR0aD0iMTMiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCI+CiAgICA8cGF0aCBkPSJNNTEyIC04IEw1MTIgMTkyIi8+CiAgICA8cGF0aCBkPSJNNDEyIDkyIEw2MTIgOTIiLz4KICAgIDxwYXRoIGQ9Ik00NDEgMjEgTDU4MyAxNjMiLz4KICAgIDxwYXRoIGQ9Ik01ODMgMjEgTDQ0MSAxNjMiLz4KICA8L2c+CiAgPGNpcmNsZSBjeD0iNTEyIiBjeT0iOTIiIHI9IjMwIiBmaWxsPSJ1cmwoI2JyYXNzKSIvPgogIDxjaXJjbGUgY3g9IjUwMCIgY3k9IjgwIiByPSIxMCIgZmlsbD0iI2ZmZjZkZCIgb3BhY2l0eT0iMC42Ii8+CgogIDwhLS0gdGhlIHdpcmUgcm9wZSAtLT4KICA8cmVjdCB4PSI1MDQiIHk9IjkyIiB3aWR0aD0iMTYiIGhlaWdodD0iMjY4IiBmaWxsPSIjOGQ4Nzc4Ii8+CiAgPHJlY3QgeD0iNTA0IiB5PSI5MiIgd2lkdGg9IjUiIGhlaWdodD0iMjY4IiBmaWxsPSIjYzRiZGE5IiBvcGFjaXR5PSIwLjciLz4KCiAgPCEtLSB0aGUgY2FnZSwgbGl0IGJ5IHRoZSBjYXJiaWRlIGxhbXAgLS0+CiAgPGVsbGlwc2UgY3g9IjUxMiIgY3k9IjQwMCIgcng9IjMwMCIgcnk9IjIxMCIgZmlsbD0idXJsKCNsYW1wcG9vbCkiLz4KICA8Zz4KICAgIDxyZWN0IHg9IjQxMCIgeT0iMzU4IiB3aWR0aD0iMjA0IiBoZWlnaHQ9IjEwNCIgZmlsbD0iIzMzMmQyMiIvPgogICAgPHJlY3QgeD0iNDEwIiB5PSIzNTgiIHdpZHRoPSIyMDQiIGhlaWdodD0iMTA0IiBmaWxsPSJub25lIiBzdHJva2U9IiNhMDk4ODMiIHN0cm9rZS13aWR0aD0iMTEiLz4KICAgIDxnIHN0cm9rZT0iIzAwMDAwMCIgc3Ryb2tlLXdpZHRoPSI2IiBvcGFjaXR5PSIwLjQ1Ij4KICAgICAgPHBhdGggZD0iTTQ2MSAzNjQgTDQ2MSA0NTYiLz48cGF0aCBkPSJNNTEyIDM2NCBMNTEyIDQ1NiIvPjxwYXRoIGQ9Ik01NjMgMzY0IEw1NjMgNDU2Ii8+CiAgICA8L2c+CiAgICA8cGF0aCBkPSJNNDE2IDQ1NiBMNDE2IDM2NCBMNjA4IDM2NCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZmZmZmZmIiBzdHJva2Utd2lkdGg9IjYiIG9wYWNpdHk9IjAuMjQiLz4KICA8L2c+CgogIDwhLS0gVEhFIERBTVA6IGEgbWFuLXNoYXBlZCBhYnNlbmNlLiBTaG91bGRlcnMgdG9vIGhpZ2ggYW5kIHRvbyBzcXVhcmUsIGFybXMgdG9vIGxvbmcsCiAgICAgICBhbmQgYSBzYWZldHkgbGFtcCBidXJuaW5nIGJsdWUgd2hlcmUgdGhlIGZhY2Ugc2hvdWxkIGJlLiAtLT4KICA8Zz4KICAgIDwhLS0gdW5zdGFibGUsIHNtb2tpbmcgZWRnZSAtLT4KICAgIDxnIGZpbHRlcj0idXJsKCNzb2Z0KSIgb3BhY2l0eT0iMC44NSI+CiAgICAgIDxyZWN0IHg9IjQ2NiIgeT0iNTQ4IiB3aWR0aD0iOTIiIGhlaWdodD0iNzAiIGZpbGw9IiMwYTBmMTciLz4KICAgICAgPHJlY3QgeD0iMzg2IiB5PSI2NjQiIHdpZHRoPSIyNTIiIGhlaWdodD0iNTIiIHJ4PSIyNiIgZmlsbD0iIzBhMGYxNyIvPgogICAgICA8cGF0aCBkPSJNNDYyIDEwMzAgTDQ1NiA3MDAgTDU2OCA3MDAgTDU2MiAxMDMwIFoiIGZpbGw9IiMwYTBmMTciLz4KICAgICAgPGcgc3Ryb2tlPSIjMGEwZjE3IiBzdHJva2Utd2lkdGg9IjQ0IiBzdHJva2UtbGluZWNhcD0icm91bmQiPgogICAgICAgIDxwYXRoIGQ9Ik00MDQgNzAwIEwzNzQgOTYwIi8+CiAgICAgICAgPHBhdGggZD0iTTYyMCA3MDAgTDY1MCA5NjAiLz4KICAgICAgPC9nPgogICAgPC9nPgogICAgPCEtLSB0aGUgYm9keSBwcm9wZXIg4oCUIG9uZSB2YWx1ZSBsaWdodGVyIHRoYW4gdGhlIHBpdCBzbyB0aGUgc2lsaG91ZXR0ZSByZWFkcyAtLT4KICAgIDxnIGZpbGw9IiMxYTIzMzEiPgogICAgICA8cmVjdCB4PSI0NzAiIHk9IjU1MiIgd2lkdGg9Ijg0IiBoZWlnaHQ9IjY0Ii8+CiAgICAgIDxyZWN0IHg9IjM5MCIgeT0iNjY4IiB3aWR0aD0iMjQ0IiBoZWlnaHQ9IjQ2IiByeD0iMjMiLz4KICAgICAgPHBhdGggZD0iTTQ2NiAxMDI0IEw0NjAgNzAyIEw1NjQgNzAyIEw1NTggMTAyNCBaIi8+CiAgICA8L2c+CiAgICA8ZyBzdHJva2U9IiMxYTIzMzEiIHN0cm9rZS13aWR0aD0iMzgiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgZmlsbD0ibm9uZSI+CiAgICAgIDxwYXRoIGQ9Ik00MDYgNzAyIEwzNzYgOTU4Ii8+CiAgICAgIDxwYXRoIGQ9Ik02MTggNzAyIEw2NDggOTU4Ii8+CiAgICA8L2c+CiAgICA8IS0tIHRoZSByaW0gb2YgYmx1ZSB0aGF0IG5ldmVyIGJlY29tZXMgbGlnaHQgLS0+CiAgICA8ZyBzdHJva2U9IiM0Yjg2YzkiIHN0cm9rZS13aWR0aD0iNCIgZmlsbD0ibm9uZSIgb3BhY2l0eT0iMC43MiI+CiAgICAgIDxwYXRoIGQ9Ik00NzAgNjE2IEw0NzAgNTUyIEw1NTQgNTUyIEw1NTQgNjE2Ii8+CiAgICAgIDxwYXRoIGQ9Ik0zOTAgNjkxIEwzOTAgNjY4IEw2MzQgNjY4IEw2MzQgNjkxIi8+CiAgICAgIDxwYXRoIGQ9Ik00NjYgMTAyNCBMNDYwIDcwMiBNNTY0IDcwMiBMNTU4IDEwMjQiLz4KICAgIDwvZz4KICA8L2c+CgogIDwhLS0gdGhlIGNvbHVtbiBpdCBpcyBzdGFuZGluZyBpbiAtLT4KICA8cmVjdCB4PSIwIiB5PSI5MDYiIHdpZHRoPSIxMDI0IiBoZWlnaHQ9IjExOCIgZmlsbD0iIzAyMDMwNiIvPgogIDxyZWN0IHg9IjAiIHk9Ijg1NiIgd2lkdGg9IjEwMjQiIGhlaWdodD0iNTYiIGZpbGw9IiMwNDA2MGEiIG9wYWNpdHk9IjAuOCIgZmlsdGVyPSJ1cmwoI3NvZnQyKSIvPgogIDxwYXRoIGQ9Ik0wIDkwNiBRIDEyOCA4OTQgMjU2IDkwNiBUIDUxMiA5MDYgVCA3NjggOTA2IFQgMTAyNCA5MDYiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzNiN2ZkNCIgc3Ryb2tlLXdpZHRoPSI1IiBvcGFjaXR5PSIwLjciLz4KCiAgPCEtLSB0aGUgb25lIGJsdWUgdGhpbmcgaW4gdGhlIHdob2xlIHBpY3R1cmUgLS0+CiAgPGNpcmNsZSBjeD0iNTEyIiBjeT0iNTkwIiByPSIxMTIiIGZpbGw9InVybCgjZmxhbWUpIi8+CiAgPHBhdGggZD0iTTUxMiA1NTIgUSA1MzggNTkyIDUxMiA2MjIgUSA0ODYgNTkyIDUxMiA1NTIgWiIgZmlsbD0iI2Y0ZmFmZiIvPgoKICA8cmVjdCB3aWR0aD0iMTAyNCIgaGVpZ2h0PSIxMDI0IiBmaWxsPSJ1cmwoI3ZpZykiLz4KPC9zdmc+Cg==" alt="" />
+      <div class="who"><span class="app">Downcast</span><span class="by">by BlackRaven AI LLC</span></div>
+    </header>
+    <nav class="doc"><a href="privacy.html">Privacy</a><span class="on">Support</span><a href="terms.html">Terms</a></nav>
+    <main>
+      <h1>Support</h1>
+      <p class="updated">Last updated 2026-07-08</p>
+      <p class="lead">Need help with Downcast? You're in the right place. BlackRaven AI LLC makes Downcast, and we read every message.</p>
+      <section>
+        <h2>Contact us</h2>
+        <p>Email <a href="mailto:support@blackravenai.com?subject=Downcast%20support">support@blackravenai.com</a> and we'll help. We aim to reply within 2–3 business days. To speed things up, tell us your device and OS version and describe what happened.</p>
+      </section>
+      <section>
+        <h2>Common questions</h2>
+        <ul>
+          <li><b>Restore a purchase.</b> Open the shop/store screen in the app and choose "Restore Purchases". Purchases are tied to your app-store account and restore for free on your devices.</li>
+          <li><b>Remove ads.</b> If Downcast offers a remove-ads or premium purchase, buy it once and restore it on your other devices with "Restore Purchases".</li>
+          <li><b>Reset or delete my data.</b> Your progress is stored on your device. Clearing the app's data or uninstalling the app removes it. There is no server-side account to delete.</li>
+          <li><b>Report a bug or request a feature.</b> Email us with what you expected and what happened — screenshots help a lot.</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Privacy &amp; terms</h2>
+        <p>Read our <a href="privacy.html">Privacy Policy</a> and <a href="terms.html">Terms of Service</a>.</p>
+      </section>
+      <section>
+        <h2>App details</h2>
+        <p>Downcast &middot; <code>com.blackravenai.downcast</code><br>Published by BlackRaven AI LLC.</p>
+      </section>
+    </main>
+    <footer>
+      <span>&copy; 2026 BlackRaven AI LLC</span>
+      <span><a href="privacy.html">Privacy</a> &middot; <a href="support.html">Support</a> &middot; <a href="terms.html">Terms</a></span>
+    </footer>
+  </div>
+</body>
+</html>
