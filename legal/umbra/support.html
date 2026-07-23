@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<meta name="robots" content="index,follow" />
+<title>UMBRA — Support</title>
+<meta name="description" content="Support for UMBRA by BlackRaven AI LLC." />
+<style>
+  :root{
+    --bg:#05070c; --surface:#0d1420; --text:#e8eefc; --dim:#8ea0bf;
+    --accent:#f2a83c; --accent2:#cfe0ff; --border:#1c2739;
+    --font:ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+  }
+  *{box-sizing:border-box}
+  html{ -webkit-text-size-adjust:100% }
+  body{
+    margin:0; background:var(--bg); color:var(--text); font-family:var(--font);
+    line-height:1.65; padding:max(env(safe-area-inset-top),24px) 22px calc(64px + env(safe-area-inset-bottom));
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{ max-width:680px; margin:0 auto }
+  header.mast{ display:flex; align-items:center; gap:14px; padding-bottom:22px; margin-bottom:26px; border-bottom:1px solid var(--border) }
+  .mast img{ width:44px; height:44px; border-radius:22%; flex:0 0 auto; background:var(--surface) }
+  .mast .who{ display:flex; flex-direction:column; gap:2px }
+  .mast .app{ font-size:19px; font-weight:700; letter-spacing:.01em }
+  .mast .by{ font-size:12px; color:var(--dim); letter-spacing:.02em }
+  nav.doc{ display:flex; gap:8px; flex-wrap:wrap; margin-bottom:26px; font-size:13px }
+  nav.doc a, nav.doc .on{ padding:6px 12px; border-radius:999px; text-decoration:none; border:1px solid var(--border) }
+  nav.doc a{ color:var(--dim) }
+  nav.doc a:hover{ color:var(--text); border-color:var(--accent) }
+  nav.doc .on{ color:var(--bg); background:var(--accent); border-color:var(--accent); font-weight:600 }
+  h1{ font-size:26px; letter-spacing:.01em; margin:0 0 6px }
+  .updated{ color:var(--dim); font-size:12.5px; margin:0 0 22px }
+  .lead{ font-size:16px; color:var(--text); margin:0 0 8px }
+  section{ margin:24px 0 }
+  h2{ font-size:14px; text-transform:uppercase; letter-spacing:.09em; color:var(--accent); margin:0 0 8px }
+  p{ margin:0 0 12px } ul{ margin:0 0 12px; padding-left:20px } li{ margin:6px 0 }
+  a{ color:var(--accent2); text-decoration:underline; text-underline-offset:2px }
+  code{ font-family:ui-monospace,SFMono-Regular,Menlo,monospace; font-size:.9em; color:var(--dim) }
+  footer{ margin-top:40px; padding-top:20px; border-top:1px solid var(--border); color:var(--dim); font-size:12px; display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap }
+  footer a{ color:var(--dim) }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="mast">
+      <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAyNCIgaGVpZ2h0PSIxMDI0IiB2aWV3Qm94PSIwIDAgMTAyNCAxMDI0IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogIDxkZWZzPgogICAgPHJhZGlhbEdyYWRpZW50IGlkPSJiZyIgY3g9IjUwJSIgY3k9IjQ2JSIgcj0iNzIlIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzBkMTQyMCIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjYyJSIgc3RvcC1jb2xvcj0iIzBhMGUxNyIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwNTA3MGMiLz4KICAgIDwvcmFkaWFsR3JhZGllbnQ+CiAgICA8cmFkaWFsR3JhZGllbnQgaWQ9InBsYW5ldCIgY3g9IjM0JSIgY3k9IjMwJSIgcj0iNzglIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2M2NmEzYSIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjQyJSIgc3RvcC1jb2xvcj0iIzhhMzQyMCIvPgogICAgICA8c3RvcCBvZmZzZXQ9Ijc4JSIgc3RvcC1jb2xvcj0iIzNhMTYwZSIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMxMjA3MDUiLz4KICAgIDwvcmFkaWFsR3JhZGllbnQ+CiAgICA8cmFkaWFsR3JhZGllbnQgaWQ9ImJlYW0iIGN4PSI1MCUiIGN5PSI1MCUiIHI9IjUwJSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNmZmYwY2YiIHN0b3Atb3BhY2l0eT0iMC45NSIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjQyJSIgc3RvcC1jb2xvcj0iI2ZmY2Y3YSIgc3RvcC1vcGFjaXR5PSIwLjU1Ii8+CiAgICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2YyYTgzYyIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICA8L3JhZGlhbEdyYWRpZW50PgogICAgPHJhZGlhbEdyYWRpZW50IGlkPSJjb3JlIiBjeD0iNDAlIiBjeT0iMzglIiByPSI2NSUiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjZmZmZmZmIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iNDUlIiBzdG9wLWNvbG9yPSIjZmZkOThhIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2I1NzIyYSIvPgogICAgPC9yYWRpYWxHcmFkaWVudD4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYm9keSIgeDE9IjAiIHkxPSIwIiB4Mj0iMSIgeTI9IjEiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjZjRmNmZmIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2MzYzBiMiIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDxyYWRpYWxHcmFkaWVudCBpZD0idmlnIiBjeD0iNTAlIiBjeT0iNTAlIiByPSI2MiUiPgogICAgICA8c3RvcCBvZmZzZXQ9IjYwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjY1Ii8+CiAgICA8L3JhZGlhbEdyYWRpZW50PgogIDwvZGVmcz4KCiAgPCEtLSB2b2lkIC0tPgogIDxyZWN0IHdpZHRoPSIxMDI0IiBoZWlnaHQ9IjEwMjQiIGZpbGw9InVybCgjYmcpIi8+CgogIDwhLS0gZGVhZCBwbGFuZXQgbGltYiAoYm90dG9tLXJpZ2h0LCBibGVlZHMgb2ZmKSAtLT4KICA8Y2lyY2xlIGN4PSI5MDAiIGN5PSI5NjUiIHI9IjQzMCIgZmlsbD0idXJsKCNwbGFuZXQpIi8+CiAgPGNpcmNsZSBjeD0iOTAwIiBjeT0iOTY1IiByPSI0MzAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2M2NmEzYSIgc3Ryb2tlLW9wYWNpdHk9IjAuMTgiIHN0cm9rZS13aWR0aD0iNiIvPgoKICA8IS0tIHN0YXJzIC0tPgogIDxnIGZpbGw9IiNlZWYyZmYiPgogICAgPGNpcmNsZSBjeD0iMTgwIiBjeT0iMTYwIiByPSIzIiBvcGFjaXR5PSIwLjciLz4KICAgIDxjaXJjbGUgY3g9IjMwMCIgY3k9IjEyMCIgcj0iMiIgb3BhY2l0eT0iMC41Ii8+CiAgICA8Y2lyY2xlIGN4PSI3NjAiIGN5PSIxODAiIHI9IjIuNSIgb3BhY2l0eT0iMC42Ii8+CiAgICA8Y2lyY2xlIGN4PSI4ODAiIGN5PSIzMDAiIHI9IjIiIG9wYWNpdHk9IjAuNDUiLz4KICAgIDxjaXJjbGUgY3g9IjE1MCIgY3k9IjUyMCIgcj0iMiIgb3BhY2l0eT0iMC41Ii8+CiAgICA8Y2lyY2xlIGN4PSI2MjAiIGN5PSI5MCIgcj0iMiIgb3BhY2l0eT0iMC41Ii8+CiAgPC9nPgoKICA8IS0tIGJlYXJpbmcgYmV6ZWwgLS0+CiAgPGNpcmNsZSBjeD0iNTEyIiBjeT0iNTQwIiByPSI0NTIiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzNhNGE2MyIgc3Ryb2tlLW9wYWNpdHk9IjAuMzUiIHN0cm9rZS13aWR0aD0iNCIvPgogIDxnIHN0cm9rZT0iIzNhNGE2MyIgc3Ryb2tlLW9wYWNpdHk9IjAuNCIgc3Ryb2tlLXdpZHRoPSI0Ij4KICAgIDxsaW5lIHgxPSI1MTIiIHkxPSI5OCIgeDI9IjUxMiIgeTI9IjEyOCIvPgogICAgPGxpbmUgeDE9IjUxMiIgeTE9Ijk1MiIgeDI9IjUxMiIgeTI9Ijk4MiIvPgogICAgPGxpbmUgeDE9IjcwIiB5MT0iNTQwIiB4Mj0iMTAwIiB5Mj0iNTQwIi8+CiAgICA8bGluZSB4MT0iOTI0IiB5MT0iNTQwIiB4Mj0iOTU0IiB5Mj0iNTQwIi8+CiAgPC9nPgoKICA8IS0tIHNjYW5uZXIgYmVhbSB3ZWRnZSBwb2ludGluZyB1cC1sZWZ0IC0tPgogIDxnIHN0eWxlPSJtaXgtYmxlbmQtbW9kZTpzY3JlZW4iPgogICAgPHBhdGggZD0iTTUxMiA1NDAgTDkyIDIzNiBBNDUyIDQ1MiAwIDAgMSAzMDAgOTIgWiIgZmlsbD0idXJsKCNiZWFtKSIvPgogICAgPHBhdGggZD0iTTUxMiA1NDAgTDE1MCAyMDAiIHN0cm9rZT0iI2ZmZjBjZiIgc3Ryb2tlLW9wYWNpdHk9IjAuNSIgc3Ryb2tlLXdpZHRoPSI2IiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KICA8L2c+CgogIDwhLS0gU1RBUlZFTElORyBjYXVnaHQgaW4gdGhlIGJlYW0gKGZyb3plbiwgZ2xhcmluZykgLS0+CiAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMzAwIDI2Mikgcm90YXRlKDM4KSI+CiAgICA8IS0tIHNwaW5kbHkgbGVncyAtLT4KICAgIDxnIHN0cm9rZT0idXJsKCNib2R5KSIgc3Ryb2tlLXdpZHRoPSIxNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBmaWxsPSJub25lIiBvcGFjaXR5PSIwLjkyIj4KICAgICAgPHBhdGggZD0iTS03MCAtMjAgUSAtMTMwIC03MCAtMTc1IC01NSIvPgogICAgICA8cGF0aCBkPSJNLTQwIC0zNCBRIC05NSAtOTUgLTE1MCAtMTEwIi8+CiAgICAgIDxwYXRoIGQ9Ik0tNzAgMjAgUSAtMTMwIDcwIC0xNzUgNTUiLz4KICAgICAgPHBhdGggZD0iTS00MCAzNCBRIC05NSA5NSAtMTUwIDExMCIvPgogICAgPC9nPgogICAgPCEtLSBlbG9uZ2F0ZWQgYm9keSAtLT4KICAgIDxwYXRoIGQ9Ik0xMTggMCBRIDYwIC02NiAtNjAgLTQ2IFEgLTEyMCAtMTggLTExOCAwIFEgLTEyMCAxOCAtNjAgNDYgUSA2MCA2NiAxMTggMCBaIiBmaWxsPSJ1cmwoI2JvZHkpIi8+CiAgICA8IS0tIGV5ZWxlc3MgaGVhZCBkb21lICsgZGFyayBtb3V0aCAtLT4KICAgIDxjaXJjbGUgY3g9IjkyIiBjeT0iMCIgcj0iNDYiIGZpbGw9IiNmZmZmZmYiLz4KICAgIDxwYXRoIGQ9Ik02MCAxMiBBIDM0IDM0IDAgMCAwIDEyNCAxMiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMDUwNzBjIiBzdHJva2Utb3BhY2l0eT0iMC43IiBzdHJva2Utd2lkdGg9IjEyIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KICAgIDwhLS0gZ2xhcmUgc2VhbSAtLT4KICAgIDxwYXRoIGQ9Ik0xMDggMCBMIC05NiAtNCIgc3Ryb2tlPSIjZmZmZmZmIiBzdHJva2Utb3BhY2l0eT0iMC43IiBzdHJva2Utd2lkdGg9IjkiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgogIDwvZz4KCiAgPCEtLSBzdGF0aW9uIGNvcmUgLS0+CiAgPGNpcmNsZSBjeD0iNTEyIiBjeT0iNTQwIiByPSIxNTAiIGZpbGw9IiNmMmE4M2MiIG9wYWNpdHk9IjAuMTQiLz4KICA8Y2lyY2xlIGN4PSI1MTIiIGN5PSI1NDAiIHI9IjY2IiBmaWxsPSJ1cmwoI2NvcmUpIi8+CiAgPGNpcmNsZSBjeD0iNTEyIiBjeT0iNTQwIiByPSI5NCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZmZjZjdhIiBzdHJva2Utb3BhY2l0eT0iMC41NSIgc3Ryb2tlLXdpZHRoPSI3Ii8+CiAgPGcgc3Ryb2tlPSIjM2E0YTYzIiBzdHJva2Utd2lkdGg9IjkiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgb3BhY2l0eT0iMC44NSI+CiAgICA8bGluZSB4MT0iNTEyIiB5MT0iNDc0IiB4Mj0iNTEyIiB5Mj0iNDMwIi8+CiAgICA8bGluZSB4MT0iNTc4IiB5MT0iNTQwIiB4Mj0iNjIwIiB5Mj0iNTQwIi8+CiAgICA8bGluZSB4MT0iNTEyIiB5MT0iNjA2IiB4Mj0iNTEyIiB5Mj0iNjQ4Ii8+CiAgICA8bGluZSB4MT0iNDQ2IiB5MT0iNTQwIiB4Mj0iNDA0IiB5Mj0iNTQwIi8+CiAgPC9nPgoKICA8IS0tIHZpZ25ldHRlIC0tPgogIDxyZWN0IHdpZHRoPSIxMDI0IiBoZWlnaHQ9IjEwMjQiIGZpbGw9InVybCgjdmlnKSIvPgo8L3N2Zz4K" alt="" />
+      <div class="who"><span class="app">UMBRA</span><span class="by">by BlackRaven AI LLC</span></div>
+    </header>
+    <nav class="doc"><a href="privacy.html">Privacy</a><span class="on">Support</span><a href="terms.html">Terms</a></nav>
+    <main>
+      <h1>Support</h1>
+      <p class="updated">Last updated 2026-07-08</p>
+      <p class="lead">Need help with UMBRA? You're in the right place. BlackRaven AI LLC makes UMBRA, and we read every message.</p>
+      <section>
+        <h2>Contact us</h2>
+        <p>Email <a href="mailto:support@blackravenai.com?subject=UMBRA%20support">support@blackravenai.com</a> and we'll help. We aim to reply within 2–3 business days. To speed things up, tell us your device and OS version and describe what happened.</p>
+      </section>
+      <section>
+        <h2>Common questions</h2>
+        <ul>
+          <li><b>Restore a purchase.</b> Open the shop/store screen in the app and choose "Restore Purchases". Purchases are tied to your app-store account and restore for free on your devices.</li>
+          <li><b>Remove ads.</b> If UMBRA offers a remove-ads or premium purchase, buy it once and restore it on your other devices with "Restore Purchases".</li>
+          <li><b>Reset or delete my data.</b> Your progress is stored on your device. Clearing the app's data or uninstalling the app removes it. There is no server-side account to delete.</li>
+          <li><b>Report a bug or request a feature.</b> Email us with what you expected and what happened — screenshots help a lot.</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Privacy &amp; terms</h2>
+        <p>Read our <a href="privacy.html">Privacy Policy</a> and <a href="terms.html">Terms of Service</a>.</p>
+      </section>
+      <section>
+        <h2>App details</h2>
+        <p>UMBRA &middot; <code>com.blackravenai.umbra</code><br>Published by BlackRaven AI LLC.</p>
+      </section>
+    </main>
+    <footer>
+      <span>&copy; 2026 BlackRaven AI LLC</span>
+      <span><a href="privacy.html">Privacy</a> &middot; <a href="support.html">Support</a> &middot; <a href="terms.html">Terms</a></span>
+    </footer>
+  </div>
+</body>
+</html>
