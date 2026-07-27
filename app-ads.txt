@@ -1,0 +1,39 @@
+# app-ads.txt — NOT READY TO PUBLISH. Deliberately left uncommitted.
+#
+# WHY IT IS BEING HELD BACK
+# The line at the bottom still carries the placeholder publisher id
+# pub-0000000000000000. Publishing that is WORSE than having no file:
+#
+#   No app-ads.txt   -> ad serving is uninterrupted. The only exposure is
+#                       inventory spoofing (someone else selling fake
+#                       "BlackRaven AI" impressions).
+#
+#   Wrong id in one  -> programmatic buyers validate every seller against
+#                       this list and treat anyone NOT on it as
+#                       UNAUTHORIZED. With only a placeholder here that is
+#                       every real seller — lower bid rates, reduced fill,
+#                       lost revenue on whatever is live at the time.
+#
+# An empty slot is safe. A wrong slot actively suppresses your own demand.
+#
+# HOW TO FINISH IT
+# 1. Create the AdMob account (Nexus Roadmap -> "Set up AdMob (only if
+#    running ads)"), still To do as of 2026-07-26. There is no real
+#    publisher id anywhere in the fleet yet — the only ids present are
+#    Google's public TEST units (pub-3940256099942544).
+# 2. AdMob -> Settings -> Account information -> copy the Publisher ID
+#    (format: pub- followed by 16 digits).
+# 3. Replace the placeholder line below with it.
+# 4. In AdMob set each app's Developer website to https://www.blackravenai.com
+#    so Google knows to crawl this file. That domain MUST match the
+#    developer/marketing URL on the store listing or verification fails.
+# 5. Commit + push. It has to be served from the ROOT of the domain —
+#    https://www.blackravenai.com/app-ads.txt — which is exactly here.
+# 6. AdMob -> Apps -> app-ads.txt tab: status flips to "Found" within ~24h.
+#
+# Add one line per demand partner you actually work with. Every mediation
+# network added later needs its own line or its demand goes unauthorized.
+#
+# Format: <domain>, <publisher id>, <DIRECT|RESELLER>, <certification id>
+
+google.com, pub-0000000000000000, DIRECT, f08c47fec0942fa0
