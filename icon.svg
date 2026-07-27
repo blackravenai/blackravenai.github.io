@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <rect width="1024" height="1024" fill="#050607"/>
+  <!-- Facet — low-poly raven head (facing left), brand palette -->
+  <polygon points="650,250 830,340 630,370" fill="#b9bec8"/>
+  <polygon points="830,340 810,660 630,370" fill="#5f6774"/>
+  <polygon points="630,370 810,660 570,480" fill="#868d99"/>
+  <polygon points="810,660 610,760 570,480" fill="#474e5c"/>
+  <polygon points="570,480 610,760 510,640" fill="#6f7787"/>
+  <polygon points="570,480 510,640 510,510" fill="#9aa0ab"/>
+  <polygon points="650,250 630,370 570,360" fill="#e4e0d7"/>
+  <polygon points="630,370 570,480 570,360" fill="#f0ece3"/>
+  <polygon points="570,480 510,510 570,360" fill="#d3d7de"/>
+  <polygon points="510,640 160,600 510,510" fill="#c4c8d0"/>
+  <circle cx="570" cy="450" r="34" fill="#7C6BFF"/>
+</svg>
