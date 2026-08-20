@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<meta name="robots" content="index,follow" />
+<title>Greenhorn — Support</title>
+<meta name="description" content="Support for Greenhorn by BlackRaven AI LLC." />
+<style>
+  :root{
+    --bg:#f3ead8; --surface:#fbf6ea; --text:#3a2c1e; --dim:#6b543f;
+    --accent:#b87a1c; --accent2:#55704a; --border:#ddcdae;
+    --font:Georgia, 'Iowan Old Style', 'Palatino Linotype', Palatino, 'Book Antiqua', serif;
+  }
+  *{box-sizing:border-box}
+  html{ -webkit-text-size-adjust:100% }
+  body{
+    margin:0; background:var(--bg); color:var(--text); font-family:var(--font);
+    line-height:1.65; padding:max(env(safe-area-inset-top),24px) 22px calc(64px + env(safe-area-inset-bottom));
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{ max-width:680px; margin:0 auto }
+  header.mast{ display:flex; align-items:center; gap:14px; padding-bottom:22px; margin-bottom:26px; border-bottom:1px solid var(--border) }
+  .mast img{ width:44px; height:44px; border-radius:22%; flex:0 0 auto; background:var(--surface) }
+  .mast .who{ display:flex; flex-direction:column; gap:2px }
+  .mast .app{ font-size:19px; font-weight:700; letter-spacing:.01em }
+  .mast .by{ font-size:12px; color:var(--dim); letter-spacing:.02em }
+  nav.doc{ display:flex; gap:8px; flex-wrap:wrap; margin-bottom:26px; font-size:13px }
+  nav.doc a, nav.doc .on{ padding:6px 12px; border-radius:999px; text-decoration:none; border:1px solid var(--border) }
+  nav.doc a{ color:var(--dim) }
+  nav.doc a:hover{ color:var(--text); border-color:var(--accent) }
+  nav.doc .on{ color:var(--bg); background:var(--accent); border-color:var(--accent); font-weight:600 }
+  h1{ font-size:26px; letter-spacing:.01em; margin:0 0 6px }
+  .updated{ color:var(--dim); font-size:12.5px; margin:0 0 22px }
+  .lead{ font-size:16px; color:var(--text); margin:0 0 8px }
+  section{ margin:24px 0 }
+  h2{ font-size:14px; text-transform:uppercase; letter-spacing:.09em; color:var(--accent); margin:0 0 8px }
+  p{ margin:0 0 12px } ul{ margin:0 0 12px; padding-left:20px } li{ margin:6px 0 }
+  a{ color:var(--accent2); text-decoration:underline; text-underline-offset:2px }
+  code{ font-family:ui-monospace,SFMono-Regular,Menlo,monospace; font-size:.9em; color:var(--dim) }
+  footer{ margin-top:40px; padding-top:20px; border-top:1px solid var(--border); color:var(--dim); font-size:12px; display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap }
+  footer a{ color:var(--dim) }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="mast">
+      <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDI0IiBoZWlnaHQ9IjEwMjQiIHZpZXdCb3g9IjAgMCAxMDI0IDEwMjQiPgogIDxkZWZzPgogICAgPHJhZGlhbEdyYWRpZW50IGlkPSJiZyIgY3g9IjUwJSIgY3k9IjM4JSIgcj0iODAlIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2Y3ZWZkZCIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjYyJSIgc3RvcC1jb2xvcj0iI2YzZWFkOCIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlMmQyYjIiLz4KICAgIDwvcmFkaWFsR3JhZGllbnQ+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImJvZHkiIHgxPSIwIiB5MT0iMCIgeDI9IjAiIHkyPSIxIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzhhYTA3NSIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM3MTg3NWQiLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgPC9kZWZzPgogIDxyZWN0IHdpZHRoPSIxMDI0IiBoZWlnaHQ9IjEwMjQiIGZpbGw9InVybCgjYmcpIi8+CgogIDwhLS0gd2FybSB3aW5kb3cgbGlnaHQgYmVoaW5kIC0tPgogIDxjaXJjbGUgY3g9IjUxMiIgY3k9IjQzMCIgcj0iMzMwIiBmaWxsPSJyZ2JhKDIxNywxNTAsNDYsMC4xMikiLz4KICA8Y2lyY2xlIGN4PSI1MTIiIGN5PSI0MzAiIHI9IjI1MiIgZmlsbD0icmdiYSgyNTEsMjQ2LDIzNCwwLjU1KSIvPgoKICA8IS0tIHRoZSBncmVlbmhvcm4gLS0+CiAgPGc+CiAgICA8ZWxsaXBzZSBjeD0iNTEyIiBjeT0iODEyIiByeD0iMjY4IiByeT0iNDAiIGZpbGw9InJnYmEoNTgsNDQsMzAsMC4xNikiLz4KICAgIDwhLS0gcm9vdCBmZWV0IC0tPgogICAgPGVsbGlwc2UgY3g9IjQxOCIgY3k9Ijc5MiIgcng9IjYyIiByeT0iMzQiIGZpbGw9IiM1NTcwNGEiLz4KICAgIDxlbGxpcHNlIGN4PSI2MDYiIGN5PSI3OTIiIHJ4PSI2MiIgcnk9IjM0IiBmaWxsPSIjNTU3MDRhIi8+CiAgICA8IS0tIGJvZHkgLS0+CiAgICA8cGF0aCBkPSJNIDI2MiA3ODAgUSAyMzIgNDcwIDUxMiAzODAgUSA3OTIgNDcwIDc2MiA3ODAgWiIKICAgICAgICAgIGZpbGw9InVybCgjYm9keSkiIHN0cm9rZT0iIzU1NzA0YSIgc3Ryb2tlLXdpZHRoPSIxOCIvPgogICAgPHBhdGggZD0iTSAzMDAgNzQwIFEgMzAwIDUyMCA0NjAgNDMwIiBmaWxsPSJub25lIiBzdHJva2U9IiM1NTcwNGEiIHN0cm9rZS13aWR0aD0iOCIgb3BhY2l0eT0iMC4zNSIvPgogICAgPCEtLSBzcHJvdXQgaG9ybnMgLS0+CiAgICA8Zz4KICAgICAgPHBhdGggZD0iTSA0MzAgNDAyIHEgLTUyIC0xMTggMTYgLTE3OCBxIDM4IDc0IDEyIDE3OCBaIiBmaWxsPSIjNTU3MDRhIi8+CiAgICAgIDxwYXRoIGQ9Ik0gNTk0IDQwMiBxIDUyIC0xMTggLTE2IC0xNzggcSAtMzggNzQgLTEyIDE3OCBaIiBmaWxsPSIjNTU3MDRhIi8+CiAgICAgIDxjaXJjbGUgY3g9IjQ0NiIgY3k9IjIxMiIgcj0iMjYiIGZpbGw9IiNkOTk2MmUiLz4KICAgICAgPGNpcmNsZSBjeD0iNTc4IiBjeT0iMjEyIiByPSIyNiIgZmlsbD0iI2Q5OTYyZSIvPgogICAgPC9nPgogICAgPCEtLSBmYWNlIC0tPgogICAgPGNpcmNsZSBjeD0iNDM4IiBjeT0iNTc2IiByPSIzNSIgZmlsbD0iIzNhMmMxZSIvPgogICAgPGNpcmNsZSBjeD0iNTg2IiBjeT0iNTc2IiByPSIzNSIgZmlsbD0iIzNhMmMxZSIvPgogICAgPGNpcmNsZSBjeD0iNDUwIiBjeT0iNTYyIiByPSIxMSIgZmlsbD0iI2ZmZmZmZiIvPgogICAgPGNpcmNsZSBjeD0iNTk4IiBjeT0iNTYyIiByPSIxMSIgZmlsbD0iI2ZmZmZmZiIvPgogICAgPGxpbmUgeDE9IjM5MiIgeTE9IjUxMiIgeDI9IjQ3NCIgeTI9IjUxMiIgc3Ryb2tlPSIjM2EyYzFlIiBzdHJva2Utd2lkdGg9IjE0IiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KICAgIDxsaW5lIHgxPSI1NTAiIHkxPSI1MTIiIHgyPSI2MzIiIHkyPSI1MTIiIHN0cm9rZT0iIzNhMmMxZSIgc3Ryb2tlLXdpZHRoPSIxNCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+CiAgICA8cGF0aCBkPSJNIDQ2MiA2NjQgcSA1MCA1MiAxMDAgMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjM2EyYzFlIiBzdHJva2Utd2lkdGg9IjE2IiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KICAgIDwhLS0gZnJlY2tsZXMgLS0+CiAgICA8Y2lyY2xlIGN4PSIzNjAiIGN5PSI2MjAiIHI9IjgiIGZpbGw9IiM1NTcwNGEiIG9wYWNpdHk9IjAuNiIvPgogICAgPGNpcmNsZSBjeD0iMzM2IiBjeT0iNjU2IiByPSI4IiBmaWxsPSIjNTU3MDRhIiBvcGFjaXR5PSIwLjYiLz4KICAgIDxjaXJjbGUgY3g9IjY2OCIgY3k9IjYyMCIgcj0iOCIgZmlsbD0iIzU1NzA0YSIgb3BhY2l0eT0iMC42Ii8+CiAgPC9nPgoKICA8IS0tIGJyYW5kIGFjY2VudDogb25lIG1hcmlnb2xkIHNwcmlnLCBib3R0b20gcmlnaHQgLS0+CiAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNzg4LDg2OCkgcm90YXRlKC0xNCkiPgogICAgPHBhdGggZD0iTSAwIDYwIFEgOCAxMCA0NCAtMTgiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2I4N2ExYyIgc3Ryb2tlLXdpZHRoPSIxMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+CiAgICA8cGF0aCBkPSJNIDEwIDI2IHEgLTMwIC02IC00MCAtMzIgcSAzMiAtNCA0MCAzMiBaIiBmaWxsPSIjZDk5NjJlIi8+CiAgICA8cGF0aCBkPSJNIDI2IC0yIHEgLTYgLTMyIDE4IC01MCBxIDEyIDMwIC0xOCA1MCBaIiBmaWxsPSIjZDk5NjJlIi8+CiAgPC9nPgo8L3N2Zz4K" alt="" />
+      <div class="who"><span class="app">Greenhorn</span><span class="by">by BlackRaven AI LLC</span></div>
+    </header>
+    <nav class="doc"><a href="privacy.html">Privacy</a><span class="on">Support</span><a href="terms.html">Terms</a></nav>
+    <main>
+      <h1>Support</h1>
+      <p class="updated">Last updated 2026-08-20</p>
+      <p class="lead">Need help with Greenhorn? You're in the right place. BlackRaven AI LLC makes Greenhorn, and we read every message.</p>
+      <section>
+        <h2>Contact us</h2>
+        <p>Email <a href="mailto:support@blackravenai.com?subject=Greenhorn%20support">support@blackravenai.com</a> and we'll help. We aim to reply within 2–3 business days. To speed things up, tell us your device and OS version and describe what happened.</p>
+      </section>
+      <section>
+        <h2>Common questions</h2>
+        <ul>
+          <li><b>Restore a purchase.</b> Open the shop/store screen in the app and choose "Restore Purchases". Purchases are tied to your app-store account and restore for free on your devices.</li>
+          <li><b>Remove ads.</b> If Greenhorn offers a remove-ads or premium purchase, buy it once and restore it on your other devices with "Restore Purchases".</li>
+          <li><b>Reset or delete my data.</b> Your progress is stored on your device. Clearing the app's data or uninstalling the app removes it. There is no server-side account to delete.</li>
+          <li><b>Report a bug or request a feature.</b> Email us with what you expected and what happened — screenshots help a lot.</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Privacy &amp; terms</h2>
+        <p>Read our <a href="privacy.html">Privacy Policy</a> and <a href="terms.html">Terms of Service</a>.</p>
+      </section>
+      <section>
+        <h2>App details</h2>
+        <p>Greenhorn &middot; <code>com.blackravenai.amaranth</code><br>Published by BlackRaven AI LLC.</p>
+      </section>
+    </main>
+    <footer>
+      <span>&copy; 2026 BlackRaven AI LLC</span>
+      <span><a href="privacy.html">Privacy</a> &middot; <a href="support.html">Support</a> &middot; <a href="terms.html">Terms</a></span>
+    </footer>
+  </div>
+</body>
+</html>
