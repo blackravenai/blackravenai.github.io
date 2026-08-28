@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<meta name="robots" content="index,follow" />
+<title>GAMBREL — Support</title>
+<meta name="description" content="Support for GAMBREL by BlackRaven AI LLC." />
+<style>
+  :root{
+    --bg:#F1F4F3; --surface:#FAFBFA; --text:#223035; --dim:#54666C;
+    --accent:#4A2A73; --accent2:#6B3FA0; --border:#D2D9D8;
+    --font:'IBM Plex Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
+    --display:Oswald, 'Avenir Next Condensed', 'Roboto Condensed', 'Arial Narrow', system-ui, sans-serif;
+  }
+  *{box-sizing:border-box}
+  html{ -webkit-text-size-adjust:100% }
+  body{
+    margin:0; background:var(--bg); color:var(--text); font-family:var(--font);
+    line-height:1.65; padding:max(env(safe-area-inset-top),24px) 22px calc(64px + env(safe-area-inset-bottom));
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{ max-width:680px; margin:0 auto }
+  header.mast{ display:flex; align-items:center; gap:14px; padding-bottom:22px; margin-bottom:26px; border-bottom:1px solid var(--border) }
+  .mast img{ width:44px; height:44px; border-radius:22%; flex:0 0 auto; background:var(--surface) }
+  .mast .who{ display:flex; flex-direction:column; gap:2px }
+  .mast .app{ font-family:var(--display); font-size:19px; font-weight:400; letter-spacing:.03em }
+  .mast .by{ font-size:12px; color:var(--dim); letter-spacing:.02em }
+  nav.doc{ display:flex; gap:8px; flex-wrap:wrap; margin-bottom:26px; font-size:13px }
+  nav.doc a, nav.doc .on{ padding:6px 12px; border-radius:999px; text-decoration:none; border:1px solid var(--border) }
+  nav.doc a{ color:var(--dim) }
+  nav.doc a:hover{ color:var(--text); border-color:var(--accent) }
+  nav.doc .on{ color:#FAFBFA; background:var(--accent); border-color:var(--accent); font-weight:600 }
+  h1{ font-family:var(--display); font-size:26px; font-weight:400; letter-spacing:.01em; margin:0 0 6px }
+  .updated{ color:var(--dim); font-size:12.5px; margin:0 0 22px; font-variant-numeric:tabular-nums }
+  .lead{ font-size:16px; color:var(--text); margin:0 0 8px }
+  section{ margin:24px 0 }
+  h2{ font-size:14px; text-transform:uppercase; letter-spacing:.09em; color:var(--accent); margin:0 0 8px }
+  p{ margin:0 0 12px } ul{ margin:0 0 12px; padding-left:20px } li{ margin:6px 0 }
+  a{ color:var(--accent2); text-decoration:underline; text-underline-offset:2px }
+  code{ font-family:ui-monospace,SFMono-Regular,Menlo,monospace; font-size:.9em; color:var(--dim) }
+  footer{ margin-top:40px; padding-top:20px; border-top:1px solid var(--border); color:var(--dim); font-size:12px; display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap }
+  footer a{ color:var(--dim) }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="mast">
+      <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDI0IDEwMjQiIHdpZHRoPSIxMDI0IiBoZWlnaHQ9IjEwMjQiIHJvbGU9ImltZyIgYXJpYS1sYWJlbD0iR0FNQlJFTCI+CiAgPHRpdGxlPkdBTUJSRUw8L3RpdGxlPgogIDxkZWZzPgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJ3YXNoIiB4MT0iMCIgeTE9IjAiIHgyPSIwIiB5Mj0iMSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iI0ZBRkJGQSIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjAuNjAiIHN0b3AtY29sb3I9IiNGMUY0RjMiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjRERFNUU0Ii8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPCEtLSBUSEUgU0lERTogc3BpbmUgc3RyYWlnaHQgb24gdGhlIHJpZ2h0LCBiZWxseSBjdXJ2ZWQgb24gdGhlIGxlZnQsCiAgICAgICAgIGhvY2sgYXQgdGhlIHRvcCwgYnJpc2tldCBhbmQgZm9yZXNoYW5rIGF0IHRoZSBib3R0b20gbGVmdC4gLS0+CiAgICA8cGF0aCBpZD0ic2lkZSIgZD0iCiAgICAgIE0gNTk2IDE5NgogICAgICBRIDY3NiAyMjQgNjkyIDMxOAogICAgICBMIDcxMiA1NjAKICAgICAgUSA3MjYgNzM2IDY5MCA4NTYKICAgICAgUSA2NjggOTMwIDYwNCA5NDQKICAgICAgTCA0NzAgOTY0CiAgICAgIFEgNDA0IDk3MiAzODYgOTA4CiAgICAgIEwgMzYwIDgxMgogICAgICBRIDMyMiA3NjQgMzIyIDY5MAogICAgICBRIDMyMiA2MzYgMzQ2IDU5NgogICAgICBRIDMxNiA1MDAgMzM2IDQxMgogICAgICBRIDM1NCAzMDYgNDI4IDI0NAogICAgICBRIDQ4MiAyMDAgNTQ0IDE5NgogICAgICBaIi8+CiAgICA8Y2xpcFBhdGggaWQ9InNpZGVjbGlwIj48dXNlIGhyZWY9IiNzaWRlIi8+PC9jbGlwUGF0aD4KICA8L2RlZnM+CgogIDxyZWN0IHdpZHRoPSIxMDI0IiBoZWlnaHQ9IjEwMjQiIGZpbGw9InVybCgjd2FzaCkiLz4KCiAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNTEyIDYwMCkgc2NhbGUoMS4xMCkgdHJhbnNsYXRlKC01MTIgLTYwMCkiPgogIDwhLS0gdGhlIHNpZGUsIGhhbmdpbmcgLS0+CiAgPGcgY2xpcC1wYXRoPSJ1cmwoI3NpZGVjbGlwKSI+CiAgICA8dXNlIGhyZWY9IiNzaWRlIiBmaWxsPSIjMkEzQTQwIi8+CiAgICA8cmVjdCB4PSIzMDAiIHk9IjE4MCIgd2lkdGg9IjQ0MCIgaGVpZ2h0PSIyNDAiIGZpbGw9IiM2QjNGQTAiLz4KICAgIDxyZWN0IHg9IjMwMCIgeT0iNDIwIiB3aWR0aD0iNDQwIiBoZWlnaHQ9IjE4MCIgZmlsbD0iIzhFNjNDNCIvPgogICAgPGcgc3Ryb2tlPSIjRjFGNEYzIiBzdHJva2Utd2lkdGg9IjE0IiBvcGFjaXR5PSIwLjk0IiBmaWxsPSJub25lIj4KICAgICAgPHBhdGggZD0iTSAzMjAgNDIwIEwgNzMwIDQyMCIvPgogICAgICA8cGF0aCBkPSJNIDMyMCA2MDAgTCA3MzAgNjAwIi8+CiAgICAgIDxwYXRoIGQ9Ik0gMzMwIDc5MCBMIDczMCA3OTAiLz4KICAgIDwvZz4KICAgIDxwYXRoIGQ9Ik0gNjY2IDE5NiBMIDY5MiA5NjQiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0YxRjRGMyIgc3Ryb2tlLXdpZHRoPSIxNCIKICAgICAgICAgIHN0cm9rZS1kYXNoYXJyYXk9IjMyIDM2IiBvcGFjaXR5PSIwLjkiLz4KICA8L2c+CgogIDwhLS0gVEhFIEdBTUJSRUw6IHNoYWNrbGUgdG8gdGhlIHJhaWwgYWJvdmUsIHN0cmFpZ2h0IHNwcmVhZGVyLCBob29rcyB0dXJuZWQgdXAgLS0+CiAgPGcgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMjIzMDM1IiBzdHJva2Utd2lkdGg9IjU0IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPgogICAgPHBhdGggZD0iTSA1MTIgMCBMIDUxMiAxNTAiLz4KICAgIDxwYXRoIGQ9Ik0gNTEyIDE1MCBMIDM1MCAyNjggTSA1MTIgMTUwIEwgNjc0IDI2OCIvPgogICAgPHBhdGggZD0iTSAzNTAgMjY4IFEgMjkyIDI5MiAyOTYgMjI2IE0gNjc0IDI2OCBRIDczMiAyOTIgNzI4IDIyNiIvPgogIDwvZz4KICA8L2c+Cjwvc3ZnPgo=" alt="" />
+      <div class="who"><span class="app">GAMBREL</span><span class="by">by BlackRaven AI LLC</span></div>
+    </header>
+    <nav class="doc"><a href="privacy.html">Privacy</a><span class="on">Support</span><a href="terms.html">Terms</a></nav>
+    <main>
+      <h1>Support</h1>
+      <p class="updated">Last updated 2026-08-28</p>
+      <p class="lead">Need help with GAMBREL? You're in the right place. BlackRaven AI LLC makes GAMBREL, and we read every message.</p>
+      <section>
+        <h2>Contact us</h2>
+        <p>Email <a href="mailto:support@blackravenai.com?subject=GAMBREL%20support">support@blackravenai.com</a> and we'll help. We aim to reply within 2–3 business days. To speed things up, tell us your device and OS version and describe what happened.</p>
+      </section>
+      <section>
+        <h2>Common questions</h2>
+        <ul>
+          <li><b>Restore a purchase.</b> Open the purchase screen in the app and choose "Restore Purchases". Purchases are tied to your app-store account and restore for free on your devices.</li>
+          <li><b>What is free and what is Pro.</b> The whole solver is free forever — all four species, the full cut taxonomy, the work order, every manifest, every customer quote, the yield book and uncapped export in JSON, CSV and plain text. Free keeps 3 animals on the rail with 2 buyers each. Pro removes both caps and re-fits the yield estimate from your own finished animals.</li><li><b>Subscription terms.</b> Pro is $59.99 a year with a 28-day free trial (annual plan only, once per store account), or $8.99 a month with no trial, or $119.99 once for lifetime. The yearly and monthly plans renew automatically at the then-current price until you cancel; the lifetime purchase is a single payment, never renews, and there is nothing to cancel. Cancel a renewing plan any time in your App Store or Google Play account under Subscriptions, at least 24 hours before the period ends — cancelling stops the next charge and the plan runs to the end of the period you have already paid for.</li><li><b>My Pro plan lapsed.</b> Nothing of yours is deleted or locked. Every animal, buyer, break, artifact and yield record stays on the device, stays readable, stays exportable and stays deletable; the free caps simply apply again to what you add next.</li><li><b>What GAMBREL is not.</b> It plans your animal on paper. It is not a storefront, it does not take payments, it does not route deliveries, and it does not keep herd or treatment records. It starts when the animal is booked for harvest.</li><li><b>No inspection, safety or legal claim.</b> GAMBREL organises your own cutting plan and your own numbers. It makes no food-safety, inspection, grading or legal statement about any animal or any cut, and it is not a substitute for your processor’s rules or your local law.</li><li><b>The numbers are estimates until you weigh.</b> Dressing percentage and cut yields are published reference figures until you record what actually came back from the locker. Every estimated figure says so in the app.</li>
+          <li><b>Reset or delete my data.</b> Your work is stored on your device. Clearing the app's data or uninstalling the app removes it. There is no server-side account to delete.</li>
+          <li><b>Report a bug or request a feature.</b> Email us with what you expected and what happened — screenshots help a lot.</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Sources &amp; attribution</h2>
+        <p>GAMBREL’s primal and sub-primal yield references are taken from published extension-service carcass-cutting data (including Penn State Extension’s beef carcass yield tables), which sum to about 97% of carcass weight; the app does not invent the remainder. The allocator is a deterministic seeded greedy solve refined by simulated annealing, constrained by package grain, and every constant and citation is recorded line by line in the app’s design record.</p>
+      </section>
+      <section>
+        <h2>Privacy &amp; terms</h2>
+        <p>Read our <a href="privacy.html">Privacy Policy</a> and <a href="terms.html">Terms of Service</a>.</p>
+      </section>
+      <section>
+        <h2>App details</h2>
+        <p>GAMBREL &middot; <code>com.blackravenai.gambrel</code><br>Published by BlackRaven AI LLC.</p>
+      </section>
+    </main>
+    <footer>
+      <span>&copy; 2026 BlackRaven AI LLC</span>
+      <span><a href="privacy.html">Privacy</a> &middot; <a href="support.html">Support</a> &middot; <a href="terms.html">Terms</a></span>
+    </footer>
+  </div>
+</body>
+</html>
