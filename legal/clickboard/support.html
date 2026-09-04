@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<meta name="robots" content="index,follow" />
+<title>CLICKBOARD — Support</title>
+<meta name="description" content="Support for CLICKBOARD by BlackRaven AI LLC." />
+<style>
+  :root{
+    --bg:#1A130D; --surface:#241A12; --text:#EDE3D2; --dim:#B7A88F;
+    --accent:#A9682F; --accent2:#C0392B; --border:#33251A;
+    --font:Archivo, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    --display:"Saira Condensed", "Avenir Next Condensed", "Roboto Condensed", "Arial Narrow", system-ui, sans-serif;
+  }
+  *{box-sizing:border-box}
+  html{ -webkit-text-size-adjust:100% }
+  body{
+    margin:0; background:var(--bg); color:var(--text); font-family:var(--font);
+    line-height:1.65; padding:max(env(safe-area-inset-top),24px) 22px calc(64px + env(safe-area-inset-bottom));
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{ max-width:680px; margin:0 auto }
+  header.mast{ display:flex; align-items:center; gap:14px; padding-bottom:22px; margin-bottom:26px; border-bottom:1px solid var(--border) }
+  .mast img{ width:44px; height:44px; border-radius:22%; flex:0 0 auto; background:var(--surface) }
+  .mast .who{ display:flex; flex-direction:column; gap:2px }
+  .mast .app{ font-family:var(--display); font-size:19px; font-weight:400; letter-spacing:.03em }
+  .mast .by{ font-size:12px; color:var(--dim); letter-spacing:.02em }
+  nav.doc{ display:flex; gap:8px; flex-wrap:wrap; margin-bottom:26px; font-size:13px }
+  nav.doc a, nav.doc .on{ padding:6px 12px; border-radius:999px; text-decoration:none; border:1px solid var(--border) }
+  nav.doc a{ color:var(--dim) }
+  nav.doc a:hover{ color:var(--text); border-color:var(--accent) }
+  nav.doc .on{ color:#1A130D; background:var(--accent); border-color:var(--accent); font-weight:600 }
+  h1{ font-family:var(--display); font-size:26px; font-weight:400; letter-spacing:.01em; margin:0 0 6px }
+  .updated{ color:var(--dim); font-size:12.5px; margin:0 0 22px; font-variant-numeric:tabular-nums }
+  .lead{ font-size:16px; color:var(--text); margin:0 0 8px }
+  section{ margin:24px 0 }
+  h2{ font-size:14px; text-transform:uppercase; letter-spacing:.09em; color:var(--accent); margin:0 0 8px }
+  p{ margin:0 0 12px } ul{ margin:0 0 12px; padding-left:20px } li{ margin:6px 0 }
+  a{ color:var(--accent2); text-decoration:underline; text-underline-offset:2px }
+  code{ font-family:ui-monospace,SFMono-Regular,Menlo,monospace; font-size:.9em; color:var(--dim) }
+  footer{ margin-top:40px; padding-top:20px; border-top:1px solid var(--border); color:var(--dim); font-size:12px; display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap }
+  footer a{ color:var(--dim) }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="mast">
+      <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDI0IiBoZWlnaHQ9IjEwMjQiIHZpZXdCb3g9IjAgMCAxMDI0IDEwMjQiIHJvbGU9ImltZyIgYXJpYS1sYWJlbD0iQ2xpY2tib2FyZCI+CiAgPGRlZnM+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9Im9hayIgeDE9IjAiIHkxPSIwIiB4Mj0iMC40IiB5Mj0iMSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iIzI0MUExMiIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzE1MEYwQSIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iaGlkZSIgeDE9IjAuMDIiIHkxPSIwLjA1IiB4Mj0iMC45OCIgeTI9IjAuOTUiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNDOThBNEMiLz48c3RvcCBvZmZzZXQ9IjAuNSIgc3RvcC1jb2xvcj0iI0E5NjgyRiIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzZFNDAxQSIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDwhLS0gVEhFIFNJREU6IGJ1dHQgYXQgdGhlIHRvcCwgYmFja2JvbmUgZG93biB0aGUgbGVmdCwgYmVsbHkgc3dlbGxpbmcgcmlnaHQsIG5lY2sgYXQgdGhlIGZvb3QgLS0+CiAgICA8cGF0aCBpZD0ic2lkZSIgZD0iTTIzMiAxMTIgTDQ3MCA3OCBDIDU2NiA5NiA2MzIgMTUwIDY5MCAyNDQgQyA3NTIgMzQ0IDc5NiA0NjAgNzkwIDU2NiBDIDc4NiA2NDggNzYyIDcwMCA3MjYgNzU0IEMgNzAwIDc5MiA3MDYgODEyIDczNiA4MzAgQyA2OTAgODkyIDYzNiA5MjYgNTY2IDk0NiBMIDMwMCA5NDYgQyAyNTAgOTQwIDIyNiA5MDggMjI2IDg1NiBaIi8+CiAgICA8Y2xpcFBhdGggaWQ9ImhpZGVDbGlwIj48dXNlIGhyZWY9IiNzaWRlIi8+PC9jbGlwUGF0aD4KICA8L2RlZnM+CgogIDxyZWN0IHdpZHRoPSIxMDI0IiBoZWlnaHQ9IjEwMjQiIGZpbGw9InVybCgjb2FrKSIvPgogIDxnIHRyYW5zZm9ybT0icm90YXRlKC01IDUxMiA1MTIpIj4KICAgIDx1c2UgaHJlZj0iI3NpZGUiIGZpbGw9InVybCgjaGlkZSkiLz4KICAgIDxnIGNsaXAtcGF0aD0idXJsKCNoaWRlQ2xpcCkiPgogICAgICA8ZyBzdHJva2U9IiNFREUzRDIiIHN0cm9rZS13aWR0aD0iMTAiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgb3BhY2l0eT0iMC4yNiIgc3Ryb2tlLWRhc2hhcnJheT0iMjYgMzQiPgogICAgICAgIDxwYXRoIGQ9Ik0xODAgMzQwIEg4NDAiLz48cGF0aCBkPSJNMTgwIDcwMCBIODQwIi8+CiAgICAgIDwvZz4KICAgICAgPHBhdGggZD0iTTI1MCA4MCBWOTYwIiBzdHJva2U9IiMzQTI0MTMiIHN0cm9rZS13aWR0aD0iMTYiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgb3BhY2l0eT0iMC41Ii8+CiAgICAgIDxwYXRoIGQ9Ik02NzYgNjEwIEM3MTYgNjQyIDcyMCA2ODYgNjk4IDcyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjQzAzOTJCIiBzdHJva2Utd2lkdGg9IjMwIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KICAgICAgPGcgZmlsbD0iI0VERTNEMiIgc3Ryb2tlPSIjMUExMzBEIiBzdHJva2Utd2lkdGg9IjEyIiBzdHJva2Utb3BhY2l0eT0iMC4zMiI+CiAgICAgICAgPCEtLSBhIHN0cmFwIGNsaWNrZWQgb2ZmIHRoZSBiZW5kLCBncmFpbiB3aXRoIHRoZSBiYWNrYm9uZSAtLT4KICAgICAgICA8cmVjdCB4PSIyODgiIHk9IjE2OCIgd2lkdGg9IjE0OCIgaGVpZ2h0PSI2MjAiIHJ4PSIxNiIvPgogICAgICAgIDwhLS0gYSBndXNzZXQgLS0+CiAgICAgICAgPHJlY3QgeD0iNDc0IiB5PSIxNjgiIHdpZHRoPSIxNzYiIGhlaWdodD0iMjMwIiByeD0iMjQiLz4KICAgICAgICA8IS0tIGEgcm91bmQgLS0+CiAgICAgICAgPHJlY3QgeD0iNDc0IiB5PSI0NDAiIHdpZHRoPSIxNzYiIGhlaWdodD0iMTUwIiByeD0iMjQiLz4KICAgICAgICA8Y2lyY2xlIGN4PSI1NTYiIGN5PSI3NDIiIHI9Ijg2Ii8+CiAgICAgIDwvZz4KICAgIDwvZz4KICA8L2c+Cjwvc3ZnPgo=" alt="" />
+      <div class="who"><span class="app">CLICKBOARD</span><span class="by">by BlackRaven AI LLC</span></div>
+    </header>
+    <nav class="doc"><a href="privacy.html">Privacy</a><span class="on">Support</span><a href="terms.html">Terms</a></nav>
+    <main>
+      <h1>Support</h1>
+      <p class="updated">Last updated 2026-09-04</p>
+      <p class="lead">Need help with CLICKBOARD? You're in the right place. BlackRaven AI LLC makes CLICKBOARD, and we read every message.</p>
+      <section>
+        <h2>Contact us</h2>
+        <p>Email <a href="mailto:support@blackravenai.com?subject=CLICKBOARD%20support">support@blackravenai.com</a> and we'll help. We aim to reply within 2–3 business days. To speed things up, tell us your device and OS version and describe what happened.</p>
+      </section>
+      <section>
+        <h2>Common questions</h2>
+        <ul>
+          <li><b>Restore a purchase.</b> Open the purchase screen in the app and choose "Restore Purchases". Purchases are tied to your app-store account and restore for free on your devices.</li>
+          <li><b>What is free and what is Pro.</b> One side on the bench, the whole capture pipeline with its measured band and every refusal reason, the full nester with every zone, grain, margin and mark constraint, hand placement, cut order and every cost figure, your own hide-book row for every side you ever measure, 12 patterns, and a watermarked SVG and DXF are free forever — and the hide book CSV and the full JSON backup and restore are free on every tier. Pro adds unlimited sides on the bench, the by-tannery-and-grade roll-up with claimed-versus-measured across every side, clean SVG and DXF, SVG/DXF pattern import and an unlimited pattern book. <b>Pro never buys a better number</b> — the solver, the constraints and the arithmetic are identical on both tiers.</li><li><b>Subscription terms.</b> Pro is $39.99 a year and opens with a 21-day free trial (yearly plan only, offered once per store account), or $6.99 a month with no trial, or $79.99 once for lifetime. The yearly and monthly plans renew automatically at the then-current price for the same period unless renewal is turned off at least 24 hours before the period ends; the lifetime purchase is a single payment, never renews, and there is nothing to cancel. Cancel a renewing plan any time in your store account — on iOS, Settings › your name › Subscriptions; on Android, the Play Store › Payments and subscriptions. Cancelling stops the next charge and the period you have paid for runs to its end.</li><li><b>My Pro plan lapsed.</b> Nothing of yours is deleted or hidden. Every hide, every mark, every pattern and every hide-book row stays exactly where it is, stays readable, stays editable and stays exportable as CSV, JSON, SVG and DXF. A lapse lowers a ceiling on how many sides sit on the bench at once; it never takes a record away.</li><li><b>How many reference sheets do I need.</b> Two at minimum and three are recommended, laid flat on the bench beside the hide. One sheet is refused on purpose: with a single sheet the fit has nothing to disagree with, so the app cannot state an honest error band. With three sheets, measured area error is ±0.37% median and ±1.31% at the 95th percentile.</li><li><b>What the band means.</b> Every area and every cost the app prints carries a band — the half-width of the error CLICKBOARD is prepared to stand behind for that particular capture, derived from how far the reference sheets disagree, how far apart they sit, and how much further the hide reaches than they do. The band is deliberately conservative and is checked against ground truth on every release.</li><li><b>It refused my capture.</b> That is the app working. A refusal always names what to change — one sheet only, sheets that disagree, sheets bunched too close together, too shallow an angle, or a hide running out of frame. It will not give you a number it cannot defend.</li><li><b>What CLICKBOARD does, and does not do.</b> It measures the hide you photographed, lays your patterns on it under the constraints you set, and costs each piece against the price you paid. It does not grade leather, it does not judge temper, stretch, thickness or finish, and it makes no promise about a hide it has not seen. Check the layout against the physical hide before you cut — the leather is the authority, not the drawing.</li>
+          <li><b>Reset or delete my data.</b> Your work is stored on your device. Clearing the app's data or uninstalling the app removes it. There is no server-side account to delete.</li>
+          <li><b>Report a bug or request a feature.</b> Email us with what you expected and what happened — screenshots help a lot.</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Sources &amp; attribution</h2>
+        <p>CLICKBOARD’s rectification is a planar homography by direct linear transform with sub-pixel corner refinement and a pose-free multi-sheet bundle fit, implemented from published computer-vision literature and cited line by line in the app’s design record. Hide segmentation uses seeded Lab-space region growing with a border-sampled bench prior; the nester is the app’s own constrained placement search over exact polygon geometry, with placement legality decided by a single shared definition used by both the app and its physical audit. DXF output is written to the AutoCAD R12 specification.</p>
+      </section>
+      <section>
+        <h2>Privacy &amp; terms</h2>
+        <p>Read our <a href="privacy.html">Privacy Policy</a> and <a href="terms.html">Terms of Service</a>.</p>
+      </section>
+      <section>
+        <h2>App details</h2>
+        <p>CLICKBOARD &middot; <code>com.blackravenai.clickboard</code><br>Published by BlackRaven AI LLC.</p>
+      </section>
+    </main>
+    <footer>
+      <span>&copy; 2026 BlackRaven AI LLC</span>
+      <span><a href="privacy.html">Privacy</a> &middot; <a href="support.html">Support</a> &middot; <a href="terms.html">Terms</a></span>
+    </footer>
+  </div>
+</body>
+</html>
