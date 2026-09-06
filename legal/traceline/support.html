@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<meta name="robots" content="index,follow" />
+<title>TRACELINE — Support</title>
+<meta name="description" content="Support for TRACELINE by BlackRaven AI LLC." />
+<style>
+  :root{
+    --bg:#F4F0E6; --surface:#FBF8F0; --text:#1A1815; --dim:#6B6355;
+    --accent:#B4762A; --accent2:#A82B1E; --border:#D8D0BE;
+    --font:'IBM Plex Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
+    --display:'Iowan Old Style', Palatino, 'Palatino Linotype', Georgia, 'Times New Roman', serif;
+  }
+  *{box-sizing:border-box}
+  html{ -webkit-text-size-adjust:100% }
+  body{
+    margin:0; background:var(--bg); color:var(--text); font-family:var(--font);
+    line-height:1.65; padding:max(env(safe-area-inset-top),24px) 22px calc(64px + env(safe-area-inset-bottom));
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{ max-width:680px; margin:0 auto }
+  header.mast{ display:flex; align-items:center; gap:14px; padding-bottom:22px; margin-bottom:26px; border-bottom:1px solid var(--border) }
+  .mast img{ width:44px; height:44px; border-radius:22%; flex:0 0 auto; background:var(--surface) }
+  .mast .who{ display:flex; flex-direction:column; gap:2px }
+  .mast .app{ font-family:var(--display); font-size:19px; font-weight:400; letter-spacing:.03em }
+  .mast .by{ font-size:12px; color:var(--dim); letter-spacing:.02em }
+  nav.doc{ display:flex; gap:8px; flex-wrap:wrap; margin-bottom:26px; font-size:13px }
+  nav.doc a, nav.doc .on{ padding:6px 12px; border-radius:999px; text-decoration:none; border:1px solid var(--border) }
+  nav.doc a{ color:var(--dim) }
+  nav.doc a:hover{ color:var(--text); border-color:var(--accent) }
+  nav.doc .on{ color:#FBF8F0; background:var(--accent); border-color:var(--accent); font-weight:600 }
+  h1{ font-family:var(--display); font-size:26px; font-weight:400; letter-spacing:.01em; margin:0 0 6px }
+  .updated{ color:var(--dim); font-size:12.5px; margin:0 0 22px; font-variant-numeric:tabular-nums }
+  .lead{ font-size:16px; color:var(--text); margin:0 0 8px }
+  section{ margin:24px 0 }
+  h2{ font-size:14px; text-transform:uppercase; letter-spacing:.09em; color:var(--accent); margin:0 0 8px }
+  p{ margin:0 0 12px } ul{ margin:0 0 12px; padding-left:20px } li{ margin:6px 0 }
+  a{ color:var(--accent2); text-decoration:underline; text-underline-offset:2px }
+  code{ font-family:ui-monospace,SFMono-Regular,Menlo,monospace; font-size:.9em; color:var(--dim) }
+  footer{ margin-top:40px; padding-top:20px; border-top:1px solid var(--border); color:var(--dim); font-size:12px; display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap }
+  footer a{ color:var(--dim) }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="mast">
+      <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsPSJUUkFDRUxJTkUiPgogIDxkZWZzPgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJwYXBlciIgeDE9IjAiIHkxPSIwIiB4Mj0iMCIgeTI9IjEiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNGNEYwRTYiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjRUJFNUQ2Ii8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogIDwvZGVmcz4KICA8cmVjdCB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgZmlsbD0idXJsKCNwYXBlcikiLz4KICA8IS0tIHJ1bGVkIGxlZGdlciBjb2x1bW5zIC0tPgogIDxnIHN0cm9rZT0iI0Q4RDBCRSIgc3Ryb2tlLXdpZHRoPSIxLjI1Ij4KICAgIDxsaW5lIHgxPSI3MiIgeTE9IjUyIiB4Mj0iNzIiIHkyPSI0NjAiLz4KICAgIDxsaW5lIHgxPSI0NDAiIHkxPSI1MiIgeDI9IjQ0MCIgeTI9IjQ2MCIvPgogIDwvZz4KICA8IS0tIFRIRSBDQVNDQURFOiBiYW5kcyBuYXJyb3dpbmcgYXMgdGhlIHRyYWNlIHJ1bnMgZG93biAtLT4KICA8ZyBmaWxsPSIjQjQ3NjJBIj4KICAgIDxyZWN0IHg9IjExMiIgeT0iOTYiICB3aWR0aD0iMjg4IiBoZWlnaHQ9IjQyIiByeD0iMyIvPgogICAgPHJlY3QgeD0iMTQwIiB5PSIxNjAiIHdpZHRoPSIyMzIiIGhlaWdodD0iNDIiIHJ4PSIzIi8+CiAgICA8cmVjdCB4PSIxNzYiIHk9IjIyNCIgd2lkdGg9IjE2MCIgaGVpZ2h0PSI0MiIgcng9IjMiLz4KICAgIDxyZWN0IHg9IjIwNiIgeT0iMjg4IiB3aWR0aD0iMTAwIiBoZWlnaHQ9IjQyIiByeD0iMyIvPgogIDwvZz4KICA8IS0tIHRoZSBhbWJlciB0cmlidXRhcnkgYSBuYXR1cmFsIGNhcnJpZXMgaW4gLS0+CiAgPHBhdGggZD0iTTQwMCAxMTcgQyA0MzYgMTE3LCA0MzYgMTgxLCAzNzIgMTgxIiBmaWxsPSJub25lIiBzdHJva2U9IiM4QTU1MTgiIHN0cm9rZS13aWR0aD0iOSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+CiAgPCEtLSB0aGUgbGFzdCBiYW5kLCBkcmF3biBhZ2FpbnN0IHRoZSByZWQgYW5hbHlzaXMgcnVsZSAtLT4KICA8cmVjdCB4PSIyMjIiIHk9IjM1MiIgd2lkdGg9IjY4IiBoZWlnaHQ9IjQyIiByeD0iMyIgZmlsbD0iIzhBNTUxOCIvPgogIDxsaW5lIHgxPSI5NiIgeTE9IjQxOCIgeDI9IjQxNiIgeTI9IjQxOCIgc3Ryb2tlPSIjQTgyQjFFIiBzdHJva2Utd2lkdGg9IjExIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KICA8IS0tIHRoZSB0cmFjZSBsaW5lIGl0c2VsZiAtLT4KICA8bGluZSB4MT0iMjU2IiB5MT0iNjAiIHgyPSIyNTYiIHkyPSI0MDQiIHN0cm9rZT0iIzFBMTgxNSIgc3Ryb2tlLXdpZHRoPSIyLjUiIHN0cm9rZS1kYXNoYXJyYXk9IjcgNyIgb3BhY2l0eT0iMC41NSIvPgo8L3N2Zz4K" alt="" />
+      <div class="who"><span class="app">TRACELINE</span><span class="by">by BlackRaven AI LLC</span></div>
+    </header>
+    <nav class="doc"><a href="privacy.html">Privacy</a><span class="on">Support</span><a href="terms.html">Terms</a></nav>
+    <main>
+      <h1>Support</h1>
+      <p class="updated">Last updated 2026-09-06</p>
+      <p class="lead">Need help with TRACELINE? You're in the right place. BlackRaven AI LLC makes TRACELINE, and we read every message.</p>
+      <section>
+        <h2>Contact us</h2>
+        <p>Email <a href="mailto:support@blackravenai.com?subject=TRACELINE%20support">support@blackravenai.com</a> and we'll help. We aim to reply within 2–3 business days. To speed things up, tell us your device and OS version and describe what happened.</p>
+      </section>
+      <section>
+        <h2>Common questions</h2>
+        <ul>
+          <li><b>Restore a purchase.</b> Open the purchase screen in the app and choose "Restore Purchases". Purchases are tied to your app-store account and restore for free on your devices.</li>
+          <li><b>What TRACELINE computes, and what it does not decide.</b> TRACELINE performs arithmetic on the numbers you enter, against the limits you enter. It traces each restricted material through every route it takes to the finished product, prints the whole working beside every figure, and inverts the solve to give the maximum level of use of your compound in each category band. It never decides whether a formula or a product may be sold, never performs a safety assessment, and makes no health, allergy or toxicological claim. A verdict reads “within the limit you entered” or “over the limit you entered” — it is a statement about your own arithmetic, and nothing more. A safety assessment is a regulated professional act this app does not perform.</li><li><b>Why do I have to type the limits in myself?</b> Because we will not ship a number we have no right to republish. The International Fragrance Association publishes no reuse grant for its Standards, so TRACELINE carries none of them: you enter each limit from your own copy, and the app requires and prints the amendment, the citation and the date beside every one. This is also the honest architecture. Limits move between amendments, and the two IFRA documents in the same 51st-amendment bundle state Coumarin’s Category 4 limit as 1.3 % in one place and 1.5 % in another — a bundled table would have to pick one and would go stale on the next amendment. Your citations stay yours, and they stay current because you keep them.</li><li><b>Where does the allergen list come from?</b> The eighty-three-entry fragrance-allergen list is EU public law, taken from EUR-Lex (Regulation (EC) No 1223/2009 and Regulation (EU) 2023/1545) and shipped with its CELEX citations, under the Commission’s reuse decision 2011/833/EU. Every declaration the app raises names the entry and the citation behind it.</li><li><b>What is free and what is Pro.</b> The instrument is free forever: one formula, the whole cascade with every route drawn and every citation printed, the eighteen-band maximum-level table, the allergen sweep, dated immutable checks, and full export of everything you have entered as JSON and CSV. Pro adds unlimited formulas and versions, The Book (the history, the stale-and-resolve loop and the line-by-line diff between two checks), the composed ingredient list, the conformity statement drafter and batch records. <b>Pro never buys a different answer</b> — the engine is the same engine on both tiers, and your export is never gated.</li><li><b>Subscription terms.</b> TRACELINE Pro is $27.99 a year and opens with a 21-day free introductory offer (annual plan only, offered once per store account), or $4.99 a month with no trial, or $79.99 once for lifetime. The yearly and monthly plans renew automatically at the then-current price for the same period unless renewal is turned off at least 24 hours before the period ends; the lifetime purchase is a single payment, never renews, and there is nothing to cancel. Cancel a renewing plan any time in your store account — on iOS, Settings › your name › Subscriptions; on Android, the Play Store › Payments and subscriptions. Cancelling stops the next charge and the period you have paid for runs to its end. We cannot cancel it for you, and the app will not ask you to stay.</li><li><b>My Pro plan lapsed.</b> Nothing of yours is deleted, hidden or truncated. Every formula, every dated check, every statement and every batch record stays readable, editable, deletable and exportable, however many there are, and both exports come back byte-identical. What stops is starting a new formula beyond the first, opening the diff between two checks, composing the ingredient list, drafting a statement and filing batch records. A lapse lowers a ceiling on new work; it never takes a record away.</li><li><b>Prove it.</b> Open the “Prove it” screen and TRACELINE re-runs its answer-key cases on your own handset and shows its answers beside the expected ones, so you can check the instrument rather than trust it.</li><li><b>Does it need a signal at the bench?</b> No. The whole solve is arithmetic on your own data, so the app opens, traces, sweeps, drafts and exports with the network switched off.</li><li><b>Whose documents are the drafted ones?</b> Yours. The ingredient list and the conformity statement are drafted in your name, from your inputs and your citations, and carry the same disclaimer the real ones carry — that they do not replace a safety assessment and have not been prepared or endorsed by any standards body. Read them before you issue them.</li>
+          <li><b>Reset or delete my data.</b> Your work is stored on your device. Clearing the app's data or uninstalling the app removes it. There is no server-side account to delete.</li>
+          <li><b>Report a bug or request a feature.</b> Email us with what you expected and what happened — screenshots help a lot.</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Sources &amp; attribution</h2>
+        <p>TRACELINE’s engine was written against an answer key and a null baseline both recorded before any solver code existed. It reproduces 24 of 24 assertions from published worked examples exactly, agrees with an independent second derivation on 1,200 of 1,200 generated formulas with 0 violations across eight algebraic properties, decides 1,200 of 1,200 allergen threshold cases, and emits ingredient ordering and document structure correctly on 1,200 of 1,200. The null baseline — sending the formula to the bottle as written — finds 0 of the 196 limit exceedances and declares 0 of the 3,544 declarations present in the same case set. The fragrance-allergen list is EU public law from EUR-Lex, cited entry by entry with its CELEX reference and reused under Decision 2011/833/EU. No IFRA table is transcribed or shipped: the per-category limits are entered by the perfumer from her own copy of the Standard and printed with her own amendment, citation and date.</p>
+      </section>
+      <section>
+        <h2>Privacy &amp; terms</h2>
+        <p>Read our <a href="privacy.html">Privacy Policy</a> and <a href="terms.html">Terms of Service</a>.</p>
+      </section>
+      <section>
+        <h2>App details</h2>
+        <p>TRACELINE &middot; <code>com.blackravenai.traceline</code><br>Published by BlackRaven AI LLC.</p>
+      </section>
+    </main>
+    <footer>
+      <span>&copy; 2026 BlackRaven AI LLC</span>
+      <span><a href="privacy.html">Privacy</a> &middot; <a href="support.html">Support</a> &middot; <a href="terms.html">Terms</a></span>
+    </footer>
+  </div>
+</body>
+</html>
