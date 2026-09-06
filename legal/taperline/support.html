@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<meta name="robots" content="index,follow" />
+<title>TAPERLINE — Support</title>
+<meta name="description" content="Support for TAPERLINE by BlackRaven AI LLC." />
+<style>
+  :root{
+    --bg:#171310; --surface:#241D18; --text:#EDE6DA; --dim:#9A9086;
+    --accent:#B4453C; --accent2:#7E8C92; --border:#3A3430;
+    --font:ui-monospace, 'SF Mono', SFMono-Regular, Menlo, Consolas, 'Roboto Mono', monospace;
+    --display:'Avenir Next Condensed', Oswald, 'Roboto Condensed', 'Arial Narrow', system-ui, sans-serif;
+  }
+  *{box-sizing:border-box}
+  html{ -webkit-text-size-adjust:100% }
+  body{
+    margin:0; background:var(--bg); color:var(--text); font-family:var(--font);
+    line-height:1.65; padding:max(env(safe-area-inset-top),24px) 22px calc(64px + env(safe-area-inset-bottom));
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{ max-width:680px; margin:0 auto }
+  header.mast{ display:flex; align-items:center; gap:14px; padding-bottom:22px; margin-bottom:26px; border-bottom:1px solid var(--border) }
+  .mast img{ width:44px; height:44px; border-radius:22%; flex:0 0 auto; background:var(--surface) }
+  .mast .who{ display:flex; flex-direction:column; gap:2px }
+  .mast .app{ font-family:var(--display); font-size:19px; font-weight:400; letter-spacing:.03em }
+  .mast .by{ font-size:12px; color:var(--dim); letter-spacing:.02em }
+  nav.doc{ display:flex; gap:8px; flex-wrap:wrap; margin-bottom:26px; font-size:13px }
+  nav.doc a, nav.doc .on{ padding:6px 12px; border-radius:999px; text-decoration:none; border:1px solid var(--border) }
+  nav.doc a{ color:var(--dim) }
+  nav.doc a:hover{ color:var(--text); border-color:var(--accent) }
+  nav.doc .on{ color:#171310; background:var(--accent); border-color:var(--accent); font-weight:600 }
+  h1{ font-family:var(--display); font-size:26px; font-weight:400; letter-spacing:.01em; margin:0 0 6px }
+  .updated{ color:var(--dim); font-size:12.5px; margin:0 0 22px; font-variant-numeric:tabular-nums }
+  .lead{ font-size:16px; color:var(--text); margin:0 0 8px }
+  section{ margin:24px 0 }
+  h2{ font-size:14px; text-transform:uppercase; letter-spacing:.09em; color:var(--accent); margin:0 0 8px }
+  p{ margin:0 0 12px } ul{ margin:0 0 12px; padding-left:20px } li{ margin:6px 0 }
+  a{ color:var(--accent2); text-decoration:underline; text-underline-offset:2px }
+  code{ font-family:ui-monospace,SFMono-Regular,Menlo,monospace; font-size:.9em; color:var(--dim) }
+  footer{ margin-top:40px; padding-top:20px; border-top:1px solid var(--border); color:var(--dim); font-size:12px; display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap }
+  footer a{ color:var(--dim) }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="mast">
+      <img src="" alt="" />
+      <div class="who"><span class="app">TAPERLINE</span><span class="by">by BlackRaven AI LLC</span></div>
+    </header>
+    <nav class="doc"><a href="privacy.html">Privacy</a><span class="on">Support</span><a href="terms.html">Terms</a></nav>
+    <main>
+      <h1>Support</h1>
+      <p class="updated">Last updated 2026-09-06</p>
+      <p class="lead">Need help with TAPERLINE? You're in the right place. BlackRaven AI LLC makes TAPERLINE, and we read every message.</p>
+      <section>
+        <h2>Contact us</h2>
+        <p>Email <a href="mailto:support@blackravenai.com?subject=TAPERLINE%20support">support@blackravenai.com</a> and we'll help. We aim to reply within 2–3 business days. To speed things up, tell us your device and OS version and describe what happened.</p>
+      </section>
+      <section>
+        <h2>Common questions</h2>
+        <ul>
+          <li><b>Restore a purchase.</b> Open the purchase screen in the app and choose "Restore Purchases". Purchases are tied to your app-store account and restore for free on your devices.</li>
+          <li><b>What TAPERLINE does, and what it does not decide.</b> TAPERLINE lays out geometry and counts material. It takes the plane you measured and the rules you set, and returns the board layout with the fewest butt joints those rules allow — with the courses on the framing, the joints clear of the opening lines and the courses staggered as you asked. It does not measure your building, inspect your framing or specify your assembly. <b>It produces no fire rating, no sound rating and no structural output anywhere in the app.</b> Local code, the manufacturer’s installation instructions and the architect or engineer of record govern.</li><li><b>Where the bundled numbers come from.</b> The default screw spacings, framing spacings and clearances are transcribed from UFGS 09 29 00 (Gypsum Board) and UFGS 09 22 00 (Supports for Plaster and Gypsum Board) — Unified Facilities Guide Specifications, works of the United States Government in the public domain under 17 U.S.C. §105. Every one carries its clause on screen, and every one is a starting point you can change. Eighteen of them are re-checked against the transcription by the app’s own harness on every release.</li><li><b>Prove it.</b> TAPERLINE’s claim is that its layout has the fewest butt joints obtainable under the rules you entered, and it is checked rather than asserted. Open the “Prove it” screen and the app re-solves ten bundled cases on your own handset, showing its answer beside the optimum an independently written exhaustive enumeration found. Off the phone, the same engine agrees with that enumeration on 320 of 320 bounded planes, holds every invariant on 1,200 planes at full scale with 0 violations, and reproduces 18 of 18 of the transcribed public-domain numbers — against a null solver, “hang from the corner and cut what is left”, that scores 40 of 320 with 6,466 violations.</li><li><b>What is free and what is Pro.</b> The instrument is free forever: every plane you measure, solved, with the dimensioned elevation, the butt-joint count set against the corner-hang baseline, the reason the solver gives for the layout, the whole material take-off and board order, one job open at a time, the “Prove it” screen, both unit systems, and <b>export of everything you have entered as JSON, always, on any tier</b>. Pro adds the per-board cut list with its offcut chain, the joint map that is the finisher’s mud take-off, every job open at once, and the joint ledger that accrues butt joints removed and board not bought month by month. <b>Pro never buys a better plan</b> — the solver is the same solver on both tiers.</li><li><b>Subscription terms.</b> TAPERLINE Pro is $169.99 once for lifetime, or $59.99 a year opening with a 21-day free introductory offer (annual plan only, offered once per store account), or $8.99 a month with no trial. The yearly and monthly plans renew automatically at the then-current price for the same period unless renewal is turned off at least 24 hours before the period ends; the lifetime purchase is a single payment, never renews, and there is nothing to cancel. Cancel a renewing plan any time in your store account — on iOS, Settings › your name › Subscriptions; on Android, the Play Store › Payments and subscriptions. Cancelling stops the next charge and the period you have paid for runs to its end.</li><li><b>My Pro plan lapsed.</b> Nothing of yours is deleted, hidden or truncated. Every job, every room, every plane, every solved layout and every ledger row stays on the device, stays readable, stays editable, stays deletable and stays exportable as JSON, however many jobs there are. What stops is opening the cut list and the joint map, keeping more than one job open, and reading the ledger. A lapse lowers a ceiling on new work; it never takes a record away.</li><li><b>Does it need a signal on site?</b> No. The solver, the drawing, the cut list and the export are all arithmetic on your own figures, so the app opens, solves, draws and exports with the radios off, in a basement with no bars.</li><li><b>Why does it sometimes say there is no layout?</b> Because there is not one under the rules you entered. A plane whose openings sit where the stagger and the clearance cannot both be honoured has no admissible layout, and TAPERLINE says so by name and tells you which rule to loosen rather than quietly drawing a plan that breaks one. Where it has to relax a rule to return anything at all, it declares the relaxation on the screen.</li><li><b>Measure the plane yourself.</b> TAPERLINE solves from the figures you type. It does not measure your walls, check your framing or count what is on the lift. Check the layout against the room before the first board goes up.</li><li><b>Restore purchases.</b> Restore is on the Pro screen and in Settings; entitlements are re-checked with the store.</li>
+          <li><b>Reset or delete my data.</b> Your work is stored on your device. Clearing the app's data or uninstalling the app removes it. There is no server-side account to delete.</li>
+          <li><b>Report a bug or request a feature.</b> Email us with what you expected and what happened — screenshots help a lot.</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Sources &amp; attribution</h2>
+        <p>TAPERLINE’s engine was written against an answer key and a null baseline both recorded before any solver code existed. The objective, the constraints, the frozen input ranges and the search bound are stated in the app’s answer key ahead of the results. Against an independently written exhaustive enumeration it returns an optimal or tied layout on 320 of 320 bounded planes, with 0 planes worse than the optimum and 0 feasibility disagreements; at full scale it holds every declared invariant on 1,200 of 1,200 planes with 0 violations and 0 undeclared relaxations, with the butt count at the per-course lower bound on 1,154 of them; it agrees with an explicitly enumerated stock assignment on 60 of 60 planes; and it reproduces 18 of 18 numbers transcribed from the public-domain source specifications. The null baseline recorded before the engine existed — hang from the corner and cut what is left — scores 40 of 320, 6,466 invariant violations, 13 of 60 and 0 of 18 on the same cases. Every length in the engine and the answer key is an integer number of ten-thousandths of an inch, so both 1/16 in and 1 mm are exact and there is no floating-point slack anywhere. The bundled reference numbers are transcribed from UFGS 09 29 00 and UFGS 09 22 00, Unified Facilities Guide Specifications published by the United States Government and in the public domain under 17 U.S.C. §105; each is cited to its clause in the app.</p>
+      </section>
+      <section>
+        <h2>Privacy &amp; terms</h2>
+        <p>Read our <a href="privacy.html">Privacy Policy</a> and <a href="terms.html">Terms of Service</a>.</p>
+      </section>
+      <section>
+        <h2>App details</h2>
+        <p>TAPERLINE &middot; <code>com.blackravenai.taperline</code><br>Published by BlackRaven AI LLC.</p>
+      </section>
+    </main>
+    <footer>
+      <span>&copy; 2026 BlackRaven AI LLC</span>
+      <span><a href="privacy.html">Privacy</a> &middot; <a href="support.html">Support</a> &middot; <a href="terms.html">Terms</a></span>
+    </footer>
+  </div>
+</body>
+</html>
