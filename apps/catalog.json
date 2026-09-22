@@ -1,0 +1,29 @@
+[
+  {
+    "slug": "squeezy-fish",
+    "name": "Squeezy Fish",
+    "kind": "Mobile arcade game",
+    "tagline": "Hold to puff. Release to dive.",
+    "description": "Guide a pufferfish through an endless reef. Inflate for a bigger score, then deflate to squeeze through the coral and escape the shark.",
+    "features": ["One-touch puff-and-dive controls", "Coral gaps that reward timing", "Quick runs and another chance to beat your best"],
+    "accent": "#65e4ed"
+  },
+  {
+    "slug": "doodlegs",
+    "name": "Doodle Legs",
+    "kind": "Mobile drawing and physics game",
+    "tagline": "Your next great idea has legs.",
+    "description": "Draw a pair of legs for NIBS and watch your scribble become a moving mechanism. Redraw mid-run to tackle an ever-changing obstacle course.",
+    "features": ["Draw the shape that moves your character", "Experiment with loops, hooks and strides", "Adapt your drawing as the obstacles change"],
+    "accent": "#b3f18a"
+  },
+  {
+    "slug": "averted",
+    "name": "AVERTED",
+    "kind": "Mobile astronomy planner",
+    "tagline": "Make a plan for the night sky.",
+    "description": "Plan deep-sky observing around your telescope, eyepieces and observing conditions. Explore targets, arrange your night and keep an observation log.",
+    "features": ["Targets ranked for your equipment and sky", "An observing plan from dusk to dawn", "A log of the objects you have observed"],
+    "accent": "#c3b7ff"
+  }
+]
