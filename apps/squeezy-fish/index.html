@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Squeezy Fish — One-Touch Ocean Survival | BlackRaven AI LLC</title>
+  <title>Squeezy Fish — One-Touch Ocean Survival | BlackRaven AI</title>
   <meta name="description" content="Hold to puff. Release to dive. Meet Squeezy Fish, a one-touch ocean survival game with tight coral gaps, a hungry shark, daily reefs and unlockable cosmetics.">
   <link rel="canonical" href="https://www.blackravenai.com/apps/squeezy-fish/">
   <meta property="og:type" content="website">
@@ -18,54 +18,74 @@
   <meta name="twitter:image" content="https://www.blackravenai.com/apps/squeezy-fish/puff-gameplay.jpg">
   <link rel="stylesheet" href="/apps/site.css">
   <style>
-    :root{--accent:#65e4ed}body{background:radial-gradient(ellipse at 90% 0,#10333c 0,transparent 45%),var(--bg)}
-    .hero{max-width:none;display:grid;grid-template-columns:1.25fr .75fr;gap:48px;align-items:center}
-    .hero h1{font-size:clamp(3rem,7vw,5rem)}.hero h2{font-size:clamp(1.5rem,3vw,2.2rem)}
-    .hero figure{margin:0;justify-self:center;max-width:260px}.game-shot{display:block;width:100%;height:auto;border-radius:26px;border:1px solid #4c8892;box-shadow:0 18px 60px #0005}
-    figcaption{color:var(--muted);font-size:.85rem;margin-top:12px}.hero-links{display:flex;gap:20px;flex-wrap:wrap;margin-top:25px}
-    .feature-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;margin:28px 0 52px}.feature-grid h3{margin-top:0}.feature-grid p{margin-bottom:0;color:var(--muted)}
-    .chase{display:grid;grid-template-columns:240px 1fr;gap:42px;align-items:center;margin:40px 0 60px}.chase figure{margin:0}.chase p{color:var(--muted)}
-    .legal-links{display:flex;flex-wrap:wrap;gap:12px 24px}.notice{max-width:none}.availability{font-size:.95rem;color:var(--muted)}
-    @media(max-width:760px){.hero{grid-template-columns:1fr;gap:30px}.hero figure{max-width:220px}.feature-grid{grid-template-columns:1fr}.chase{grid-template-columns:1fr;gap:24px}.chase figure{max-width:220px;margin:auto}}
+    :root{--accent:#97f2ec;--ink:#f8fcf4;--muted:#d3eeeb;--coral:#ff7393;--cream:#fff1cd;--bg:#073347;font-family:ui-rounded,"Avenir Next",system-ui,-apple-system,sans-serif}
+    html{scroll-behavior:smooth;scroll-padding-top:24px}body{overflow-x:hidden;background:radial-gradient(ellipse at 20% 0,#279daa88,transparent 45%),linear-gradient(165deg,#147b89 0,#085067 42%,#071e36 100%)}
+    body::before{content:"";position:fixed;inset:0;pointer-events:none;background:repeating-linear-gradient(106deg,transparent 0 130px,#e2ffeb03 131px 210px);z-index:-1}
+    header{border-bottom:1px solid #b6f6ed30;background:#083b4b55}nav{align-items:center}.brand{font-size:1.02rem}.nav-link{font-size:.9rem;text-decoration:none;padding:8px 16px;border:1px solid #bcf6ed50;border-radius:30px}
+    .bubbles{position:absolute;inset:80px 0 auto;height:800px;overflow:hidden;pointer-events:none;z-index:-1}.bubbles i{position:absolute;width:var(--size,24px);height:var(--size,24px);left:var(--left,10%);top:var(--top,30%);border:2px solid #bafbf74a;border-radius:50%;box-shadow:inset 3px 4px 0 #f4ffef12;animation:drift 8s ease-in-out infinite alternate;animation-delay:var(--delay,0s)}
+    .hero{position:relative;max-width:none;display:grid;grid-template-columns:1.25fr .75fr;gap:52px;align-items:center;padding:72px 0 80px}
+    .eyebrow{color:#a6fff1;letter-spacing:.14em}.hero h1{font-size:clamp(4rem,9vw,6.7rem);font-weight:950;letter-spacing:-.065em;color:var(--cream);text-shadow:0 5px 0 #075062;margin:22px 0;line-height:.94}.hero h1 span{display:block;color:var(--coral)}
+    .hero h2{font-size:clamp(1.5rem,3vw,2.2rem);letter-spacing:-.03em;line-height:1.3}.lead{line-height:1.65}.hero .lead{max-width:480px;font-size:1.18rem}
+    .hero figure{position:relative;margin:0;justify-self:center;max-width:278px;transform:rotate(4deg)}.hero figure::before{content:"";position:absolute;inset:15% -35%;z-index:-1;border-radius:50%;background:#a5ffe514;filter:blur(24px)}
+    .game-shot{display:block;width:100%;height:auto;border-radius:30px;border:5px solid #dbfff1a6;box-shadow:0 24px 0 -14px #092c43,0 30px 70px #00192888}
+    figcaption{color:var(--muted);font-size:.8rem;margin-top:18px;text-align:center}.hero-links{display:flex;gap:20px;align-items:center;flex-wrap:wrap;margin:28px 0}
+    .button{display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:12px 23px;border-radius:40px;background:var(--coral);color:#291b37;text-decoration:none;font-weight:850;box-shadow:0 5px 0 #be466b;transition:transform .2s,box-shadow .2s}.button:hover{transform:translateY(-2px);box-shadow:0 7px 0 #be466b}.button:active{transform:translateY(2px);box-shadow:0 3px 0 #be466b}
+    .badge{background:#052f4599;border-color:#a4f6e366;color:#dcfff2;font-weight:650}.availability{font-size:.88rem;color:var(--muted);max-width:440px}.hero-tag{position:absolute;right:-24px;bottom:100px;z-index:1;transform:rotate(-10deg);background:var(--cream);color:#153347;font-weight:900;border-radius:18px;padding:10px 18px;box-shadow:0 6px 0 #063b4a;font-size:1.08rem}
+    .reef-divider{height:30px;margin:0 0 65px;background:radial-gradient(circle at 20px 14px,var(--coral) 14px,transparent 15px) 0 0/64px 30px repeat-x;border-bottom:8px solid var(--coral);border-radius:16px;opacity:.95}
+    .section-intro{max-width:680px}.section-intro h2,.chase h2{font-size:clamp(2rem,4vw,3.2rem);letter-spacing:-.04em;margin:16px 0 22px;line-height:1.15}
+    .feature-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;margin:32px 0 70px}.feature-grid .card{border:0;border-radius:26px;background:#fff1cd;color:#173548;padding:30px;box-shadow:0 8px 0 #021e3638}.feature-grid .card:nth-child(2){background:#c8f4ed}.feature-grid .card:nth-child(3){background:#ffcedb}.feature-grid .card:nth-child(4){background:#d9d8ff}
+    .feature-grid h3{margin:15px 0 8px;font-size:1.35rem;letter-spacing:-.025em}.feature-grid p{margin-bottom:0;color:#35536a}.feature-number{font-size:.85rem;font-weight:900;letter-spacing:.12em;border:1px solid currentColor;border-radius:99px;padding:5px 10px;display:inline-block;opacity:.75}
+    .chase{display:grid;grid-template-columns:260px 1fr;gap:70px;align-items:center;margin:60px 0 85px}.chase figure{margin:0;transform:rotate(-3deg)}.chase p{color:var(--muted)}.chase .lead{font-size:1.2rem}.chase h2 em{font-style:normal;color:var(--coral)}
+    .notice{max-width:none;border:1px solid #8edcdd4a;background:#08283ec9;border-radius:28px;padding:34px}.notice h2{font-size:1.8rem;letter-spacing:-.035em;color:var(--cream)}.notice p{color:#bfdadf}.notice .price{font-size:1.05rem;color:#ebfff8}.notice details{margin:20px 0}.notice summary{cursor:pointer;font-weight:700;color:#a9efe6}.notice details p{font-size:.9rem}.legal-links{display:flex;flex-wrap:wrap;gap:12px 24px;font-size:.9rem;border-top:1px solid #85bfc633;padding-top:20px}
+    footer{border-color:#83b9c333;background:#031d2c55;color:#b4d1d9}footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}footer p{margin:7px 0;font-size:.82rem}
+    @keyframes drift{from{transform:translateY(0)}to{transform:translateY(-30px)}}
+    @media(max-width:760px){.hero{grid-template-columns:1fr;gap:35px;padding-top:45px}.hero h1 span{display:inline}.hero h1{font-size:clamp(3.4rem,14vw,5rem)}.hero figure{max-width:230px;transform:rotate(2deg)}.hero-tag{right:-15px;bottom:75px}.feature-grid{grid-template-columns:1fr;gap:16px}.feature-grid .card{padding:25px}.chase{grid-template-columns:1fr;gap:35px;margin-bottom:55px}.chase figure{max-width:215px;margin:auto;order:2}.notice{padding:25px}.reef-divider{margin-bottom:45px}nav{gap:12px}.nav-link{font-size:.8rem;padding:6px 12px}.hero-links{gap:18px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.bubbles i{animation:none}.button{transition:none}}
   </style>
 </head>
 <body>
-  <header><nav class="wrap" aria-label="Main"><a class="brand" href="/apps/">BlackRaven AI LLC</a><a href="/apps/">Our mobile apps</a></nav></header>
+  <header><nav class="wrap" aria-label="Main"><a class="brand" href="/apps/">BlackRaven AI</a><a class="nav-link" href="/apps/">More from our studio ↗</a></nav></header>
+  <div class="bubbles" aria-hidden="true"><i style="--left:5%;--top:12%;--size:45px"></i><i style="--left:45%;--top:8%;--size:20px;--delay:-3s"></i><i style="--left:93%;--top:48%;--size:64px;--delay:-5s"></i><i style="--left:52%;--top:63%;--size:34px;--delay:-1s"></i><i style="--left:12%;--top:85%;--size:22px;--delay:-4s"></i></div>
   <main class="wrap">
     <section class="hero">
       <div>
         <span class="eyebrow">One-touch ocean survival</span>
-        <h1>Squeezy Fish</h1>
+        <h1>Squeezy <span>Fish.</span></h1>
         <h2>Hold to puff.<br>Release to dive.</h2>
         <p class="lead">One little pufferfish. One hungry shark. Squeeze through the coral, stay ahead of Chomps, and see how deep you can go.</p>
-        <span class="badge">Preparing for App Store review · Not yet available</span>
-        <p class="availability">Planned first release: iPhone and iPad. Free to play with ads and optional Ad-Free Monthly. No release date has been announced.</p>
-        <div class="hero-links"><a href="#how-to-play">Explore the game</a><a href="/legal/squeezy-fish/support.html">Get support</a></div>
+        <div class="hero-links"><a class="button" href="#how-to-play">Meet your next little adventure ↓</a><a href="/legal/squeezy-fish/support.html">Get support</a></div>
+        <span class="badge">Coming to iPhone &amp; iPad</span>
+        <p class="availability">Free to play with ads. Optional Ad-Free Monthly.<br>Not available yet—we're preparing for App Store review.</p>
       </div>
-      <figure><img class="game-shot" src="puff-gameplay.jpg" width="1170" height="2532" alt="Squeezy puffed up above a narrow pink coral gap at 51 meters"><figcaption>Actual iPhone simulator gameplay.</figcaption></figure>
+      <figure><span class="hero-tag" aria-hidden="true">Big puff. Tiny gap.</span><img class="game-shot" src="puff-gameplay.jpg" width="1170" height="2532" alt="Squeezy puffed up above a narrow pink coral gap at 51 meters"><figcaption>Actual iPhone simulator gameplay.</figcaption></figure>
     </section>
+    <div class="reef-divider" aria-hidden="true"></div>
     <section id="how-to-play" aria-labelledby="play-heading">
+      <div class="section-intro">
       <span class="eyebrow">Small gesture. Big squeeze.</span>
       <h2 id="play-heading">Easy to start. A challenge to master.</h2>
+      <p class="lead">A little timing. A little nerve. A whole ocean of “I can squeeze through that.”</p>
+      </div>
       <div class="feature-grid">
-        <article class="card"><h3>Puff, dive, repeat</h3><p>Hold to inflate, then release to shrink and dive. Time your moves through the coral gaps and chase your personal best.</p></article>
-        <article class="card"><h3>One reef. One daily shot.</h3><p>Today's Reef brings a new challenge each day with one attempt. Make it count, then head back to endless mode for another run.</p></article>
-        <article class="card"><h3>Make your fish your own</h3><p>Earn bubbles through play to unlock colorful skins, hats, and pop effects—from confetti and fireworks to hearts and duckies.</p></article>
-        <article class="card"><h3>Find your sound</h3><p>Explore the Music Library and choose your soundtrack. Music, sound effects, and optional haptics have their own controls.</p></article>
+        <article class="card"><span class="feature-number">01 / THE SQUEEZE</span><h3>Puff, dive, repeat</h3><p>Hold to inflate, then release to shrink and dive. Time your moves through the coral gaps and chase your personal best.</p></article>
+        <article class="card"><span class="feature-number">02 / THE DAILY DIVE</span><h3>One reef. One shot.</h3><p>Today's Reef brings a new challenge each day with one attempt. Make it count, then head back to endless mode for another run.</p></article>
+        <article class="card"><span class="feature-number">03 / YOUR FISH, YOUR STYLE</span><h3>Pop with personality</h3><p>Earn bubbles through play to unlock colorful skins, hats, and pop effects—from confetti and fireworks to hearts and duckies.</p></article>
+        <article class="card"><span class="feature-number">04 / GOOD REEF VIBES</span><h3>Find your sound</h3><p>Explore the Music Library and choose your soundtrack. Music, sound effects, and optional haptics have their own controls.</p></article>
       </div>
     </section>
     <section class="chase" aria-labelledby="chase-heading">
       <figure><img class="game-shot" src="shark-chase.jpg" width="1170" height="2532" loading="lazy" alt="Chomps the cartoon shark chasing Squeezy through the reef at 179 meters"><figcaption>Actual gameplay: Chomps is closing in.</figcaption></figure>
-      <div><span class="eyebrow">Keep Chomps behind you</span><h2 id="chase-heading">How close can you cut it?</h2><p class="lead">Thread tight gaps and chain perfect squeezes. Puff too far and the coral ends your run with a pop. Wait too long and Chomps catches up.</p><p>Quick runs. A deeper personal best to chase. Just one more dive.</p></div>
+      <div><span class="eyebrow">Meet your very enthusiastic rival</span><h2 id="chase-heading">Chomps would love<br>to <em>catch up.</em></h2><p class="lead">Thread tight gaps and chain perfect squeezes. Puff too far and the coral ends your run with a pop. Wait too long and Chomps catches up.</p><p>Quick runs. A deeper personal best to chase.<br>Just one more dive.</p><a class="button" href="#pricing-heading">The launch details ↓</a></div>
     </section>
     <section class="notice" aria-labelledby="pricing-heading">
-      <h2 id="pricing-heading">Free to play. Optional Ad-Free Monthly.</h2>
-      <p>Squeezy Fish is planned as a free download with ads. The optional Ad-Free Monthly subscription removes ads while active. The US price is $4.99 per month; prices vary by region and your local price is shown in the app.</p>
-      <p>Payment is charged to your Apple Account at confirmation. The subscription automatically renews unless canceled at least 24 hours before the current period ends. Manage or cancel it in your Apple Account subscription settings. Restore Purchases is available in Reef Shop.</p>
-      <p>This is the official information page for the mobile app, not a playable browser version. There are no downloads or purchases on this website. A verified App Store link will be added when the app is released.</p>
+      <span class="eyebrow">A little heads-up before the dive</span>
+      <h2 id="pricing-heading">Free to play.<br>Keep the reef ad-free if you like.</h2>
+      <p class="price">Planned as a free download with ads. Optional <strong>Ad-Free Monthly: $4.99/month in the US</strong> removes ads while your subscription is active. Prices vary by region; your local price is shown in the app.</p>
+      <details><summary>How the optional subscription works</summary><p>Payment is charged to your Apple Account at confirmation. The subscription automatically renews unless canceled at least 24 hours before the current period ends. Manage or cancel it in your Apple Account subscription settings. Restore Purchases is available in Reef Shop.</p></details>
+      <p>We're getting Squeezy Fish ready for its first App Store release on iPhone and iPad. It isn't available yet, and no release date has been announced. The official download link will appear here at launch. This page is a peek at the mobile game—not a browser game or a checkout.</p>
       <div class="legal-links"><a href="/legal/squeezy-fish/privacy.html">Privacy Policy</a><a href="/legal/squeezy-fish/terms.html">Terms</a><a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Apple Standard EULA</a><a href="/legal/squeezy-fish/support.html">App support</a></div>
     </section>
   </main>
-  <footer><div class="wrap">BlackRaven AI LLC · <a href="mailto:support@blackravenai.com">support@blackravenai.com</a><p>Squeezy Fish is not yet available in stores. No release date has been announced.</p></div></footer>
+  <footer><div class="wrap"><div><strong>Made by BlackRaven AI LLC</strong><p>Small fish. Big personality.</p></div><div><a href="mailto:support@blackravenai.com">support@blackravenai.com</a><p>Questions about the game? We're here to help.</p></div></div></footer>
 </body>
 </html>
