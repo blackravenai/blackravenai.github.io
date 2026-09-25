@@ -103,3 +103,26 @@ h3{word-spacing:.02em}
 
 /* Deliberate contrast: light display lettering, readable copy, crisp controls. */
 strong,b{font-weight:500}.type-specimen>div:nth-child(2) h2{font-weight:400}.type-specimen>div:first-child h2{letter-spacing:-.025em}.studio-project summary>span:first-child{font-weight:300}.brand-voice h2{font-weight:300}
+
+/* Quiet editorial layouts: the main idea and product imagery carry each section. */
+.hero{padding-block:20px 40px}.work-section.section{padding-top:72px}
+.quiet-page .page-hero>h1:first-child{margin-top:0}
+.quiet-page .page-intro{display:block}.quiet-page .page-intro>p{max-width:760px}
+.section-heading h2:first-child{margin-top:0}.doodle-feature h3:first-child{margin-top:0}
+.manifesto h2{margin-top:0}.manifesto-bottom{display:block}.manifesto-bottom>div{max-width:720px;margin-left:auto}
+.service-list>a{grid-template-columns:1fr 1fr 26px}
+.capability-nav a{grid-template-columns:1fr 18px}
+.service-category{font-size:16px;color:var(--paper);margin:0 0 24px;line-height:1.5}
+.process-section h2{margin-top:0}.faq h2{margin-top:0}
+.contact-band h2{margin-top:0}.contact-bottom{justify-content:flex-end}
+.contact-logo-card{justify-content:center;align-items:center}.contact-outline-card{justify-content:flex-end}
+.support-note h3{font-size:18px;letter-spacing:-.02em;margin:0 0 15px}.support-note p,.form-note{font-size:14px}
+.studio-project small{font-size:14px;letter-spacing:0}.summary-hint b{margin-left:0}
+.quiet-page .project-info{display:block}.quiet-page .ai-window{top:55px;height:320px}
+@media(max-width:900px){
+ .hero{padding-block:12px 36px}.hero-copy{padding-top:30px}.work-section.section{padding-top:55px}
+ .service-list>a{grid-template-columns:1fr 20px}.service-list p{grid-column:1;grid-row:2}.service-list>a>span:last-child{grid-column:2;grid-row:1}
+ .manifesto-bottom>div{max-width:none}.quiet-page .page-intro{padding-top:25px}
+ .service-category{font-size:16px;margin-bottom:20px}
+}
+@media(max-width:420px){.quiet-page .ai-window{top:45px;height:295px}}

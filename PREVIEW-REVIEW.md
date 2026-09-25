@@ -98,3 +98,10 @@ Local preview only; no deployment.
 - Inter Light/Regular/Medium web files are served locally as WOFF2. The typography specimen, usage guide, and brand kit now describe the editorial type system. Updated archive: 224 files, approximately 5.17 MB, integrity verified; print artwork unchanged.
 - Desktop homepage/services and brand type specimens inspected. At 390px, all nine core studio/product pages have no horizontal overflow or broken loaded images; product pages retain their own headline font and use Inter in shared navigation. At 320px, homepage, services, projects, brand, and apps index fit without overflow.
 - Mobile menu opens and closes with Escape, returning focus. All 19 connected routes/assets/fragments resolve. Changes remain local with no deployment.
+
+## Cleaner editorial hierarchy
+
+- Removed decorative hero captions, the discipline strip, numbered section labels, repeated app-card taglines, and secondary service/CTA blurbs. Main copy, animated imagery, and the signature slogan now carry the pages.
+- Applied the same restraint to services, projects, contact, the apps index, AVERTED, and the brand-studio introduction. Useful app availability, form instructions, and brand-library controls remain. Service categories and support instructions use readable sizes.
+- Rebalanced spacing and grids after removing labels. Desktop homepage/services and the 390px homepage visually inspected; all seven updated core pages fit at 390px without horizontal overflow or broken loaded images. Homepage also fits at 320px; the mobile menu opens and closes with Escape.
+- Connected-page checks pass for all 19 pages; edited main sections have balanced HTML and unique IDs. Local preview only; no deployment.
