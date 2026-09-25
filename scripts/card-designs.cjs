@@ -1,5 +1,11 @@
 /* Additional business-card compositions. Coordinates include 37.5px bleed. */
-module.exports=({C,rect,line,circle,mark,txt,centered})=>{
+module.exports=({C,rect,line,circle,mark,txt:baseTxt,centered:baseCentered})=>{
+ // Card typography is intentionally quieter than the studio's primary wordmark.
+ const typeset=base=>(t,x,y,size,fill,tracking=0,weight='light')=>{
+  if(t==='BlackRaven'){t='BLACKRAVEN';size*=.72;tracking=3;}
+  return base(t,x,y,size,fill,Math.max(0,tracking),weight==='light'?'inter-light':'inter-regular');
+ };
+ const txt=typeset(baseTxt),centered=typeset(baseCentered);
  const cm=(x,y,scale,fill,stroke,width=1)=>mark(x-33.5*scale,y-32.5*scale,scale,fill,stroke,width);
  const cross=(x,y,color,size=10)=>[line(x-size,y,x+size,y,color,1),line(x,y-size,x,y+size,color,1)];
  const W=1125,H=675;
@@ -33,7 +39,7 @@ module.exports=({C,rect,line,circle,mark,txt,centered})=>{
     line(100,356,1025,356,'#455570',1),txt('SOFTWARE',100,416,24,C.glacier,2,'medium'),txt('BUILT WITH INTENT.',600,416,24,C.silver,2,'medium'),
     txt('support@blackravenai.com',100,515,34,C.silver,0,'regular'),txt('blackravenai.com',100,567,34,C.silver,0,'regular'),...cross(1025,567,C.glacier)]},
   {name:'signal-stripe',title:'Signal stripe',family:'expressive',description:'A strong vertical band anchors the raven. The connected wordmark gets room to lead.',
-   front:[rect(0,0,W,H,C.silver),rect(0,0,244,H,C.glacier),cm(141,337.5,2.7,C.ink),txt('BlackRaven',318,326,78,C.ink,-2),
+   front:[rect(0,0,W,H,C.silver),rect(0,0,244,H,C.glacier),cm(141,337.5,2.7,C.ink),txt('BlackRaven',318,326,70,C.ink,-2),
     txt('MAKE SOMETHING MATTER.',322,388,25,'#536482',2,'medium')],
    back:[rect(0,0,W,H,C.ink),rect(0,0,244,H,C.glacier),cm(141,145,1.8,C.ink),
     txt('Christopher Shaw',318,191,45,C.silver,-1),txt('FOUNDER',320,242,25,C.glacier,3,'medium'),
@@ -52,7 +58,7 @@ module.exports=({C,rect,line,circle,mark,txt,centered})=>{
     line(100,354,1025,354,'#B0BBCE',1),txt('support@blackravenai.com',100,443,34,C.ink,0,'regular'),txt('blackravenai.com',100,495,34,C.ink,0,'regular'),
     rect(0,570,W,105,C.ink),txt('SMALL DETAILS. LASTING IMPRESSIONS.',100,623,24,C.silver,2,'medium')]},
   {name:'vertical-signature',title:'Vertical signature',family:'expressive',width:675,height:1125,description:'A different orientation. A centered raven above a deliberate two-line name, like the cover of a small book.',
-   front:[rect(0,0,675,1125,C.ink),cm(337.5,345,4.3,C.glacier),centered('BLACK',337.5,701,90,C.silver,6),centered('RAVEN',337.5,808,90,C.silver,6),
+   front:[rect(0,0,675,1125,C.ink),cm(337.5,345,4.3,C.glacier),centered('BLACK',337.5,696,68,C.silver,9),centered('RAVEN',337.5,787,68,C.silver,9),
     centered('MAKE SOMETHING',337.5,956,25,C.glacier,2,'medium'),centered('MATTER.',337.5,997,25,C.glacier,2,'medium')],
    back:[rect(0,0,675,1125,C.silver),cm(337.5,197,2.2,C.ink),centered('Christopher Shaw',337.5,407,42,C.ink,-.8),centered('FOUNDER',337.5,459,25,'#536482',3,'medium'),
     line(92,548,583,548,'#B0BBCE',1),centered('BlackRaven',337.5,648,38,C.ink,-.6),centered('support@blackravenai.com',337.5,817,33,C.ink,0,'regular'),

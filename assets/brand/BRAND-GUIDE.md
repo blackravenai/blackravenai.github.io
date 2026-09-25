@@ -1,4 +1,4 @@
-# BlackRaven / Identity 04
+# BlackRaven / Identity 05
 
 ## The idea
 Make something matter.
@@ -25,9 +25,11 @@ Files: mark-ink, mark-ivory, mark-glacier; lockup-ink, lockup-ivory, lockup-glac
 Lead with Raven and Silver. Use Glacier selectively. Avoid light-on-light combinations. For print, convert these RGB values using the printer's ICC profile and proof the result; no universal CMYK or Pantone equivalence is implied.
 
 ## Typography
-Manrope throughout. Regular for paragraphs, medium for expressive headlines, bold for emphasis and the wordmark. Upright typography at every scale, with contrast created through weight, size, spacing, and color. No italic serif accents.
+Manrope for the website and primary identity. Regular for paragraphs, medium for expressive headlines, bold for emphasis and the wordmark. Upright typography at every scale, with contrast created through weight, size, spacing, and color. No italic serif accents.
 
-Manrope is distributed under the SIL Open Font License; font files and license are included.
+The refined business cards (concepts 4–18) use Inter Light for display lettering and Inter Regular for contact details and small labels. Keep names restrained in size, open the spacing on uppercase signatures, and let the mark carry the composition. Avoid heavy type or tight, rounded title-case wordmarks on these cards. Concepts 1–3 retain their original Manrope typography.
+
+Manrope and Inter are distributed under the SIL Open Font License; both font families and their licenses are included. Inter v4.1 was sourced from the official release at https://github.com/rsms/inter/releases/tag/v4.1.
 
 ## Voice
 Specific, human, direct. Name the detail; explain the benefit. Show real screens. Let concrete work carry the confidence. Be honest about launch status. No invented customer logos, testimonials, performance claims, or adoption numbers.
@@ -50,11 +52,11 @@ The original marks and horizontal lockups remain the primary identity. The colle
 - `lockups/`: six arrangements, five colors, SVG and transparent PNG. The ink arrangement belongs on a light surface; silver/white/glacier belong on dark surfaces.
 - `mono/`: pure #000000 and #FFFFFF symbols, plus square profile avatars in both directions.
 - `watermarks/`: symbol at 24% opacity and name-plus-symbol at 28%. The suffix names the destination surface: `dark` contains white artwork; `light` contains black artwork. PNGs retain alpha transparency.
-- `cards/`: twelve concepts, each with front/back SVG and PNG source artwork plus trimmed PNG previews. The catalog records concept numbers, names, families, and dimensions.
+- `cards/`: eighteen concepts, each with front/back SVG and PNG source artwork plus trimmed PNG previews. The catalog records concept numbers, names, families, and dimensions.
 - `applications/`: circular sticker artwork, a seamless flight pattern, and a 16:9 social/presentation cover. Keep background patterns separate from the primary logo.
 
 ### Business card production
-The 24-page PDF contains twelve consecutive front/back pairs:
+The 36-page PDF contains eighteen consecutive front/back pairs:
 
 1. Quiet confidence — a restrained raven and wordmark.
 2. Glacier signal — the promise with fine outline echoes.
@@ -67,11 +69,17 @@ The 24-page PDF contains twelve consecutive front/back pairs:
 9. Signal stripe — a Glacier band and horizontal name.
 10. The promise — the slogan leads in large type.
 11. Flight rhythm — a repeated motif with one accent.
-12. Vertical signature — portrait format, centered symbol, stacked name.
+12. Vertical signature — portrait format, centered symbol, lighter stacked name.
+13. Still / dark — only a small centered raven on a tall dark field.
+14. Still / light — the inverse, with a centered contact layout.
+15. Spine — a rotated wordmark running up the card edge.
+16. Aperture — a fine frame with a centered mark and quiet signature.
+17. Horizon — a Glacier field grounded by a dark base.
+18. Ascending — an oversized raven cropped across the tall format.
 
-Concepts 1–11 finish at 3.5 × 2 inches; concept 12 finishes at 2 × 3.5 inches. All have 0.125-inch bleed on every edge. Landscape MediaBox/BleedBox: 3.75 × 2.25 inches; portrait: 2.25 × 3.75 inches. Each TrimBox is inset 0.125 inches. The PDF contains vector paths, including outlined lettering. Landscape SVGs have a 1125 × 675 viewBox; portrait SVGs use 675 × 1125. The trimmed preview removes 37.5 units on each side. Print at actual size.
+Concepts 1–11 finish at 3.5 × 2 inches; concepts 12–18 finish at 2 × 3.5 inches. All have 0.125-inch bleed on every edge. Landscape MediaBox/BleedBox: 3.75 × 2.25 inches; portrait: 2.25 × 3.75 inches. Each TrimBox is inset 0.125 inches. The PDF contains vector paths, including outlined lettering. Landscape SVGs have a 1125 × 675 viewBox; portrait SVGs use 675 × 1125. The trimmed preview removes 37.5 units on each side. Print at actual size.
 
-The web gallery leads with new concepts 4–12, followed by the original three. Use Minimal, Expressive, or Original three to compare directions. Click a card to reveal its reverse.
+The web gallery leads with a dedicated portrait collection: new concepts 13–18 and the refined Vertical signature. The landscape collection follows, with refined concepts 4–11 and the original three. Use Portrait, Minimal, Expressive, or Original three to compare directions. Click a card to reveal its reverse.
 
 Artwork is RGB, not a printer-specific CMYK separation. Have the printer apply its preferred production profile and proof the result. The layouts make no assumption about foil, embossing, spot colors, or a particular paper stock. Contact details use Christopher Shaw / Founder, support@blackravenai.com, and blackravenai.com.
 

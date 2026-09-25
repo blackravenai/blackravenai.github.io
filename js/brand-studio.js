@@ -6,9 +6,10 @@ if(cardToolbar){
   const family=button.dataset.cardFilter;
   let visible=0;
   document.querySelectorAll('.business-card').forEach(card=>{
-   card.hidden=family!=='all'&&card.dataset.cardFamily!==family;
+   card.hidden=family==='portrait'?card.dataset.cardOrientation!=='portrait':family!=='all'&&card.dataset.cardFamily!==family;
    if(!card.hidden)visible++;
   });
+  document.querySelectorAll('.card-group').forEach(group=>group.hidden=!group.querySelector('.business-card:not([hidden])'));
   cardToolbar.querySelectorAll('[data-card-filter]').forEach(item=>item.setAttribute('aria-pressed',String(item===button)));
   cardToolbar.querySelector('.card-filter-status').textContent=`${visible} concepts · ${visible*2} considered sides`;
  }));

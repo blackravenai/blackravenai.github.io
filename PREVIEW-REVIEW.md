@@ -76,3 +76,16 @@ Local preview only; nothing published.
 - All 19 connected routes/assets/fragments, unique HTML IDs, JavaScript syntax, and source whitespace checks pass.
 
 Local preview only; no publication.
+
+
+## Portrait collection and card typography / Identity 05
+
+- Replaced Manrope on concepts 4–12 with Inter Light/Regular. Refined horizontal brand names use smaller, spaced uppercase lettering; display names are lighter. The three original concepts and primary identity retain their approved typography.
+- Added six portrait concepts: Still / dark, Still / light, Spine, Aperture, Horizon, and Ascending. There are now seven portrait designs and eleven landscape designs, eighteen concepts in total.
+- Portrait cards have a dedicated gallery with larger previews and an orientation filter. Existing family filters work across both orientations and hide empty groups. Native button flipping remains keyboard accessible; no JavaScript is needed to see the full card collection or download files.
+- Inter v4.1 Light and Regular are local design assets sourced from the official release, with the SIL Open Font License included in the kit. Card lettering is outlined; no external browser font dependency was introduced.
+- Updated kit: 220 files, approximately 4.66 MB; ZIP integrity verified. PDF: 36 vector-only pages (22 landscape, 14 portrait), all rendered and visually inspected with verified trim/bleed boxes.
+- Browser checks at 1440px, 390px, and 320px: no horizontal overflow, broken loaded images, or console errors. Portrait, Minimal, and Original three filters, empty group hiding, portrait proportions, and keyboard flipping verified. Existing reduced-motion rules continue to provide static side switching.
+- All 19 connected route/asset/fragment checks and source whitespace checks pass. Gallery IDs are unique and section tags balanced.
+
+Local preview only; no deployment.

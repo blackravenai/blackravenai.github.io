@@ -1,5 +1,5 @@
 {
-  "edition": 4,
+  "edition": 5,
   "tagline": "Make something matter.",
   "lockups": [
     "signature",
@@ -156,6 +156,30 @@
     "cards/vertical-signature-front.svg",
     "cards/vertical-signature-front.png",
     "cards/vertical-signature-back.svg",
-    "cards/vertical-signature-back.png"
+    "cards/vertical-signature-back.png",
+    "cards/still-dark-front.svg",
+    "cards/still-dark-front.png",
+    "cards/still-dark-back.svg",
+    "cards/still-dark-back.png",
+    "cards/still-light-front.svg",
+    "cards/still-light-front.png",
+    "cards/still-light-back.svg",
+    "cards/still-light-back.png",
+    "cards/spine-front.svg",
+    "cards/spine-front.png",
+    "cards/spine-back.svg",
+    "cards/spine-back.png",
+    "cards/aperture-front.svg",
+    "cards/aperture-front.png",
+    "cards/aperture-back.svg",
+    "cards/aperture-back.png",
+    "cards/horizon-front.svg",
+    "cards/horizon-front.png",
+    "cards/horizon-back.svg",
+    "cards/horizon-back.png",
+    "cards/ascending-front.svg",
+    "cards/ascending-front.png",
+    "cards/ascending-back.svg",
+    "cards/ascending-back.png"
   ]
 }

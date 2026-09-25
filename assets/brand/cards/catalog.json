@@ -106,5 +106,59 @@
     "description": "A different orientation. A centered raven above a deliberate two-line name, like the cover of a small book.",
     "width": 675,
     "height": 1125
+  },
+  {
+    "number": 13,
+    "name": "still-dark",
+    "title": "Still / dark",
+    "family": "minimal",
+    "description": "One small raven, centered in a tall field of black. A quiet front with a finely set contact side.",
+    "width": 675,
+    "height": 1125
+  },
+  {
+    "number": 14,
+    "name": "still-light",
+    "title": "Still / light",
+    "family": "minimal",
+    "description": "The inverse. Black on white, with nothing around the symbol to dilute the impression.",
+    "width": 675,
+    "height": 1125
+  },
+  {
+    "number": 15,
+    "name": "spine",
+    "title": "Spine",
+    "family": "expressive",
+    "description": "The name runs up the edge. A small raven balances the open field, like a beautifully spare book cover.",
+    "width": 675,
+    "height": 1125
+  },
+  {
+    "number": 16,
+    "name": "aperture",
+    "title": "Aperture",
+    "family": "minimal",
+    "description": "A fine frame, a centered mark, and a small signature. Every element has room to breathe.",
+    "width": 675,
+    "height": 1125
+  },
+  {
+    "number": 17,
+    "name": "horizon",
+    "title": "Horizon",
+    "family": "expressive",
+    "description": "A long stretch of Glacier blue, grounded by a dark base. The raven floats above a discreet name.",
+    "width": 675,
+    "height": 1125
+  },
+  {
+    "number": 18,
+    "name": "ascending",
+    "title": "Ascending",
+    "family": "expressive",
+    "description": "An enlarged raven cuts across the tall format. A small, widely spaced signature grounds the movement.",
+    "width": 675,
+    "height": 1125
   }
 ]

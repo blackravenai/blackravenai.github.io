@@ -6,6 +6,7 @@ const sharp=require('sharp');
 const root=path.resolve(__dirname,'..'),out=path.join(root,'assets/brand');
 const fonts={};
 for(const weight of ['regular','medium','bold']){const b=fs.readFileSync(path.join(root,`assets/fonts/manrope-${weight}.ttf`));fonts[weight]=ot.parse(b.buffer.slice(b.byteOffset,b.byteOffset+b.byteLength));}
+for(const weight of ['light','regular']){const b=fs.readFileSync(path.join(root,`assets/fonts/inter-${weight}.ttf`));fonts[`inter-${weight}`]=ot.parse(b.buffer.slice(b.byteOffset,b.byteOffset+b.byteLength));}
 const C={ink:'#101217',silver:'#F0F1F5',glacier:'#ADC4FF',black:'#000000',white:'#FFFFFF'};
 const points=[[5,8],[30,17],[40,8],[49,8],[62,18],[48,21],[41,38],[20,57],[27,33]];
 const num=v=>Math.round(v*1000)/1000;
@@ -69,6 +70,7 @@ async function main(){
   {name:'editorial-white',title:'Editorial white',description:'Bold typography, generous space, and uncompromising contrast.',front:[rect(0,0,1125,675,C.white),txt('BLACK',89,247,123,C.black,9),txt('RAVEN',89,397,123,C.black,9),mark(824,93,2.5,C.black),line(100,486,1025,486,C.black,2),txt('MAKE SOMETHING MATTER.',101,562,25,C.black,3,'medium'),txt('BR / AI',844,562,25,C.black,2,'medium')],back:[rect(0,0,1125,675,C.black),mark(82,83,1.8,C.white),txt('Christopher Shaw',101,325,50,C.white,-.5),txt('FOUNDER',103,370,26,C.white,3,'medium'),line(100,425,1025,425,C.white,1),txt('support@blackravenai.com',100,509,34,C.white,0,'regular'),txt('blackravenai.com',100,559,34,C.white,0,'regular'),txt('SOFTWARE WITH CARE.',716,574,23,C.white,1,'medium')]}
  ];
  cards.push(...require('./card-designs.cjs')({C,rect,line,circle,mark,txt,centered}));
+ cards.push(...require('./portrait-card-designs.cjs')({C,rect,line,mark,txt,centered}));
  for(const card of cards)for(const side of ['front','back']){
   const source=await save(`cards/${card.name}-${side}`,card[side],card.width||1125,card.height||675,`${card.title} business card ${side}`,card.width||1125);
   const w=card.width||1125,h=card.height||675;
@@ -76,7 +78,7 @@ async function main(){
   await sharp(Buffer.from(cropped)).png().toFile(path.join(out,`cards/${card.name}-${side}-preview.png`));
  }
  fs.writeFileSync(process.env.BRAND_CARD_SCENES||'/private/tmp/blackraven-card-scenes.json',JSON.stringify(cards));
- fs.writeFileSync(path.join(out,'collection.json'),JSON.stringify({edition:4,tagline:'Make something matter.',lockups:['signature','wide','stacked','editorial','ai','seal'],colors:C,files},null,2));
+ fs.writeFileSync(path.join(out,'collection.json'),JSON.stringify({edition:5,tagline:'Make something matter.',lockups:['signature','wide','stacked','editorial','ai','seal'],colors:C,files},null,2));
  fs.writeFileSync(path.join(out,'cards/catalog.json'),JSON.stringify(cards.map((card,i)=>({number:i+1,name:card.name,title:card.title,family:card.family||'original',description:card.description||'',width:card.width||1125,height:card.height||675})),null,2));
  console.log(`Created ${files.length} SVG/PNG collection assets and ${cards.length*2} trimmed card previews.`);
 }
