@@ -40,13 +40,13 @@
 /* Give the tall cards enough space to read as physical objects. */
 .card-group[hidden]{display:none}.card-group+.card-group{margin-top:80px}
 .card-group-heading{display:flex;justify-content:space-between;align-items:end;gap:35px;margin-bottom:34px}
-.card-group-heading .eyebrow{font-size:10px;color:#52617a}.card-group-heading h3{font-size:32px;font-weight:500;letter-spacing:-.04em;margin:12px 0 0;line-height:1.15}
+.card-group-heading .eyebrow{font-size:10px;color:#52617a}.card-group-heading h3{font-size:32px;font-weight:300;letter-spacing:-.025em;margin:12px 0 0;line-height:1.15}
 .card-group-heading p{max-width:310px;margin:0;font-size:13px;color:#45556e;line-height:1.7}
 .portrait-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:45px 24px}
 .portrait-grid .card-stage{aspect-ratio:.78;background:#d3ddeb;border:1px solid #bac8db}
 .portrait-grid .card-flip.is-portrait{width:68%;max-width:240px}
 .portrait-grid .card-caption{flex-wrap:wrap;gap:6px;margin-top:20px;font-size:9px}.portrait-grid .flip-hint{font-size:9px}
-.business-card h3{font-size:22px;font-weight:500}.portrait-grid .business-card p{font-size:13px;line-height:1.7}
+.business-card h3{font-size:22px;font-weight:400}.portrait-grid .business-card p{font-size:13px;line-height:1.7}
 @media(max-width:1100px){.portrait-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:35px 20px}.card-group-heading h3{font-size:29px}}
 @media(max-width:850px){.portrait-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:700px){.card-group-heading{flex-direction:column;align-items:flex-start;gap:17px}.card-group-heading p{max-width:340px}.portrait-grid{gap:38px 18px}.portrait-grid .card-caption{margin-bottom:10px}.portrait-grid .card-flip.is-portrait{width:74%}.portrait-grid .card-stage{aspect-ratio:.72}.portrait-grid .business-card h3{font-size:19px}.portrait-grid .business-card .asset-downloads{font-size:11px;gap:9px}.card-group+.card-group{margin-top:65px}}

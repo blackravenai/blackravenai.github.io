@@ -1,8 +1,9 @@
+@font-face{font-family:Inter;src:url('/assets/fonts/inter-light.woff2') format('woff2');font-weight:300;font-style:normal;font-display:swap}@font-face{font-family:Inter;src:url('/assets/fonts/inter-regular.woff2') format('woff2');font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:Inter;src:url('/assets/fonts/inter-medium.woff2') format('woff2');font-weight:500;font-style:normal;font-display:swap}
 /* Shared studio chrome. Scoped so each product keeps its own visual world. */
 @font-face{font-family:Manrope;src:url('/assets/fonts/manrope-regular.ttf') format('truetype');font-weight:400;font-display:swap}
 @font-face{font-family:Manrope;src:url('/assets/fonts/manrope-medium.ttf') format('truetype');font-weight:500;font-display:swap}
 @font-face{font-family:Manrope;src:url('/assets/fonts/manrope-bold.ttf') format('truetype');font-weight:700 900;font-display:swap}
-.site-header,.site-footer{color:#f0f1f5;background:#101217;font-family:Manrope,Arial,sans-serif;font-synthesis:none;line-height:1.5;color-scheme:dark}
+.site-header,.site-footer{color:#f0f1f5;background:#101217;font-family:Inter,Arial,sans-serif;font-synthesis:none;line-height:1.5;color-scheme:dark}
 .site-header *,.site-footer *{box-sizing:border-box}
 .site-header a,.site-footer a{color:inherit;text-decoration:none}
 .site-header a:hover,.site-footer a:hover{color:#adc4ff}
@@ -12,26 +13,26 @@
 .site-header .wordmark,.site-footer .wordmark{display:inline-flex;align-items:center;gap:12px;flex-shrink:0}
 .site-header .wordmark img,.site-footer .wordmark img{width:38px;height:36px;max-width:none;border:0;border-radius:0;background:none;display:block}
 .site-header .wordmark>span,.site-footer .wordmark>span{font:800 18px/1.5 Manrope,Arial,sans-serif;letter-spacing:-.045em;white-space:nowrap}
-.site-header .wordmark small,.site-footer .wordmark small{display:block;font-size:8px;letter-spacing:.16em;font-weight:500;line-height:1.5;margin-top:3px}
+.site-header .wordmark small,.site-footer .wordmark small{display:block;font-family:Inter,Arial,sans-serif;font-size:8px;letter-spacing:.14em;font-weight:400;line-height:1.5;margin-top:3px}
 .site-header nav{display:flex;align-items:center;flex-wrap:nowrap;gap:28px;margin:0;padding:0;border:0;font-size:14px}
-.site-header nav a{font:500 14px/1.5 Manrope,Arial,sans-serif;transition:color .2s;white-space:nowrap}
+.site-header nav a{font:400 14px/1.5 Inter,Arial,sans-serif;transition:color .2s;white-space:nowrap}
 .site-header nav .nav-cta{border:1px solid #5f697e;border-radius:99px;padding:12px 20px}
 .site-header .nav-cta span{margin-left:20px}
-.site-header .menu-toggle{display:none;font:400 13px/1.5 Manrope,Arial,sans-serif}
+.site-header .menu-toggle{display:none;font:400 13px/1.5 Inter,Arial,sans-serif}
 .site-footer{display:block;width:100%;max-width:none;margin:0;padding:65px 0 25px;border:0}
 .site-footer .footer-wrap{width:min(1320px,calc(100% - 96px));margin:0 auto;padding:0}
 .site-footer .footer-top,.site-footer .footer-bottom{display:flex;justify-content:space-between;align-items:center;gap:25px}
 .site-footer .footer-links{display:flex;gap:32px;font-size:13px}
 .site-footer .footer-bottom{border-top:1px solid #303641;padding-top:25px;margin-top:45px;color:#a6adbb;font-size:12px}
 .site-footer .footer-bottom>div{display:flex;gap:22px}
-.skip{position:fixed;top:-80px;left:20px;z-index:100;padding:12px;background:#adc4ff;color:#101217;font:500 14px Manrope,Arial,sans-serif;text-decoration:none}
+.skip{position:fixed;top:-80px;left:20px;z-index:100;padding:12px;background:#adc4ff;color:#101217;font:500 14px Inter,Arial,sans-serif;text-decoration:none}
 .skip:focus{top:15px}
 body.app-document{padding:0}
 .app-doc-wrap{width:min(880px,calc(100% - 48px));margin:0 auto;padding:45px 0 75px}
 .app-doc-wrap main{width:100%;max-width:none;margin:0;padding:0}
-.app-document-nav{display:flex;flex-wrap:wrap;gap:12px 24px;margin:0 0 38px;padding:0 0 20px;border-bottom:1px solid currentColor;font:500 13px/1.6 Manrope,Arial,sans-serif}
+.app-document-nav{display:flex;flex-wrap:wrap;gap:12px 24px;margin:0 0 38px;padding:0 0 20px;border-bottom:1px solid currentColor;font:400 13px/1.6 Inter,Arial,sans-serif}
 .app-document-nav a:first-child{margin-right:auto}
-.app-document-nav a[aria-current="page"]{text-decoration:none;font-weight:800}
+.app-document-nav a[aria-current="page"]{text-decoration:none;font-weight:500}
 @media(max-width:1100px){.site-header .nav-wrap,.site-footer .footer-wrap{width:calc(100% - 64px)}.site-header nav{gap:20px}}
 @media(max-width:900px){
  .site-header{height:85px}.site-header .nav-wrap,.site-footer .footer-wrap{width:calc(100% - 40px)}

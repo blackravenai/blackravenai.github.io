@@ -25,7 +25,9 @@ Files: mark-ink, mark-ivory, mark-glacier; lockup-ink, lockup-ivory, lockup-glac
 Lead with Raven and Silver. Use Glacier selectively. Avoid light-on-light combinations. For print, convert these RGB values using the printer's ICC profile and proof the result; no universal CMYK or Pantone equivalence is implied.
 
 ## Typography
-Manrope for the website and primary identity. Regular for paragraphs, medium for expressive headlines, bold for emphasis and the wordmark. Upright typography at every scale, with contrast created through weight, size, spacing, and color. No italic serif accents.
+Inter is the studio's editorial typeface. Light (300) for large headlines and the closing brand line; Regular (400) for body copy, navigation, and small uppercase labels; Medium (500) for controls and functional emphasis. Give uppercase labels open tracking and let large display lettering breathe. Keep type upright, with contrast created through weight, size, spacing, and color.
+
+Manrope remains the primary logo lettering and the original graphic identity. The website wordmark and approved logo files keep their existing form. Product-specific type on the Squeezy Fish and DoodleLegs pages remains part of each app's own visual identity; their shared studio navigation uses Inter. Web fonts are served locally as WOFF2.
 
 The refined business cards (concepts 4–18) use Inter Light for display lettering and Inter Regular for contact details and small labels. Keep names restrained in size, open the spacing on uppercase signatures, and let the mark carry the composition. Avoid heavy type or tight, rounded title-case wordmarks on these cards. Concepts 1–3 retain their original Manrope typography.
 

@@ -89,3 +89,12 @@ Local preview only; no publication.
 - All 19 connected route/asset/fragment checks and source whitespace checks pass. Gallery IDs are unique and section tags balanced.
 
 Local preview only; no deployment.
+
+
+## Inter editorial typography on the site
+
+- Brought the approved card typography into the studio pages: Inter Light for large headlines and the signature slogan, Regular for body copy/navigation/uppercase labels, and Medium for controls and emphasis. Headline tracking is more open; small uppercase labels have generous spacing.
+- Shared navigation and footer type use Inter across all 20 pages. The approved Manrope wordmark and product-specific Squeezy Fish/DoodleLegs typography remain intact. App imagery, motion, layouts, and copy are preserved.
+- Inter Light/Regular/Medium web files are served locally as WOFF2. The typography specimen, usage guide, and brand kit now describe the editorial type system. Updated archive: 224 files, approximately 5.17 MB, integrity verified; print artwork unchanged.
+- Desktop homepage/services and brand type specimens inspected. At 390px, all nine core studio/product pages have no horizontal overflow or broken loaded images; product pages retain their own headline font and use Inter in shared navigation. At 320px, homepage, services, projects, brand, and apps index fit without overflow.
+- Mobile menu opens and closes with Escape, returning focus. All 19 connected routes/assets/fragments resolve. Changes remain local with no deployment.
