@@ -10,10 +10,10 @@ From this folder, run `python3 -m http.server 4177 --bind 127.0.0.1` and open ht
 
 - `/` — studio homepage
 - `/services.html` — capabilities, process, and FAQ
-- `/projects.html` — selected products and internal studio work
+- `/projects.html` — selected original apps and games
 - `/apps/` — mobile portfolio; Squeezy Fish, DoodleLegs, and AVERTED, with shared studio navigation and individual product aesthetics
 - `/contact.html` — project email brief composer; `/apply.html` preserves the old entry point
-- `/brand.html` — brand guide, logo downloads, copyable swatches, downloadable brand kit
+- `/brand.html` — direct-access brand guide, logo downloads, copyable swatches, downloadable brand kit (not linked in the public footer)
 - Existing legal URLs and `app-ads.txt` preserved
 
 `studio.css` and `js/studio.js` power the studio pages. All 20 connected studio, product, and app policy/support pages share `css/site-chrome.css`, `js/navigation.js`, and static header/footer partials. Run `python3 scripts/sync-site-chrome.py` after editing `partials/site-header.html` or `partials/site-footer.html`. The app scaffold generator also reads those partials. The bespoke mobile app pages retain their individual visual identities. Fonts and images are served locally. No new analytics, tracking cookies, or remote font requests are added to the studio pages.

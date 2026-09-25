@@ -105,3 +105,11 @@ Local preview only; no deployment.
 - Applied the same restraint to services, projects, contact, the apps index, AVERTED, and the brand-studio introduction. Useful app availability, form instructions, and brand-library controls remain. Service categories and support instructions use readable sizes.
 - Rebalanced spacing and grids after removing labels. Desktop homepage/services and the 390px homepage visually inspected; all seven updated core pages fit at 390px without horizontal overflow or broken loaded images. Homepage also fits at 320px; the mobile menu opens and closes with Escape.
 - Connected-page checks pass for all 19 pages; edited main sections have balanced HTML and unique IDs. Local preview only; no deployment.
+
+## Contact layout and public portfolio cleanup
+
+- Replaced contact hero percentage padding with a responsive two-column grid. The previous padding left only 68px for copy at 2664px; the new copy column is 530px with balanced wrapping. Checked wide-screen, desktop-breakpoint, and phone layouts without overflow or overlapping artwork.
+- Removed Brand studio from all 20 shared footers; the direct URL and asset library remain available.
+- Removed the homepage animation toggle and its handlers. The existing smooth infinite loop and reduced-motion support remain. Browser checks confirm active motion and no script errors.
+- Removed the homepage founder/studio note and the Nexus/Black Swan portfolio section. Updated service links and portfolio metadata so no links target the removed section.
+- Connected-page/asset/fragment checks pass for the 18 publicly connected pages; JavaScript syntax and source whitespace checks pass. Owner requested commit and deployment for these changes.
