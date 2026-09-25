@@ -1,4 +1,4 @@
-# Black Raven / Identity 02
+# Black Raven / Identity 03
 
 ## The idea
 Make something matter.
@@ -42,3 +42,21 @@ Core lines:
 
 ## Imagery and motion
 Use the approved vector mark as the brand's geometric motif. Actual product screens illustrate the work. Each app keeps its own colors within the restrained studio identity. Services use visual examples from those same products. Motion should feel precise, useful, and optional; respect reduced-motion preferences. The hero uses the existing vector silhouette with a dimensional entrance, separated outline planes, a moving light sweep, and pointer-responsive perspective. Pause motion when it leaves the screen and offer a visitor-controlled pause. Static brand assets keep the original flat mark.
+
+## The expanded collection
+
+The original marks and horizontal lockups remain the primary identity. The collection adds six arrangements: signature (with slogan), wide (generous tracking), stacked, editorial (two-line name), AI (category signature), and studio seal. Each is supplied in Raven ink, Silver, Glacier, pure black, and pure white. All logo artwork is transparent; all lettering is vector outlines.
+
+- `lockups/`: six arrangements, five colors, SVG and transparent PNG. The ink arrangement belongs on a light surface; silver/white/glacier belong on dark surfaces.
+- `mono/`: pure #000000 and #FFFFFF symbols, plus square profile avatars in both directions.
+- `watermarks/`: symbol at 24% opacity and name-plus-symbol at 28%. The suffix names the destination surface: `dark` contains white artwork; `light` contains black artwork. PNGs retain alpha transparency.
+- `cards/`: Quiet confidence, Glacier signal, and Editorial white; front/back SVG and PNG source artwork plus trimmed PNG previews.
+- `applications/`: circular sticker artwork, a seamless flight pattern, and a 16:9 social/presentation cover. Keep background patterns separate from the primary logo.
+
+### Business card production
+The PDF contains three consecutive front/back pairs, in the order above. Finished trim is 3.5 × 2 inches, with 0.125-inch bleed on all sides. PDF MediaBox/BleedBox: 3.75 × 2.25 inches; TrimBox: 3.5 × 2 inches. The PDF contains vector paths, including outlined lettering. Source SVGs have a 1125 × 675 viewBox representing the full bleed area; trimmed previews use the central 1050 × 600 area. Print at actual size.
+
+Artwork is RGB, not a printer-specific CMYK separation. Have the printer apply its preferred production profile and proof the result. The layouts make no assumption about foil, embossing, spot colors, or a particular paper stock. Contact details use Christopher Shaw / Founder, support@blackravenai.com, and blackravenai.com.
+
+### File choice
+Use SVG for scaling, cutting, engraving, layout software, and high-resolution output. Use transparent PNG for slides, social posts, and tools that do not support SVG. Use the watermark files when low opacity is intended, rather than fading the primary logo unpredictably. Pure black/white files are the one-color masters.

@@ -1,10 +1,3 @@
-const menu = document.querySelector('.menu-toggle');
-const nav = document.querySelector('#navigation');
-function closeMenu(){ menu?.setAttribute('aria-expanded','false'); nav?.classList.remove('is-open'); }
-menu?.addEventListener('click',()=>{const open=menu.getAttribute('aria-expanded')!=='true';menu.setAttribute('aria-expanded',String(open));nav.classList.toggle('is-open',open)});
-nav?.querySelectorAll('a').forEach(a=>a.addEventListener('click',closeMenu));
-document.addEventListener('keydown',e=>{if(e.key==='Escape' && menu?.getAttribute('aria-expanded')==='true'){closeMenu();menu.focus()}});
-document.querySelectorAll('[data-year]').forEach(el=>el.textContent=new Date().getFullYear());
 const reduced=window.matchMedia('(prefers-reduced-motion: reduce)');
 if(!reduced.matches && 'IntersectionObserver' in window){const obs=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('is-visible');obs.unobserve(e.target)}}),{threshold:.08});document.querySelectorAll('.section-heading,.project-card,.doodle-feature,.service-list>a,.studio-note').forEach(el=>{el.classList.add('reveal-ready');obs.observe(el)})}
 // Keep the signature responsive to the visitor without changing the approved mark.

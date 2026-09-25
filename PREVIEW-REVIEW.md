@@ -51,3 +51,15 @@ Still a local preview; no deployment.
 - All 12 studio pages have the same header/footer brand line. Connected page/asset/fragment checks pass for all 19 pages. JavaScript syntax and brand archive integrity checks pass.
 
 Local only; no publication.
+
+## Shared studio navigation and expanded brand library
+
+- All 20 studio, app, and connected app support/policy pages now use identical static header/footer partials and a scoped navigation stylesheet. Squeezy Fish and DoodleLegs keep their product-specific visuals. The shared menu includes Our apps and the new brand slogan. The app scaffold generator uses the same partials.
+- All 6 app policy/support main content bodies compared with the previous commit: unchanged byte-for-byte.
+- Brand studio expanded with six logo arrangements in five colors, monochrome/inverse symbols, three double-sided business card concepts, watermarks for light/dark surfaces, avatars, sticker artwork, a seamless pattern, and a 16:9 cover. Existing original logo assets and swatches preserved.
+- Logo color controls update previews and download targets together. Card previews flip to the contact side; watermark surface controls choose the appropriate white/black files.
+- Brand kit: 126 files, ZIP integrity verified, approximately 2.18 MB. All 96 newly generated SVG/PNG collection assets are present. Fonts and licensing included.
+- Business card PDF: six vector-only pages in front/back pairs. 3.5 × 2 inch trim, 0.125 inch bleed, with verified PDF trim/bleed boxes. All pages rendered and visually inspected; lettering uses nonzero fill and remains outlined.
+- Shared desktop headers checked on product pages. Mobile menu opens/closes and Escape returns focus. Narrow phone layouts and flip interaction inspected. All three app pages, both support pages, and the brand studio verified at 320px with no horizontal overflow or broken loaded images. Watermark surface switching updates SVG/PNG targets, and exported PNG alpha values match the stated 24%/28% opacity. DoodleLegs retains its direct app policy/EULA links and release notice above the common footer.
+
+Local preview only; nothing published.

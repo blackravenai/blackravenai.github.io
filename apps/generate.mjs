@@ -2,10 +2,13 @@
 import fs from 'node:fs';
 import path from 'node:path';
 const root=import.meta.dirname;
+const header=fs.readFileSync(path.join(root,'../partials/site-header.html'),'utf8').trim();
+const footer=fs.readFileSync(path.join(root,'../partials/site-footer.html'),'utf8').trim();
 const apps=JSON.parse(fs.readFileSync(path.join(root,'catalog.json'),'utf8'));
 const escape=value=>String(value).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 function layout(title,description,url,body){return `<!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>${escape(title)} · BlackRaven AI LLC</title><meta name="description" content="${escape(description)}"><link rel="canonical" href="https://www.blackravenai.com${url}"><link rel="stylesheet" href="/apps/site.css"></head><body><header><nav class="wrap" aria-label="Main"><a class="brand" href="/apps/">BlackRaven AI LLC</a><a href="/apps/">Our mobile apps</a></nav></header><main class="wrap">${body}</main><footer><div class="wrap">BlackRaven AI LLC · <a href="mailto:support@blackravenai.com">Contact support</a><p>Mobile apps in development. No downloads or purchases are available on these pages.</p></div></footer></body></html>\n`;}
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>${escape(title)} · Black Raven</title><meta name="description" content="${escape(description)}"><link rel="canonical" href="https://www.blackravenai.com${url}"><link rel="icon" href="/assets/brand/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="/apps/site.css"><link rel="stylesheet" href="/css/site-chrome.css?v=1"><script src="/js/navigation.js?v=1" defer></script></head><body><a class="skip" href="#main">Skip to content</a>${header}<main id="main" class="wrap">${body}</main>${footer}</body></html>\n`;}
+
 const cards=apps.map(app=>`<article class="card" style="--accent:${app.accent}"><span class="eyebrow">${escape(app.kind)}</span><h2>${escape(app.name)}</h2><p>${escape(app.tagline)}</p><p><span class="badge">In development</span></p><a href="/apps/${app.slug}/">Explore ${escape(app.name)} →</a></article>`).join('');
 if(!fs.existsSync(path.join(root,'index.html'))) fs.writeFileSync(path.join(root,'index.html'),layout('Our mobile apps','Meet the mobile apps in development at BlackRaven AI LLC.','/apps/',`<section class="hero"><span class="eyebrow">Independent mobile apps</span><h1>Little worlds.<br>Distinct ideas.</h1><p class="lead">Games to experiment with. Tools to explore with. Meet the mobile apps we are building at BlackRaven.</p><span class="badge">Coming soon · No release date announced</span></section><section class="grid" aria-label="Apps">${cards}</section>`));
 for(const app of apps){
