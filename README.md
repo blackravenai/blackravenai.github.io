@@ -1,196 +1,37 @@
-# BlackRaven AI - Elite Technology Solutions Website
+# Black Raven studio
 
-A stunning, futuristic website designed for BlackRaven AI, featuring a dark raven-themed aesthetic with modern animations and responsive design.
+A complete static website for **www.blackravenai.com**, designed for the existing GitHub Pages publishing setup. No build step or server-side runtime is required.
 
-## 🎨 Design Features
+## Local preview
 
-- **Dark Theme**: Sophisticated black and gold color scheme inspired by ravens
-- **Futuristic Elements**: Animated neural networks, particle effects, and glowing accents
-- **Responsive Design**: Fully optimized for desktop, tablet, and mobile devices
-- **Smooth Animations**: Scroll-triggered animations and interactive elements
-- **Modern Typography**: Clean, professional Inter font family
+From this folder, run `python3 -m http.server 4177 --bind 127.0.0.1` and open http://127.0.0.1:4177/.
 
-## 📁 File Structure
+## Pages
 
-```
-BlackRavenAI/
-├── index.html          # Landing page
-├── services.html       # Services showcase
-├── projects.html       # Portfolio projects
-├── apply.html         # Contact/application form
-├── styles.css         # Complete styling
-├── script.js          # Interactive functionality
-└── README.md          # This file
-```
+- `/` — studio homepage
+- `/services.html` — capabilities, process, and FAQ
+- `/projects.html` — selected products and internal studio work
+- `/apps/` — mobile portfolio; existing Squeezy Fish and DoodleLegs product pages retained; AVERTED redesigned
+- `/contact.html` — project email brief composer; `/apply.html` preserves the old entry point
+- `/brand.html` — brand guide, logo downloads, copyable swatches, downloadable brand kit
+- Existing legal URLs and `app-ads.txt` preserved
 
-## 🚀 Deployment to Squarespace
+`studio.css` and `js/studio.js` power the studio pages. The bespoke mobile app pages retain their individual visual identities. Fonts and images are served locally. No new analytics, tracking cookies, or remote font requests are added to the studio pages.
 
-### Method 1: Code Injection (Recommended)
+## Contact behavior
 
-1. **Upload Files to Squarespace**:
-   - Go to your Squarespace dashboard
-   - Navigate to Settings → Advanced → Code Injection
-   - Upload the CSS and JS files to your site's file manager
+The form validates fields and prepares an email. It does **not** submit to a backend or silently send mail. Visitors review the draft, then send it through their email client; copy and text download are alternatives. Project inquiries go to the established `chris@blackravenai.com`; app support uses `support@blackravenai.com`.
 
-2. **Add CSS**:
-   - In Code Injection, add to the Header section:
-   ```html
-   <link rel="stylesheet" href="/s/your-site-id/styles.css">
-   ```
+## Brand assets
 
-3. **Add JavaScript**:
-   - In Code Injection, add to the Footer section:
-   ```html
-   <script src="/s/your-site-id/script.js"></script>
-   ```
+`assets/brand/black-raven-brand-kit.zip` includes SVG and transparent PNG marks/lockups, RGB/HEX swatches, font files/licenses, favicon assets, and the usage guide. Logo type is outlined. The optimized hero artwork is `assets/brand/wing.webp`; its generation prompt is recorded in the guide.
 
-4. **Create Pages**:
-   - Create new pages in Squarespace for each HTML file
-   - Use the "Code" block to paste the HTML content
-   - Or use the "Markdown" block and convert HTML to Markdown
+## Validation
 
-### Method 2: Custom Template
+Run `python3 scripts/check-site.py` to check all connected internal links, image/script/style paths, and fragment targets. Browser validation should cover desktop/mobile layouts, menu and keyboard use, form validation and email preparation, FAQ/project disclosures, and downloads.
 
-1. **Developer Platform**:
-   - Use Squarespace Developer Platform
-   - Upload all files to your template
-   - Customize the template structure
+## Publishing
 
-2. **Template Structure**:
-   ```
-   template/
-   ├── pages/
-   │   ├── index.page
-   │   ├── services.page
-   │   ├── projects.page
-   │   └── apply.page
-   ├── assets/
-   │   ├── styles.css
-   │   └── script.js
-   └── site.conf
-   ```
+This preview is on branch `codex/blackraven-studio`, in an isolated worktree. Nothing has been published. The existing Pages configuration publishes the root of `main` in `blackravenai/blackravenai.github.io`. Preserve `CNAME`, `.nojekyll`, `app-ads.txt`, `/legal/`, and the individual app pages when integrating. Merge/push only after the owner reviews the local site. GitHub Pages will then publish the approved main branch.
 
-## 🎯 Page Features
-
-### Landing Page (index.html)
-- Hero section with animated neural network
-- Company features and benefits
-- Statistics counter animations
-- Call-to-action sections
-
-### Services Page (services.html)
-- Detailed service descriptions
-- Technology stacks and features
-- Process timeline
-- Interactive service cards
-
-### Projects Page (projects.html)
-- Portfolio showcase with filtering
-- Project statistics and metrics
-- Client testimonials
-- Interactive project cards
-
-### Apply Now Page (apply.html)
-- Comprehensive contact form
-- Form validation and submission
-- Company benefits
-- Process timeline
-- Contact information
-
-## 🛠 Customization
-
-### Colors
-The color scheme is defined in CSS variables at the top of `styles.css`:
-```css
-:root {
-    --primary-black: #0a0a0a;
-    --accent-gold: #d4af37;
-    --accent-blue: #00d4ff;
-    /* ... more colors */
-}
-```
-
-### Content
-- Update company information in HTML files
-- Modify service descriptions and project details
-- Change contact information and social links
-- Update statistics and metrics
-
-### Animations
-- Adjust animation durations in CSS
-- Modify scroll-triggered animations in JavaScript
-- Customize particle effects and transitions
-
-## 📱 Responsive Breakpoints
-
-- **Desktop**: 1200px and above
-- **Tablet**: 768px - 1199px
-- **Mobile**: Below 768px
-
-## 🔧 Technical Features
-
-### CSS Features
-- CSS Grid and Flexbox layouts
-- CSS Custom Properties (Variables)
-- Advanced animations and transitions
-- Responsive typography
-- Custom scrollbar styling
-
-### JavaScript Features
-- Intersection Observer API for scroll animations
-- Form validation and submission
-- Project filtering system
-- Mobile menu functionality
-- Performance optimizations
-
-### Performance
-- Optimized animations with `requestAnimationFrame`
-- Throttled scroll handlers
-- Lazy loading for images
-- Minimal external dependencies
-
-## 🎨 Design System
-
-### Typography
-- **Primary Font**: Inter (Google Fonts)
-- **Weights**: 300, 400, 500, 600, 700, 800
-- **Scale**: Responsive typography with clamp()
-
-### Spacing
-- **Consistent spacing scale**: 0.5rem to 4rem
-- **Grid system**: CSS Grid with auto-fit
-- **Component spacing**: Consistent padding and margins
-
-### Components
-- **Buttons**: Multiple variants with hover effects
-- **Cards**: Consistent styling with hover animations
-- **Forms**: Professional styling with validation states
-- **Navigation**: Fixed header with smooth scrolling
-
-## 🚀 Performance Optimization
-
-- **Minified CSS**: Production-ready optimized styles
-- **Efficient JavaScript**: Debounced and throttled functions
-- **Lazy Loading**: Images load only when needed
-- **Smooth Animations**: 60fps animations with hardware acceleration
-
-## 📞 Support
-
-For customization or deployment assistance:
-- Review the code comments for guidance
-- Test on multiple devices and browsers
-- Validate HTML and CSS before deployment
-- Check Squarespace documentation for platform-specific requirements
-
-## 🎯 SEO Considerations
-
-- Semantic HTML structure
-- Proper heading hierarchy
-- Alt text for images
-- Meta descriptions and titles
-- Fast loading times
-- Mobile-first responsive design
-
----
-
-**BlackRaven AI** - Elite Technology Solutions for the Modern Enterprise
+Legacy `styles.css` / `script.js` are retained for compatibility but are not loaded by the redesigned studio pages. Corporate policy text was preserved while its surrounding presentation was updated; app-specific policy content was not rewritten.
