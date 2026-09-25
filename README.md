@@ -32,6 +32,6 @@ Run `python3 scripts/check-site.py` to check all connected internal links, image
 
 ## Publishing
 
-This preview is on branch `codex/blackraven-studio`, in an isolated worktree. Nothing has been published. The existing Pages configuration publishes the root of `main` in `blackravenai/blackravenai.github.io`. Preserve `CNAME`, `.nojekyll`, `app-ads.txt`, `/legal/`, and the individual app pages when integrating. Merge/push only after the owner reviews the local site. GitHub Pages will then publish the approved main branch.
+GitHub Pages publishes the root of `main` in `blackravenai/blackravenai.github.io` at https://www.blackravenai.com/. Develop and review changes locally in the isolated `codex/blackraven-studio` worktree. After owner approval, integrate the latest `origin/main`, run validation, and push the approved commit to `main`. Confirm the Pages deployment succeeds and check the public site. Preserve `CNAME`, `.nojekyll`, `app-ads.txt`, `/legal/`, and the individual app pages when integrating.
 
 Legacy `styles.css` / `script.js` are retained for compatibility but are not loaded by the redesigned studio pages. Corporate policy text was preserved while its surrounding presentation was updated; app-specific policy content was not rewritten.
