@@ -1,8 +1,8 @@
-@font-face{font-family:Inter;src:url('/assets/fonts/inter-light.woff2') format('woff2');font-weight:300;font-style:normal;font-display:swap}@font-face{font-family:Inter;src:url('/assets/fonts/inter-regular.woff2') format('woff2');font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:Inter;src:url('/assets/fonts/inter-medium.woff2') format('woff2');font-weight:500;font-style:normal;font-display:swap}
+@font-face{font-family:Inter;src:url('/assets/fonts/inter-light-latin.woff2') format('woff2');font-weight:300;font-style:normal;font-display:swap}@font-face{font-family:Inter;src:url('/assets/fonts/inter-regular-latin.woff2') format('woff2');font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:Inter;src:url('/assets/fonts/inter-medium-latin.woff2') format('woff2');font-weight:500;font-style:normal;font-display:swap}
 /* Shared studio chrome. Scoped so each product keeps its own visual world. */
-@font-face{font-family:Manrope;src:url('/assets/fonts/manrope-regular.ttf') format('truetype');font-weight:400;font-display:swap}
-@font-face{font-family:Manrope;src:url('/assets/fonts/manrope-medium.ttf') format('truetype');font-weight:500;font-display:swap}
-@font-face{font-family:Manrope;src:url('/assets/fonts/manrope-bold.ttf') format('truetype');font-weight:700 900;font-display:swap}
+@font-face{font-family:Manrope;src:url('/assets/fonts/manrope-regular-latin.woff2') format('woff2');font-weight:400;font-display:swap}
+@font-face{font-family:Manrope;src:url('/assets/fonts/manrope-medium-latin.woff2') format('woff2');font-weight:500;font-display:swap}
+@font-face{font-family:Manrope;src:url('/assets/fonts/manrope-bold-latin.woff2') format('woff2');font-weight:700 900;font-display:swap}
 .site-header,.site-footer{color:#f0f1f5;background:#101217;font-family:Inter,Arial,sans-serif;font-synthesis:none;line-height:1.5;color-scheme:dark}
 .site-header *,.site-footer *{box-sizing:border-box}
 .site-header a,.site-footer a{color:inherit;text-decoration:none}

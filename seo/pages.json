@@ -1,0 +1,62 @@
+[
+  {
+    "file": "index.html", "url": "/", "type": "WebPage",
+    "title": "BlackRaven | Custom Software, App Development & AI",
+    "description": "BlackRaven is an independent software studio creating distinctive web and mobile apps, games, and AI experiences. Product design and development with care.",
+    "image": "studio", "sitemap": true
+  },
+  {
+    "file": "services.html", "url": "/services.html", "type": "WebPage",
+    "title": "Software Development, Product Design & AI | BlackRaven",
+    "description": "From product strategy and UX design to web and mobile development, BlackRaven builds thoughtful software, custom business tools, and practical AI integrations.",
+    "image": "studio", "sitemap": true
+  },
+  {
+    "file": "projects.html", "url": "/projects.html", "type": "CollectionPage",
+    "title": "Our Work: Mobile Apps & Games | BlackRaven",
+    "description": "Explore BlackRaven’s original apps: Squeezy Fish, DoodleLegs, and AVERTED. Mobile games and astronomy tools built with distinctive design and thoughtful engineering.",
+    "image": "studio", "sitemap": true
+  },
+  {
+    "file": "contact.html", "url": "/contact.html", "type": "ContactPage",
+    "title": "Contact BlackRaven | Build Your Next Software Product",
+    "description": "Have an app idea, a product to improve, or an AI workflow to explore? Talk with BlackRaven about software design and development, or get help with one of our apps.",
+    "image": "studio", "sitemap": true
+  },
+  {
+    "file": "apps/index.html", "url": "/apps/", "type": "CollectionPage",
+    "title": "Mobile Apps & Games by BlackRaven",
+    "description": "Meet Squeezy Fish, DoodleLegs, and AVERTED: original mobile games and an astronomy planner in development at BlackRaven. Explore gameplay and product details.",
+    "image": "studio", "sitemap": true
+  },
+  {
+    "file": "apps/squeezy-fish/index.html", "url": "/apps/squeezy-fish/", "type": "WebPage",
+    "title": "Squeezy Fish | One-Touch Ocean Survival Game | BlackRaven",
+    "description": "Hold to puff. Release to dive. Explore Squeezy Fish, BlackRaven’s mobile ocean survival game in development, with gameplay screenshots and launch information.",
+    "image": "squeezy-fish", "sitemap": true
+  },
+  {
+    "file": "apps/doodlegs/index.html", "url": "/apps/doodlegs/", "type": "WebPage",
+    "title": "DoodleLegs | Draw-and-Run Game for iPhone & iPad",
+    "description": "Draw a pair of legs and watch your scribble run. Explore real DoodleLegs gameplay on iPhone and iPad, drawing mechanics, and launch updates from BlackRaven.",
+    "image": "doodlegs", "sitemap": true
+  },
+  {
+    "file": "apps/averted/index.html", "url": "/apps/averted/", "type": "WebPage",
+    "title": "AVERTED | Astronomy & Telescope Observing Planner",
+    "description": "Plan a night of stargazing around your telescope, eyepieces, sky conditions, and deep-sky targets. Explore AVERTED, an astronomy app in development at BlackRaven.",
+    "image": "averted", "sitemap": true
+  },
+  {"file": "privacy-policy.html", "url": "/privacy-policy.html", "type": "WebPage", "sitemap": true},
+  {"file": "terms-of-service.html", "url": "/terms-of-service.html", "type": "WebPage", "sitemap": true},
+  {"file": "cookie-policy.html", "url": "/cookie-policy.html", "type": "WebPage", "sitemap": true},
+  {"file": "legal/doodlegs/privacy.html", "url": "/legal/doodlegs/privacy.html", "type": "WebPage", "title": "DoodleLegs Privacy Policy | BlackRaven", "description": "Read the DoodleLegs privacy policy, including app data, advertising, purchases, and how to contact BlackRaven for privacy questions.", "sitemap": true},
+  {"file": "legal/doodlegs/terms.html", "url": "/legal/doodlegs/terms.html", "type": "WebPage", "title": "DoodleLegs Terms of Use | BlackRaven", "description": "Read the terms for DoodleLegs, including subscriptions, acceptable use, and support from BlackRaven AI LLC.", "sitemap": true},
+  {"file": "legal/doodlegs/support.html", "url": "/legal/doodlegs/support.html", "type": "ContactPage", "title": "DoodleLegs Support & Purchase Help | BlackRaven", "description": "Get help with DoodleLegs: purchases, subscriptions, restoring access, gameplay issues, and feedback. Contact the BlackRaven support team.", "sitemap": true},
+  {"file": "legal/squeezy-fish/privacy.html", "url": "/legal/squeezy-fish/privacy.html", "type": "WebPage", "sitemap": true},
+  {"file": "legal/squeezy-fish/terms.html", "url": "/legal/squeezy-fish/terms.html", "type": "WebPage", "sitemap": true},
+  {"file": "legal/squeezy-fish/support.html", "url": "/legal/squeezy-fish/support.html", "type": "ContactPage", "sitemap": true},
+  {"file": "brand.html", "url": "/brand.html", "type": "WebPage", "robots": "noindex, follow"},
+  {"file": "404.html", "url": "/404.html", "robots": "noindex, follow"},
+  {"file": "apply.html", "url": "/contact.html", "redirect": "/contact.html"}
+]

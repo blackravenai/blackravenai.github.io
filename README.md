@@ -30,6 +30,8 @@ The form validates fields and prepares an email. It does **not** submit to a bac
 
 Run `python3 scripts/check-site.py` to check all connected internal links, image/script/style paths, and fragment targets. Browser validation should cover desktop/mobile layouts, menu and keyboard use, form validation and email preparation, FAQ/project disclosures, and downloads.
 
+Search metadata is maintained in `seo/pages.json`. Run `python3 scripts/sync-seo.py` after metadata edits, followed by `python3 scripts/check-seo.py`. See [the SEO maintenance guide](seo/README.md) for indexing rules, structured data, social previews, font assets, and Search Console submission. Public pages contain their metadata directly in the served HTML.
+
 ## Publishing
 
 GitHub Pages publishes the root of `main` in `blackravenai/blackravenai.github.io` at https://www.blackravenai.com/. Develop and review changes locally in the isolated `codex/blackraven-studio` worktree. After owner approval, integrate the latest `origin/main`, run validation, and push the approved commit to `main`. Confirm the Pages deployment succeeds and check the public site. Preserve `CNAME`, `.nojekyll`, `app-ads.txt`, `/legal/`, and the individual app pages when integrating.
