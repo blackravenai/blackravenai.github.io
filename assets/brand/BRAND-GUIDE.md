@@ -1,31 +1,31 @@
-# Black Raven / Identity 01
+# Black Raven / Identity 02
 
 ## The idea
 Software, with a pulse.
 
 Black Raven is an independent software and AI studio. We design and engineer distinctive apps, games, and digital products that are as good to use as they are to look at.
 
-## Name
-Use **Black Raven** in headlines and brand-facing material. Use **Black Raven AI** when the category needs to be explicit. Use **BlackRaven AI LLC** for the legal entity.
+## Name and contact
+Use **Black Raven** in headlines and brand-facing material, **Black Raven AI** when the category needs to be explicit, and **BlackRaven AI LLC** for the legal entity. All public inquiries and app support use **support@blackravenai.com**.
 
 ## The mark
-An angular raven in flight. A compact silhouette that conveys intelligence, direction, and momentum. Use the supplied outlines; do not redraw or stretch. Minimum recommended symbol width: 24px. Leave half the mark's height as clear space around standalone use. Wordmark artwork is supplied as vector paths and needs no installed fonts.
+The approved angular raven in flight is unchanged. A compact silhouette conveys intelligence, direction, and momentum. Use the supplied outlines; do not redraw or stretch. Minimum recommended symbol width: 24px. Leave half the mark's height as clear space. Logo type is supplied as vector paths, requiring no installed fonts.
 
-Files: mark-ink, mark-ivory, mark-citron; lockup-ink, lockup-ivory, lockup-citron. SVG originals and transparent PNG exports. Favicon and apple-touch-icon included.
+Files: mark-ink, mark-ivory, mark-glacier; lockup-ink, lockup-ivory, lockup-glacier. The ivory filenames retain compatibility and use the current Silver color. SVG originals and transparent PNG exports included.
 
 ## Palette
-- Raven #10120F — RGB 16, 18, 15. Main ground and ink.
-- Ivory #F2F0E8 — RGB 242, 240, 232. Main type and editorial surfaces.
-- Citron #C6F36A — RGB 198, 243, 106. Calls to action and expressive emphasis.
-- Sagewood #A7ABA1 — RGB 167, 171, 161. Supporting text on Raven.
-- Field #D8EDBE — RGB 216, 237, 190. Occasional soft light surface, with Raven text.
+- Raven #101217 — RGB 16, 18, 23. Primary ground and ink.
+- Silver #F0F1F5 — RGB 240, 241, 245. Primary type and editorial surfaces.
+- Glacier #ADC4FF — RGB 173, 196, 255. Restrained blue accent for interaction and emphasis.
+- Slate #A6ADBB — RGB 166, 173, 187. Supporting text on Raven.
+- Cloud #DFE6F3 — RGB 223, 230, 243. Light surfaces with Raven text.
 
-Lead with Raven and Ivory. Use Citron deliberately, not on every surface. Never use Citron or Ivory text on one another. For print, convert these RGB colors using the printer's intended ICC profile and proof the result; no universal CMYK or Pantone equivalence is implied.
+Lead with Raven and Silver. Use Glacier selectively. Avoid light-on-light combinations. For print, convert these RGB values using the printer's ICC profile and proof the result; no universal CMYK or Pantone equivalence is implied.
 
 ## Typography
-Manrope: regular (body), medium (headings), bold (emphasis and wordmark).
-Instrument Serif Italic: selective expressive words and phrases.
-Both are open-source SIL OFL fonts. Included font licenses permit redistribution subject to their terms.
+Manrope throughout. Regular for paragraphs, medium for expressive headlines, bold for emphasis and the wordmark. Upright typography at every scale, with contrast created through weight, size, spacing, and color. No italic serif accents.
+
+Manrope is distributed under the SIL Open Font License; font files and license are included.
 
 ## Voice
 Specific, human, direct. Name the detail; explain the benefit. Show real screens. Let concrete work carry the confidence. Be honest about launch status. No invented customer logos, testimonials, performance claims, or adoption numbers.
@@ -39,6 +39,4 @@ Core lines:
 - Let's make something matter.
 
 ## Imagery and motion
-Actual product screens illustrate the work. Let each app have its own palette inside a restrained studio frame. The titanium wing is brand artwork, not a screenshot or physical product. Motion should be subtle, useful, and optional. Respect reduced-motion preferences.
-
-The wing hero was generated using the built-in image_gen tool. Prompt: Premium studio macro photography of a single sculptural raven wing / folded feather in brushed dark titanium and liquid silver, layered aerodynamic vanes, diagonal lower-left to upper-right arc, subtle #c6f36a reflections, seamless #10120f background, museum-grade detail, no text or surrounding objects.
+Use the approved vector mark as the brand's geometric motif. Actual product screens illustrate the work. Each app keeps its own colors within the restrained studio identity. Services use visual examples from those same products. Motion should be subtle, useful, and optional; respect reduced-motion preferences. The hero is built from the existing vector logo, with gentle motion and fine construction lines.

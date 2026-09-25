@@ -20,11 +20,11 @@ From this folder, run `python3 -m http.server 4177 --bind 127.0.0.1` and open ht
 
 ## Contact behavior
 
-The form validates fields and prepares an email. It does **not** submit to a backend or silently send mail. Visitors review the draft, then send it through their email client; copy and text download are alternatives. Project inquiries go to the established `chris@blackravenai.com`; app support uses `support@blackravenai.com`.
+The form validates fields and prepares an email. It does **not** submit to a backend or silently send mail. Visitors review the draft, then send it through their email client; copy and text download are alternatives. Project inquiries go to the established `support@blackravenai.com`; app support uses `support@blackravenai.com`.
 
 ## Brand assets
 
-`assets/brand/black-raven-brand-kit.zip` includes SVG and transparent PNG marks/lockups, RGB/HEX swatches, font files/licenses, favicon assets, and the usage guide. Logo type is outlined. The optimized hero artwork is `assets/brand/wing.webp`; its generation prompt is recorded in the guide.
+`assets/brand/black-raven-brand-kit.zip` includes SVG and transparent PNG marks/lockups, RGB/HEX swatches, font files/licenses, favicon assets, and the usage guide. Logo type is outlined. The hero uses the approved vector raven mark with subtle motion. The current identity uses cool neutral colors, Glacier blue, and upright Manrope typography.
 
 ## Validation
 
