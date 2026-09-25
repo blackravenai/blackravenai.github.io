@@ -8,9 +8,10 @@
 <meta name="description" content="Privacy Policy for STOPBRAINROT by BlackRaven AI LLC." />
 <style>
   :root{
-    --bg:#050507; --surface:#16161e; --text:#f4f4ef; --dim:#8b8b9a;
-    --accent:#c8ff1e; --accent2:#ffd84d; --border:#262627;
-    --font:'Space Grotesk', system-ui, sans-serif;
+    --bg:#0B0B0F; --surface:#16161E; --text:#F4F4EF; --dim:#8B8B9A;
+    --accent:#C8FF1E; --accent2:#FF4FCB; --border:#2A2A36;
+    --font:'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    --display:'Unbounded', 'Arial Black', -apple-system, sans-serif;
   }
   *{box-sizing:border-box}
   html{ -webkit-text-size-adjust:100% }
@@ -23,15 +24,15 @@
   header.mast{ display:flex; align-items:center; gap:14px; padding-bottom:22px; margin-bottom:26px; border-bottom:1px solid var(--border) }
   .mast img{ width:44px; height:44px; border-radius:22%; flex:0 0 auto; background:var(--surface) }
   .mast .who{ display:flex; flex-direction:column; gap:2px }
-  .mast .app{ font-size:19px; font-weight:700; letter-spacing:.01em }
+  .mast .app{ font-family:var(--display); font-size:19px; font-weight:400; letter-spacing:.03em }
   .mast .by{ font-size:12px; color:var(--dim); letter-spacing:.02em }
   nav.doc{ display:flex; gap:8px; flex-wrap:wrap; margin-bottom:26px; font-size:13px }
   nav.doc a, nav.doc .on{ padding:6px 12px; border-radius:999px; text-decoration:none; border:1px solid var(--border) }
   nav.doc a{ color:var(--dim) }
   nav.doc a:hover{ color:var(--text); border-color:var(--accent) }
-  nav.doc .on{ color:var(--bg); background:var(--accent); border-color:var(--accent); font-weight:600 }
-  h1{ font-size:26px; letter-spacing:.01em; margin:0 0 6px }
-  .updated{ color:var(--dim); font-size:12.5px; margin:0 0 22px }
+  nav.doc .on{ color:#0B0B0F; background:var(--accent); border-color:var(--accent); font-weight:600 }
+  h1{ font-family:var(--display); font-size:26px; font-weight:400; letter-spacing:.01em; margin:0 0 6px }
+  .updated{ color:var(--dim); font-size:12.5px; margin:0 0 22px; font-variant-numeric:tabular-nums }
   .lead{ font-size:16px; color:var(--text); margin:0 0 8px }
   section{ margin:24px 0 }
   h2{ font-size:14px; text-transform:uppercase; letter-spacing:.09em; color:var(--accent); margin:0 0 8px }
@@ -51,16 +52,17 @@
     <nav class="doc"><span class="on">Privacy</span><a href="support.html">Support</a><a href="terms.html">Terms</a></nav>
     <main>
       <h1>Privacy Policy</h1>
-      <p class="updated">Last updated 2026-07-08</p>
-      <p class="lead">STOPBRAINROT is a single-player game/app made by BlackRaven AI LLC. It runs on your device. We designed it to need as little of your information as possible — there are no accounts and no sign-in.</p>
+      <p class="updated">Last updated 2026-09-25</p>
+      <p class="lead">STOPBRAINROT is a habit game that helps you spend less time doomscrolling, made by BlackRaven AI LLC. Your brain is a pet: it heals when you put the phone down and rots when you scroll. It runs entirely on your device. There is no account and no sign-in, and we designed it to need as little of your information as possible.</p>
       <section>
         <h2>The short version</h2>
         <ul>
-          <li>No account, no login, no name or email required to play.</li>
-          <li>Your progress is saved <b>on your device</b>, not on our servers.</li>
-          <li>We don't run our own analytics or tracking.</li>
-          <li>Store versions may show ads (Google AdMob) and offer purchases (via RevenueCat and the app store). Those partners have their own privacy policies, linked below.</li>
-        </ul>
+      <li>No account, no login, no name or email required.</li>
+      <li>Your data is saved <b>on your device</b>, not on our servers.</li>
+      <li>We don't run our own analytics or tracking.</li>
+      <li>STOPBRAINROT has no server of its own and makes no network request for its core features: the Rot Check, lock-in sessions, urge surfing, check-ins, the grove, quests, streaks and every game system run inside the app and work with the network switched off. Reminders you turn on are scheduled locally by your phone. There are only two exceptions. Buying or restoring the optional GIGABRAIN membership is handled by Apple’s own purchase system, and the receipt it returns is checked by our subscription provider (RevenueCat) so the app knows whether the membership is active; that check carries an anonymous store purchase identifier and the receipt, never your answers, check-ins or progress. And if you choose to watch an optional rewarded ad (see below), Google AdMob loads for that ad only.</li>
+      <li>STOPBRAINROT may show ads; advertising partners' policies are linked below.</li>
+    </ul>
       </section>
       <section>
         <h2>Information we do not collect</h2>
@@ -68,12 +70,11 @@
       </section>
       <section>
         <h2>Data stored on your device</h2>
-        <p>Your game/app progress — things like best scores, settings, in-app currency, owned items, and streaks — is stored locally on your device (for example in the app's local storage or the operating system's app storage). This data stays on your device, is not transmitted to us, and can be removed at any time by clearing the app's data or uninstalling the app.</p>
+        <p>Your Rot Check score, your brain’s name, your streaks, neurons, grove, quests, check-in answers, lock-in history, chosen “danger zone” reminder time and app settings are stored locally on your device (in the app’s private storage under the key stopbrainrot-v1). They are included in your phone’s own device backup, if you use one, and are never uploaded or transmitted by the app. Share cards are drawn on your device and handed to your phone’s share sheet only when you tap share; the link on a card carries only the score and brain name the card already shows. If you choose Save Image, the card is saved to your Photos with your permission. Deleting the app, or using “factory-reset brain” in Settings, deletes all of it.</p>
       </section>
       <section>
         <h2>Advertising</h2>
-        <p>App-store versions of STOPBRAINROT may display ads served by <b>Google AdMob</b>. To show ads, AdMob and its partners may access device and usage information — including a mobile advertising identifier — to deliver and measure ads and, where permitted, to personalize them. On iOS, personalized ads are shown only if you allow tracking; otherwise you'll see non-personalized ads. You can reset or limit your advertising identifier in your device settings.</p>
-         <p>See Google's <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">Advertising / Privacy &amp; Terms</a> and how <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">Google uses information from sites/apps that use its services</a>.</p>
+        <p>STOPBRAINROT may display advertising provided by third-party ad networks; see their linked policies for how they handle data.</p>
       </section>
       <section>
         <h2>Purchases</h2>
@@ -85,15 +86,15 @@
       </section>
       <section>
         <h2>Children</h2>
-        <p>STOPBRAINROT is not directed to children under 13 (or the minimum age of digital consent in your country), and we do not knowingly collect personal information from children. Where a store version shows ads to a general audience, they are requested in a manner intended to be appropriate for a general audience. If you believe a child has provided us personal information, contact us and we will address it.</p>
+        <p>STOPBRAINROT is not directed to children under 13 (or the minimum age of digital consent in your country), and we do not knowingly collect personal information from children. If you believe a child has provided us personal information, contact us and we will address it.</p>
       </section>
       <section>
         <h2>Your choices and rights</h2>
-        <p>Because we don't hold a personal profile of you, most control lives on your device: you can clear the app's local data, reset or limit your advertising identifier, and (on iOS) allow or deny tracking. Depending on where you live, you may have rights under laws such as the GDPR or CCPA/CPRA over data our ad and purchase partners process; you can exercise those directly with those partners (linked above) or contact us and we'll help point you to the right place.</p>
+        <p>Because we don't hold a personal profile of you, most control lives on your device: you can clear the app's local data. Depending on where you live, you may have rights under laws such as the GDPR or CCPA/CPRA over data our purchase partners process; you can exercise those directly with those partners (linked above) or contact us and we'll help point you to the right place.</p>
       </section>
       <section>
         <h2>International users</h2>
-        <p>BlackRaven AI LLC operates the app and support from Wyoming, United States. Our advertising and purchase partners may process data in other countries under their own safeguards.</p>
+        <p>BlackRaven AI LLC operates the app and support from Wyoming, United States. Our purchase partners may process data in other countries under their own safeguards.</p>
       </section>
       <section>
         <h2>Changes to this policy</h2>
