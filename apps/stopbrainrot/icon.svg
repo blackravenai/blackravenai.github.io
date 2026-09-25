@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="42%" r="72%">
+      <stop offset="0%" stop-color="#17131f"/>
+      <stop offset="60%" stop-color="#0e0c14"/>
+      <stop offset="100%" stop-color="#0b0b0f"/>
+    </radialGradient>
+    <radialGradient id="halo" cx="50%" cy="46%" r="48%">
+      <stop offset="0%" stop-color="#a78bfa" stop-opacity="0.42"/>
+      <stop offset="55%" stop-color="#7c3aed" stop-opacity="0.16"/>
+      <stop offset="100%" stop-color="#7c3aed" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="brain" cx="38%" cy="30%" r="82%">
+      <stop offset="0%" stop-color="#e9d5ff"/>
+      <stop offset="46%" stop-color="#c4a2f7"/>
+      <stop offset="100%" stop-color="#7c3aed"/>
+    </radialGradient>
+  </defs>
+
+  <!-- full-bleed background -->
+  <rect width="1024" height="1024" fill="url(#bg)"/>
+  <rect width="1024" height="1024" fill="url(#halo)"/>
+
+  <!-- subtle inner border -->
+  <rect x="60" y="60" width="904" height="904" rx="176" fill="none" stroke="#a78bfa" stroke-width="4" opacity="0.12"/>
+
+  <!-- acid-green signature glow ring behind the pet -->
+  <circle cx="512" cy="512" r="322" fill="none" stroke="#c8ff1e" stroke-width="9" opacity="0.22"/>
+  <circle cx="512" cy="512" r="322" fill="none" stroke="#c8ff1e" stroke-width="22" opacity="0.06"/>
+
+  <!-- galaxy-brain pet, centered with safe margin -->
+  <g transform="translate(512 522) scale(3.15) translate(-130 -140)">
+
+    <!-- soft drop shadow -->
+    <g fill="#000" opacity="0.35" transform="translate(0 10)">
+      <ellipse cx="130" cy="150" rx="86" ry="62"/>
+      <circle cx="116" cy="88" r="42"/>
+      <circle cx="166" cy="96" r="38"/>
+    </g>
+
+    <!-- body blob -->
+    <g fill="url(#brain)">
+      <ellipse cx="130" cy="150" rx="86" ry="62"/>
+      <circle cx="76" cy="114" r="36"/>
+      <circle cx="116" cy="88" r="42"/>
+      <circle cx="166" cy="96" r="38"/>
+      <circle cx="198" cy="130" r="30"/>
+      <circle cx="62" cy="150" r="28"/>
+    </g>
+
+    <!-- folds -->
+    <g stroke="rgba(255,255,255,0.42)" stroke-width="5.5" stroke-linecap="round" fill="none">
+      <path d="M130,58 C126,86 135,104 129,124"/>
+      <path d="M70,118 c 14,-12 30,-8 35,6"/>
+      <path d="M90,96 c 16,-9 29,-1 31,12"/>
+      <path d="M156,88 c 15,-6 28,2 29,15"/>
+      <path d="M186,116 c 12,-5 22,2 23,12"/>
+      <path d="M58,148 c 10,-8 22,-5 26,4"/>
+    </g>
+
+    <!-- happy eyes -->
+    <g stroke="#1b1b22" stroke-width="6" stroke-linecap="round" fill="none">
+      <path d="M88,153 q12,-15 24,0"/>
+      <path d="M148,153 q12,-15 24,0"/>
+    </g>
+
+    <!-- blush -->
+    <g fill="#ff4fcb" opacity="0.34">
+      <ellipse cx="82" cy="172" rx="10" ry="6"/>
+      <ellipse cx="178" cy="172" rx="10" ry="6"/>
+    </g>
+
+    <!-- smile -->
+    <g stroke="#1b1b22" stroke-width="6" stroke-linecap="round" fill="none">
+      <path d="M116,182 q14,16 28,0"/>
+    </g>
+  </g>
+
+  <!-- galaxy sparkles (signature accent) -->
+  <g fill="#ffffff">
+    <path d="M300,300 l7,-24 l7,24 l24,7 l-24,7 l-7,24 l-7,-24 l-24,-7 Z" opacity="0.95"/>
+    <path d="M742,262 l5,-17 l5,17 l17,5 l-17,5 l-5,17 l-5,-17 l-17,-5 Z" opacity="0.85"/>
+  </g>
+  <g fill="#c8ff1e">
+    <path d="M766,540 l5,-16 l5,16 l16,5 l-16,5 l-5,16 l-5,-16 l-16,-5 Z" opacity="0.9"/>
+  </g>
+  <g fill="#ffd84d">
+    <path d="M262,566 l4,-13 l4,13 l13,4 l-13,4 l-4,13 l-4,-13 l-13,-4 Z" opacity="0.85"/>
+  </g>
+  <circle cx="360" cy="238" r="4" fill="#ff4fcb" opacity="0.8"/>
+  <circle cx="686" cy="720" r="4.5" fill="#a78bfa" opacity="0.8"/>
+  <circle cx="330" cy="690" r="3.5" fill="#c8ff1e" opacity="0.75"/>
+</svg>
