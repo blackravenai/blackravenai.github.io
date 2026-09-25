@@ -25,5 +25,14 @@
     "description": "Plan deep-sky observing around your telescope, eyepieces and observing conditions. Explore targets, arrange your night and keep an observation log.",
     "features": ["Targets ranked for your equipment and sky", "An observing plan from dusk to dawn", "A log of the objects you have observed"],
     "accent": "#c3b7ff"
+  },
+  {
+    "slug": "stopbrainrot",
+    "name": "STOPBRAINROT",
+    "kind": "Mobile habit game",
+    "tagline": "Your brain is a pet. Stop scrolling and it heals.",
+    "description": "Take the 60-second Rot Check, then grow your brain back: lock-ins, urge surfing, a grove that grows while you're offline, and real-life side quests.",
+    "features": ["60-second Rot Check with shareable results", "Lock-ins that pay out when your phone is down", "Research-backed tools like urge surfing and check-ins"],
+    "accent": "#c8ff1e"
   }
 ]
