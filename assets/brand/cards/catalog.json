@@ -1,0 +1,110 @@
+[
+  {
+    "number": 1,
+    "name": "quiet-confidence",
+    "title": "Quiet confidence",
+    "family": "original",
+    "description": "A silver raven on deep black. Nothing competes for attention.",
+    "width": 1125,
+    "height": 675
+  },
+  {
+    "number": 2,
+    "name": "glacier-signal",
+    "title": "Glacier signal",
+    "family": "original",
+    "description": "The promise leads. The raven follows in a trail of precise blue lines.",
+    "width": 1125,
+    "height": 675
+  },
+  {
+    "number": 3,
+    "name": "editorial-white",
+    "title": "Editorial white",
+    "family": "original",
+    "description": "Bold typography, generous space, and uncompromising contrast.",
+    "width": 1125,
+    "height": 675
+  },
+  {
+    "number": 4,
+    "name": "nocturne",
+    "title": "Nocturne",
+    "family": "minimal",
+    "description": "A silver raven. Exactly centered. Everything else can wait until you turn it over.",
+    "width": 1125,
+    "height": 675
+  },
+  {
+    "number": 5,
+    "name": "white-space",
+    "title": "White space",
+    "family": "minimal",
+    "description": "The inverse, pared right back: one black raven on an uninterrupted white field.",
+    "width": 1125,
+    "height": 675
+  },
+  {
+    "number": 6,
+    "name": "blue-hour",
+    "title": "Blue hour",
+    "family": "minimal",
+    "description": "Glacier blue, a centered raven, and a small signature. Calm with a little electricity.",
+    "width": 1125,
+    "height": 675
+  },
+  {
+    "number": 7,
+    "name": "edge-of-flight",
+    "title": "Edge of flight",
+    "family": "expressive",
+    "description": "The raven becomes the landscape. An oversized crop brings a bold sense of scale.",
+    "width": 1125,
+    "height": 675
+  },
+  {
+    "number": 8,
+    "name": "coordinates",
+    "title": "By design",
+    "family": "expressive",
+    "description": "Fine construction lines and a precise central mark. A nod to the engineering behind the experience.",
+    "width": 1125,
+    "height": 675
+  },
+  {
+    "number": 9,
+    "name": "signal-stripe",
+    "title": "Signal stripe",
+    "family": "expressive",
+    "description": "A strong vertical band anchors the raven. The connected wordmark gets room to lead.",
+    "width": 1125,
+    "height": 675
+  },
+  {
+    "number": 10,
+    "name": "the-promise",
+    "title": "The promise",
+    "family": "expressive",
+    "description": "Our whole point of view, set large. The kind of card that starts the conversation.",
+    "width": 1125,
+    "height": 675
+  },
+  {
+    "number": 11,
+    "name": "flight-rhythm",
+    "title": "Flight rhythm",
+    "family": "expressive",
+    "description": "A field of quiet ravens, interrupted by one clear signal. Pattern with a point of focus.",
+    "width": 1125,
+    "height": 675
+  },
+  {
+    "number": 12,
+    "name": "vertical-signature",
+    "title": "Vertical signature",
+    "family": "expressive",
+    "description": "A different orientation. A centered raven above a deliberate two-line name, like the cover of a small book.",
+    "width": 675,
+    "height": 1125
+  }
+]

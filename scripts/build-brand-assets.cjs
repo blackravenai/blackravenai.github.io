@@ -33,39 +33,51 @@ async function save(name,scene,w,h,label,pngWidth=1600){
  const stem=path.join(out,name);fs.mkdirSync(path.dirname(stem),{recursive:true});const source=svg(scene,w,h,label);fs.writeFileSync(stem+'.svg',source);await sharp(Buffer.from(source)).resize({width:pngWidth}).png().toFile(stem+'.png');files.push(name+'.svg',name+'.png');return source;
 }
 function lockup(kind,color){
- if(kind==='signature')return [mark(74,162,2.8,color),txt('BLACK RAVEN',310,277,71,color,-.7),txt('MAKE SOMETHING MATTER.',315,327,18,color,3,'medium')];
- if(kind==='wide')return [mark(66,208,1.8,color),txt('BLACK RAVEN',225,278,47,color,5.2),txt('MAKE SOMETHING MATTER.',228,322,13,color,4,'medium')];
- if(kind==='stacked')return [mark(398,66,3,color),centered('BLACK RAVEN',500,380,61,color,1),centered('MAKE SOMETHING MATTER.',500,433,16,color,3,'medium')];
+ if(kind==='signature')return [mark(74,162,2.8,color),txt('BLACKRAVEN',310,277,71,color,-.7),txt('MAKE SOMETHING MATTER.',315,327,18,color,3,'medium')];
+ if(kind==='wide')return [mark(66,208,1.8,color),txt('BLACKRAVEN',225,278,47,color,5.2),txt('MAKE SOMETHING MATTER.',228,322,13,color,4,'medium')];
+ if(kind==='stacked')return [mark(398,66,3,color),centered('BLACKRAVEN',500,380,61,color,1),centered('MAKE SOMETHING MATTER.',500,433,16,color,3,'medium')];
  if(kind==='editorial')return [mark(82,134,4.3,color),txt('BLACK',437,262,99,color,2),txt('RAVEN',437,371,99,color,2)];
- if(kind==='ai')return [mark(81,158,3,color),txt('BLACK RAVEN',324,262,62,color,.6),txt('AI',326,326,40,color,4),line(411,302,411,329,color,1),txt('INDEPENDENT SOFTWARE STUDIO',434,319,13,color,2,'medium')];
- return [circle(500,280,208,undefined,color,2),circle(500,280,195,undefined,color,.7),centered('B L A C K   R A V E N',500,159,23,color),mark(405,170,2.8,color),centered('MAKE SOMETHING',500,398,15,color,2,'medium'),centered('MATTER.',500,426,15,color,2,'medium'),line(476,451,524,451,color,1)];
+ if(kind==='ai')return [mark(81,158,3,color),txt('BLACKRAVEN',324,262,62,color,.6),txt('AI',326,326,40,color,4),line(411,302,411,329,color,1),txt('INDEPENDENT SOFTWARE STUDIO',434,319,13,color,2,'medium')];
+ return [circle(500,280,208,undefined,color,2),circle(500,280,195,undefined,color,.7),centered('BLACKRAVEN',500,159,23,color,3),mark(405,170,2.8,color),centered('MAKE SOMETHING',500,398,15,color,2,'medium'),centered('MATTER.',500,426,15,color,2,'medium'),line(476,451,524,451,color,1)];
 }
-function contactBack(bg,fg,accent){return [rect(0,0,1125,675,bg),txt('Christopher Shaw',100,174,49,fg,-.6),txt('FOUNDER / BLACK RAVEN',102,223,26,accent,2,'medium'),line(100,301,1025,301,accent,1),txt('Thoughtful software.',100,375,34,fg,0,'medium'),txt('Extraordinary experiences.',100,422,34,fg,0,'medium'),txt('support@blackravenai.com',100,524,34,fg,0,'regular'),txt('blackravenai.com',100,575,34,fg,0,'regular'),mark(889,442,2,fg)];}
+function contactBack(bg,fg,accent){return [rect(0,0,1125,675,bg),txt('Christopher Shaw',100,174,49,fg,-.6),txt('FOUNDER / BLACKRAVEN',102,223,26,accent,2,'medium'),line(100,301,1025,301,accent,1),txt('Thoughtful software.',100,375,34,fg,0,'medium'),txt('Extraordinary experiences.',100,422,34,fg,0,'medium'),txt('support@blackravenai.com',100,524,34,fg,0,'regular'),txt('blackravenai.com',100,575,34,fg,0,'regular'),mark(889,442,2,fg)];}
 async function main(){
- for(const kind of ['signature','wide','stacked','editorial','ai','seal'])for(const [tone,color] of Object.entries(C))await save(`lockups/${kind}-${tone}`,lockup(kind,color),1000,560,`Black Raven ${kind} lockup in ${tone}`,1800);
- for(const tone of ['black','white'])await save(`mono/mark-${tone}`,[mark(0,0,1,C[tone])],68,64,`Black Raven pure ${tone} symbol`,1024);
+ // Primary lockups share the same unbroken name as the expanded collection.
+ for(const [tone,color] of [['ink',C.ink],['ivory',C.silver],['glacier',C.glacier]]){
+  await save(`lockup-${tone}`,[mark(12,30,1.2,color),txt('BLACKRAVEN',105,91,49,color)],485,145,`BlackRaven ${tone} primary logo`,1940);
+ }
+ const palette=[['Raven',C.ink,'16, 18, 23'],['Silver',C.silver,'240, 241, 245'],['Glacier',C.glacier,'173, 196, 255'],['Slate','#A6ADBB','166, 173, 187'],['Cloud','#DFE6F3','223, 230, 243']];
+ const swatches=[rect(0,0,1400,720,C.ink),txt('BLACKRAVEN',55,82,38,C.silver),txt('COLOR PALETTE / 04',55,125,15,'#A6ADBB')];
+ palette.forEach(([name,color,rgb],i)=>{const x=55+i*263;swatches.push({...rect(x,175,239,300,color),stroke:'#454c5a',width:1},txt(name,x,530,26,C.silver),txt(color,x,569,19,'#A6ADBB'),txt('RGB '+rgb,x,600,15,'#A6ADBB'));});
+ swatches.push(txt('Make something matter.',55,678,22,C.glacier));
+ await save('color-palette',swatches,1400,720,'BlackRaven color palette',1400);
+ for(const kind of ['signature','wide','stacked','editorial','ai','seal'])for(const [tone,color] of Object.entries(C))await save(`lockups/${kind}-${tone}`,lockup(kind,color),1000,560,`BlackRaven ${kind} lockup in ${tone}`,1800);
+ for(const tone of ['black','white'])await save(`mono/mark-${tone}`,[mark(0,0,1,C[tone])],68,64,`BlackRaven pure ${tone} symbol`,1024);
  for(const [tone,bg,fg] of [['light',C.white,C.black],['dark',C.black,C.white]]){
-  await save(`mono/tile-${tone}`,[rect(0,0,640,640,bg),mark(103,112,6.4,fg)],640,640,`Black Raven ${tone} square`,1200);
-  await save(`applications/sticker-${tone}`,[circle(320,320,298,bg,fg,3),mark(103,112,6.4,fg)],640,640,`Black Raven ${tone} circular sticker`,1200);
-  await save(`watermarks/symbol-${tone}`,[{...mark(40,35,6.4,fg),opacity:.24}],512,480,`Black Raven transparent ${tone} symbol watermark`,1600);
-  await save(`watermarks/signature-${tone}`,[{...mark(15,18,2.9,fg),opacity:.28},{...txt('BLACK RAVEN',245,140,65,fg,2),opacity:.28}],1000,240,`Black Raven transparent ${tone} signature watermark`,2000);
+  await save(`mono/tile-${tone}`,[rect(0,0,640,640,bg),mark(103,112,6.4,fg)],640,640,`BlackRaven ${tone} square`,1200);
+  await save(`applications/sticker-${tone}`,[circle(320,320,298,bg,fg,3),mark(103,112,6.4,fg)],640,640,`BlackRaven ${tone} circular sticker`,1200);
+  await save(`watermarks/symbol-${tone}`,[{...mark(40,35,6.4,fg),opacity:.24}],512,480,`BlackRaven transparent ${tone} symbol watermark`,1600);
+  await save(`watermarks/signature-${tone}`,[{...mark(15,18,2.9,fg),opacity:.28},{...txt('BLACKRAVEN',245,140,65,fg,2),opacity:.28}],1000,240,`BlackRaven transparent ${tone} signature watermark`,2000);
  }
  const pattern=[];for(let y=0;y<2;y++)for(let x=0;x<2;x++){pattern.push(mark(58+x*320,50+y*320,2.8,C.silver));pattern.push(line(276+x*320,260+y*320,292+x*320,260+y*320,C.glacier,1));pattern.push(line(284+x*320,252+y*320,284+x*320,268+y*320,C.glacier,1));}
- await save('applications/flight-pattern',[rect(0,0,640,640,C.ink),...pattern.map(s=>({...s,opacity:.17}))],640,640,'Black Raven repeating flight pattern',1280);
- const cover=[rect(0,0,1920,1080,C.ink),txt('BLACK RAVEN',100,119,29,C.silver,3),txt('INDEPENDENT SOFTWARE & AI',100,177,16,C.glacier,3,'medium'),txt('Make',94,440,157,C.silver,-5),txt('something',94,625,157,C.silver,-5),txt('matter.',94,810,157,C.glacier,-5),mark(1140,200,9.2,C.glacier),line(100,930,1820,930,'#455069',1),txt('DESIGN WITH CARE. BUILD WITH INTENT.',100,987,17,C.silver,3,'medium'),txt('blackravenai.com',1510,987,22,C.silver,0,'regular')];
- await save('applications/social-cover',cover,1920,1080,'Black Raven Make something matter social cover',2400);
+ await save('applications/flight-pattern',[rect(0,0,640,640,C.ink),...pattern.map(s=>({...s,opacity:.17}))],640,640,'BlackRaven repeating flight pattern',1280);
+ const cover=[rect(0,0,1920,1080,C.ink),txt('BLACKRAVEN',100,119,29,C.silver,3),txt('INDEPENDENT SOFTWARE & AI',100,177,16,C.glacier,3,'medium'),txt('Make',94,440,157,C.silver,-5),txt('something',94,625,157,C.silver,-5),txt('matter.',94,810,157,C.glacier,-5),mark(1140,200,9.2,C.glacier),line(100,930,1820,930,'#455069',1),txt('DESIGN WITH CARE. BUILD WITH INTENT.',100,987,17,C.silver,3,'medium'),txt('blackravenai.com',1510,987,22,C.silver,0,'regular')];
+ await save('applications/social-cover',cover,1920,1080,'BlackRaven Make something matter social cover',2400);
  const cards=[
-  {name:'quiet-confidence',title:'Quiet confidence',front:[rect(0,0,1125,675,C.ink),mark(411,111,4.5,C.silver),txt('BLACK RAVEN',100,536,38,C.silver,2),txt('MAKE SOMETHING MATTER.',101,579,25,C.glacier,2,'medium'),txt('01',969,575,25,C.glacier,1,'medium')],back:contactBack(C.silver,C.ink,'#536482')},
-  {name:'glacier-signal',title:'Glacier signal',front:[rect(0,0,1125,675,C.glacier),mark(687,56,5.4,undefined,'#6d89be',1),mark(641,102,5.4,undefined,'#6d89be',1),mark(595,148,5.4,undefined,'#6d89be',1),txt('MAKE',93,238,87,C.ink,-2),txt('SOMETHING',93,344,87,C.ink,-2),txt('MATTER.',93,450,87,C.ink,-2),line(100,523,1025,523,C.ink,1),txt('BLACK RAVEN',100,581,30,C.ink,3),mark(941,531,1.1,C.ink)],back:contactBack(C.ink,C.silver,C.glacier)},
-  {name:'editorial-white',title:'Editorial white',front:[rect(0,0,1125,675,C.white),txt('BLACK',89,247,123,C.black,9),txt('RAVEN',89,397,123,C.black,9),mark(824,93,2.5,C.black),line(100,486,1025,486,C.black,2),txt('MAKE SOMETHING MATTER.',101,562,25,C.black,3,'medium'),txt('BR / AI',844,562,25,C.black,2,'medium')],back:[rect(0,0,1125,675,C.black),mark(82,83,1.8,C.white),txt('Christopher Shaw',101,325,50,C.white,-.5),txt('FOUNDER',103,370,26,C.white,3,'medium'),line(100,425,1025,425,C.white,1),txt('support@blackravenai.com',100,509,34,C.white,0,'regular'),txt('blackravenai.com',100,559,34,C.white,0,'regular'),txt('SOFTWARE WITH CARE.',716,574,23,C.white,1,'medium')]}
+  {name:'quiet-confidence',title:'Quiet confidence',description:'A silver raven on deep black. Nothing competes for attention.',front:[rect(0,0,1125,675,C.ink),mark(411,111,4.5,C.silver),txt('BLACKRAVEN',100,536,38,C.silver,2),txt('MAKE SOMETHING MATTER.',101,579,25,C.glacier,2,'medium'),txt('01',969,575,25,C.glacier,1,'medium')],back:contactBack(C.silver,C.ink,'#536482')},
+  {name:'glacier-signal',title:'Glacier signal',description:'The promise leads. The raven follows in a trail of precise blue lines.',front:[rect(0,0,1125,675,C.glacier),mark(687,56,5.4,undefined,'#6d89be',1),mark(641,102,5.4,undefined,'#6d89be',1),mark(595,148,5.4,undefined,'#6d89be',1),txt('MAKE',93,238,87,C.ink,-2),txt('SOMETHING',93,344,87,C.ink,-2),txt('MATTER.',93,450,87,C.ink,-2),line(100,523,1025,523,C.ink,1),txt('BLACKRAVEN',100,581,30,C.ink,3),mark(941,531,1.1,C.ink)],back:contactBack(C.ink,C.silver,C.glacier)},
+  {name:'editorial-white',title:'Editorial white',description:'Bold typography, generous space, and uncompromising contrast.',front:[rect(0,0,1125,675,C.white),txt('BLACK',89,247,123,C.black,9),txt('RAVEN',89,397,123,C.black,9),mark(824,93,2.5,C.black),line(100,486,1025,486,C.black,2),txt('MAKE SOMETHING MATTER.',101,562,25,C.black,3,'medium'),txt('BR / AI',844,562,25,C.black,2,'medium')],back:[rect(0,0,1125,675,C.black),mark(82,83,1.8,C.white),txt('Christopher Shaw',101,325,50,C.white,-.5),txt('FOUNDER',103,370,26,C.white,3,'medium'),line(100,425,1025,425,C.white,1),txt('support@blackravenai.com',100,509,34,C.white,0,'regular'),txt('blackravenai.com',100,559,34,C.white,0,'regular'),txt('SOFTWARE WITH CARE.',716,574,23,C.white,1,'medium')]}
  ];
+ cards.push(...require('./card-designs.cjs')({C,rect,line,circle,mark,txt,centered}));
  for(const card of cards)for(const side of ['front','back']){
-  const source=await save(`cards/${card.name}-${side}`,card[side],1125,675,`${card.title} business card ${side}`,1125);
-  const cropped=source.replace('width="1125" height="675" viewBox="0 0 1125 675"','width="1050" height="600" viewBox="37.5 37.5 1050 600"');
+  const source=await save(`cards/${card.name}-${side}`,card[side],card.width||1125,card.height||675,`${card.title} business card ${side}`,card.width||1125);
+  const w=card.width||1125,h=card.height||675;
+  const cropped=source.replace(`width="${w}" height="${h}" viewBox="0 0 ${w} ${h}"`,`width="${w-75}" height="${h-75}" viewBox="37.5 37.5 ${w-75} ${h-75}"`);
   await sharp(Buffer.from(cropped)).png().toFile(path.join(out,`cards/${card.name}-${side}-preview.png`));
  }
  fs.writeFileSync(process.env.BRAND_CARD_SCENES||'/private/tmp/blackraven-card-scenes.json',JSON.stringify(cards));
- fs.writeFileSync(path.join(out,'collection.json'),JSON.stringify({edition:3,tagline:'Make something matter.',lockups:['signature','wide','stacked','editorial','ai','seal'],colors:C,files},null,2));
- console.log(`Created ${files.length} SVG/PNG collection assets and 6 trimmed card previews.`);
+ fs.writeFileSync(path.join(out,'collection.json'),JSON.stringify({edition:4,tagline:'Make something matter.',lockups:['signature','wide','stacked','editorial','ai','seal'],colors:C,files},null,2));
+ fs.writeFileSync(path.join(out,'cards/catalog.json'),JSON.stringify(cards.map((card,i)=>({number:i+1,name:card.name,title:card.title,family:card.family||'original',description:card.description||'',width:card.width||1125,height:card.height||675})),null,2));
+ console.log(`Created ${files.length} SVG/PNG collection assets and ${cards.length*2} trimmed card previews.`);
 }
 main().catch(e=>{console.error(e);process.exitCode=1});

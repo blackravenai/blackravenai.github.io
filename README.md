@@ -1,4 +1,4 @@
-# Black Raven studio
+# BlackRaven studio
 
 A complete static website for **www.blackravenai.com**, designed for the existing GitHub Pages publishing setup. No build step or server-side runtime is required.
 
@@ -24,7 +24,7 @@ The form validates fields and prepares an email. It does **not** submit to a bac
 
 ## Brand assets
 
-`assets/brand/black-raven-brand-kit.zip` includes SVG and transparent PNG marks/lockups, RGB/HEX swatches, font files/licenses, favicon assets, and the usage guide. Logo type is outlined. The expanded kit also includes six logo arrangements in five colors, pure monochrome symbols, watermarks, three two-sided business card concepts, sticker artwork, avatars, a pattern, and a social cover. The business card PDF is under `output/pdf/`. `scripts/build-brand-assets.cjs` generates the collection with sharp and opentype.js (or an OpenType-compatible module via BRAND_FONT_ENGINE); `scripts/build-business-cards.py` uses ReportLab and pypdf to generate outlined vector print artwork. These are design-time tools only. The hero uses the approved vector raven mark with dimensional motion. The current identity uses cool neutral colors, Glacier blue, and upright Manrope typography.
+`assets/brand/black-raven-brand-kit.zip` includes SVG and transparent PNG marks/lockups, RGB/HEX swatches, font files/licenses, favicon assets, and the usage guide. Logo type is outlined. The expanded kit also includes six logo arrangements in five colors, pure monochrome symbols, watermarks, twelve two-sided business card concepts (including centered minimalist and portrait options), sticker artwork, avatars, a pattern, and a social cover. The business card PDF is under `output/pdf/`. `scripts/build-brand-assets.cjs` generates the collection with sharp and opentype.js (or an OpenType-compatible module via BRAND_FONT_ENGINE); `scripts/build-business-cards.py` uses ReportLab and pypdf to generate outlined vector print artwork. Run `python3 scripts/render-card-gallery.py` after generating assets to update the static gallery from its catalog, then `python3 scripts/package-brand.py` to refresh the downloadable kit. These are design-time tools only. The hero uses the approved vector raven mark with dimensional motion. The current identity uses cool neutral colors, Glacier blue, and upright Manrope typography.
 
 ## Validation
 

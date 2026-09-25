@@ -1,4 +1,4 @@
-# Local review / Black Raven studio
+# Local review / BlackRaven studio
 
 Status: complete local preview; not published.
 
@@ -63,3 +63,16 @@ Local only; no publication.
 - Shared desktop headers checked on product pages. Mobile menu opens/closes and Escape returns focus. Narrow phone layouts and flip interaction inspected. All three app pages, both support pages, and the brand studio verified at 320px with no horizontal overflow or broken loaded images. Watermark surface switching updates SVG/PNG targets, and exported PNG alpha values match the stated 24%/28% opacity. DoodleLegs retains its direct app policy/EULA links and release notice above the common footer.
 
 Local preview only; nothing published.
+
+
+## Business cards / Identity 04
+
+- Nine new concepts added, for twelve total. The new set includes two centered raven-only fronts, a tonal Glacier card, an oversized crop, construction details, a vertical stripe, a large slogan, a repeating motif, and a portrait format.
+- Each concept has its own front/back artwork, downloadable SVG and PNG exports, and a flip preview. The static gallery leads with the nine new concepts, and filters compare Minimal, Expressive, and Original three. All twelve remain available without JavaScript.
+- Brand spelling is BlackRaven in running text or BLACKRAVEN in uppercase horizontal treatments. Deliberately stacked BLACK / RAVEN remains part of the visual vocabulary. Public titles, shared header/footer partials, contact draft copy, outlined logos, watermarks, cover artwork, palette, guide, and kit agree.
+- Updated kit: 181 files, approximately 3.56 MB, archive integrity verified. The collection manifest contains 140 SVG/PNG assets; all resolve.
+- Print PDF: 24 vector-only pages, eleven landscape front/back pairs and one portrait pair. Every page has verified trim/bleed dimensions; all pages rendered and visually inspected.
+- Desktop 1440px and phone 390px/320px layouts checked. Gallery filtering, card flipping, intact portrait proportions, and connected header name verified. No horizontal overflow or broken loaded images observed. The card heading now has appropriate contrast on its light background.
+- All 19 connected routes/assets/fragments, unique HTML IDs, JavaScript syntax, and source whitespace checks pass.
+
+Local preview only; no publication.

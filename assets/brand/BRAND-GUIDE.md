@@ -1,14 +1,14 @@
-# Black Raven / Identity 03
+# BlackRaven / Identity 04
 
 ## The idea
 Make something matter.
 
-Our official brand line. A call to make useful things, give every interaction care, and create an experience worth someone’s time. Use it beneath the Black Raven wordmark and as the closing invitation. “Software, with a pulse.” remains supporting product copy.
+Our official brand line. A call to make useful things, give every interaction care, and create an experience worth someone’s time. Use it beneath the BlackRaven wordmark and as the closing invitation. “Software, with a pulse.” remains supporting product copy.
 
-Black Raven is an independent software and AI studio. We design and engineer distinctive apps, games, and digital products that are as good to use as they are to look at.
+BlackRaven is an independent software and AI studio. We design and engineer distinctive apps, games, and digital products that are as good to use as they are to look at.
 
 ## Name and contact
-Use **Black Raven** in headlines and brand-facing material, **Black Raven AI** when the category needs to be explicit, and **BlackRaven AI LLC** for the legal entity. All public inquiries and app support use **support@blackravenai.com**.
+The name is one word: **BlackRaven** in running text, or **BLACKRAVEN** in all-capital treatments. Use **BlackRaven AI** when the category needs to be explicit, and **BlackRaven AI LLC** for the legal entity. Keep the name connected in horizontal wordmarks. A deliberate two-line BLACK / RAVEN arrangement is allowed. All public inquiries and app support use **support@blackravenai.com**.
 
 ## The mark
 The approved angular raven in flight is unchanged. A compact silhouette conveys intelligence, direction, and momentum. Use the supplied outlines; do not redraw or stretch. Minimum recommended symbol width: 24px. Leave half the mark's height as clear space. Logo type is supplied as vector paths, requiring no installed fonts.
@@ -50,11 +50,28 @@ The original marks and horizontal lockups remain the primary identity. The colle
 - `lockups/`: six arrangements, five colors, SVG and transparent PNG. The ink arrangement belongs on a light surface; silver/white/glacier belong on dark surfaces.
 - `mono/`: pure #000000 and #FFFFFF symbols, plus square profile avatars in both directions.
 - `watermarks/`: symbol at 24% opacity and name-plus-symbol at 28%. The suffix names the destination surface: `dark` contains white artwork; `light` contains black artwork. PNGs retain alpha transparency.
-- `cards/`: Quiet confidence, Glacier signal, and Editorial white; front/back SVG and PNG source artwork plus trimmed PNG previews.
+- `cards/`: twelve concepts, each with front/back SVG and PNG source artwork plus trimmed PNG previews. The catalog records concept numbers, names, families, and dimensions.
 - `applications/`: circular sticker artwork, a seamless flight pattern, and a 16:9 social/presentation cover. Keep background patterns separate from the primary logo.
 
 ### Business card production
-The PDF contains three consecutive front/back pairs, in the order above. Finished trim is 3.5 × 2 inches, with 0.125-inch bleed on all sides. PDF MediaBox/BleedBox: 3.75 × 2.25 inches; TrimBox: 3.5 × 2 inches. The PDF contains vector paths, including outlined lettering. Source SVGs have a 1125 × 675 viewBox representing the full bleed area; trimmed previews use the central 1050 × 600 area. Print at actual size.
+The 24-page PDF contains twelve consecutive front/back pairs:
+
+1. Quiet confidence — a restrained raven and wordmark.
+2. Glacier signal — the promise with fine outline echoes.
+3. Editorial white — deliberately stacked BLACK / RAVEN.
+4. Nocturne — only a centered silver raven on dark.
+5. White space — only a centered black raven on white.
+6. Blue hour — a centered raven on Glacier, with a quiet name.
+7. Edge of flight — an oversized cropped symbol.
+8. By design — precise rules and construction details.
+9. Signal stripe — a Glacier band and horizontal name.
+10. The promise — the slogan leads in large type.
+11. Flight rhythm — a repeated motif with one accent.
+12. Vertical signature — portrait format, centered symbol, stacked name.
+
+Concepts 1–11 finish at 3.5 × 2 inches; concept 12 finishes at 2 × 3.5 inches. All have 0.125-inch bleed on every edge. Landscape MediaBox/BleedBox: 3.75 × 2.25 inches; portrait: 2.25 × 3.75 inches. Each TrimBox is inset 0.125 inches. The PDF contains vector paths, including outlined lettering. Landscape SVGs have a 1125 × 675 viewBox; portrait SVGs use 675 × 1125. The trimmed preview removes 37.5 units on each side. Print at actual size.
+
+The web gallery leads with new concepts 4–12, followed by the original three. Use Minimal, Expressive, or Original three to compare directions. Click a card to reveal its reverse.
 
 Artwork is RGB, not a printer-specific CMYK separation. Have the printer apply its preferred production profile and proof the result. The layouts make no assumption about foil, embossing, spot colors, or a particular paper stock. Contact details use Christopher Shaw / Founder, support@blackravenai.com, and blackravenai.com.
 

@@ -1,11 +1,25 @@
 const logoGrid=document.querySelector('.collection-grid');
+const cardToolbar=document.querySelector('.card-toolbar');
+if(cardToolbar){
+ cardToolbar.hidden=false;
+ cardToolbar.querySelectorAll('[data-card-filter]').forEach(button=>button.addEventListener('click',()=>{
+  const family=button.dataset.cardFilter;
+  let visible=0;
+  document.querySelectorAll('.business-card').forEach(card=>{
+   card.hidden=family!=='all'&&card.dataset.cardFamily!==family;
+   if(!card.hidden)visible++;
+  });
+  cardToolbar.querySelectorAll('[data-card-filter]').forEach(item=>item.setAttribute('aria-pressed',String(item===button)));
+  cardToolbar.querySelector('.card-filter-status').textContent=`${visible} concepts · ${visible*2} considered sides`;
+ }));
+}
 document.querySelectorAll('[data-logo-theme]').forEach(button=>button.addEventListener('click',()=>{
  const tone=button.dataset.logoTheme;
  logoGrid.dataset.collectionTheme=tone;
  document.querySelectorAll('[data-logo-theme]').forEach(item=>item.setAttribute('aria-pressed',String(item===button)));
  logoGrid.querySelectorAll('[data-lockup]').forEach(card=>{
   const stem=`/assets/brand/lockups/${card.dataset.lockup}-${tone}`;
-  const image=card.querySelector('img');image.src=stem+'.svg';image.alt=`Black Raven ${card.dataset.lockup} logo arrangement in ${tone}`;
+  const image=card.querySelector('img');image.src=stem+'.svg';image.alt=`BlackRaven ${card.dataset.lockup} logo arrangement in ${tone}`;
   card.querySelectorAll('[data-format]').forEach(link=>link.href=stem+'.'+link.dataset.format);
  });
  document.querySelector('.collection-status').textContent=`Showing ${button.textContent}. Downloads follow your selected treatment.`;

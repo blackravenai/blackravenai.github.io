@@ -13,8 +13,8 @@ out=root/'output/pdf/black-raven-business-cards.pdf'
 out.parent.mkdir(parents=True,exist_ok=True)
 tmp=Path('/private/tmp/black-raven-business-cards-raw.pdf')
 c=canvas.Canvas(str(tmp),pagesize=(270,162))
-c.setTitle('Black Raven - Business card collection')
-c.setAuthor('Black Raven')
+c.setTitle('BlackRaven - Business card collection')
+c.setAuthor('BlackRaven')
 def draw(item):
  c.saveState()
  if item.get('fill'):c.setFillColor(HexColor(item['fill']))
@@ -38,16 +38,19 @@ def draw(item):
  c.restoreState()
 for card in scenes:
  for side in ('front','back'):
-  c.saveState();c.translate(0,162);c.scale(.24,-.24)
+  width=card.get('width',1125)*.24; height=card.get('height',675)*.24
+  c.setPageSize((width,height))
+  c.saveState();c.translate(0,height);c.scale(.24,-.24)
   for item in card[side]:draw(item)
   c.restoreState();c.showPage()
 c.save()
 r=PdfReader(tmp);w=PdfWriter()
 for page in r.pages:
- page.trimbox=RectangleObject([9,9,261,153])
- page.bleedbox=RectangleObject([0,0,270,162])
+ width=float(page.mediabox.width);height=float(page.mediabox.height)
+ page.trimbox=RectangleObject([9,9,width-9,height-9])
+ page.bleedbox=RectangleObject([0,0,width,height])
  w.add_page(page)
-w.add_metadata({'/Title':'Black Raven - Three business card concepts','/Author':'Black Raven','/Subject':'Front/back pairs. 3.5 x 2 inch trim, 0.125 inch bleed. RGB vector artwork.'})
+w.add_metadata({'/Title':f'BlackRaven - {len(scenes)} business card concepts','/Author':'BlackRaven','/Subject':'Front/back pairs. 3.5 x 2 inch landscape or 2 x 3.5 inch portrait trim. 0.125 inch bleed. RGB vector artwork.'})
 for i,card in enumerate(scenes):w.add_outline_item(card['title']+' - front / back',i*2)
 with out.open('wb') as f:w.write(f)
-print(f'Created {out}: {len(r.pages)} vector pages, 3.5 x 2 in trim + 0.125 in bleed.')
+print(f'Created {out}: {len(r.pages)} vector pages, landscape/portrait trim boxes + 0.125 in bleed.')

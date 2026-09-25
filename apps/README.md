@@ -1,4 +1,4 @@
-# Black Raven mobile portfolio
+# BlackRaven mobile portfolio
 
 The public portfolio is `/apps/`, with dedicated pages for Squeezy Fish, DoodleLegs, and AVERTED. Each product page is hand-designed and its truthful launch information is maintained independently. None offers a download until a verified store URL is available.
 
