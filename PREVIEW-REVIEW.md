@@ -41,3 +41,13 @@ To publish after review, integrate this branch into the existing GitHub Pages re
 - Brand kit integrity and all 19 connected routes/assets/fragment targets pass.
 
 Still a local preview; no deployment.
+
+## Signature motion and brand line
+
+- Official slogan changed to “Make something matter.” beneath every studio header/footer wordmark, the main raven, and the closing call to action. Homepage metadata, brand voice guidance, and the downloadable palette/kit agree.
+- Hero animation adds a dimensional entrance, layered outline motion, a silver light sweep, an edge highlight, and pointer-responsive perspective using native SVG/CSS. The original raven silhouette is preserved geometrically; SVG coordinates are expanded to avoid blur from nested scaling during animation.
+- Pause/resume control verified: the animated transform stays unchanged while paused. Motion automatically pauses when the hero is offscreen. Reduced-motion styles keep a static, complete mark and remove motion controls.
+- Desktop and 390px/320px phone layouts inspected; no horizontal overflow. Closing slogan and header lockup fit narrow phones.
+- All 12 studio pages have the same header/footer brand line. Connected page/asset/fragment checks pass for all 19 pages. JavaScript syntax and brand archive integrity checks pass.
+
+Local only; no publication.

@@ -1,7 +1,9 @@
 # Black Raven / Identity 02
 
 ## The idea
-Software, with a pulse.
+Make something matter.
+
+Our official brand line. A call to make useful things, give every interaction care, and create an experience worth someone’s time. Use it beneath the Black Raven wordmark and as the closing invitation. “Software, with a pulse.” remains supporting product copy.
 
 Black Raven is an independent software and AI studio. We design and engineer distinctive apps, games, and digital products that are as good to use as they are to look at.
 
@@ -31,12 +33,12 @@ Manrope is distributed under the SIL Open Font License; font files and license a
 Specific, human, direct. Name the detail; explain the benefit. Show real screens. Let concrete work carry the confidence. Be honest about launch status. No invented customer logos, testimonials, performance claims, or adoption numbers.
 
 Core lines:
+- Make something matter.
 - Software, with a pulse.
 - Engineered to work. Designed to feel.
 - Useful is the starting point. Unforgettable is what we build toward.
 - Different worlds. Same obsession.
 - Good instincts. Serious engineering.
-- Let's make something matter.
 
 ## Imagery and motion
-Use the approved vector mark as the brand's geometric motif. Actual product screens illustrate the work. Each app keeps its own colors within the restrained studio identity. Services use visual examples from those same products. Motion should be subtle, useful, and optional; respect reduced-motion preferences. The hero is built from the existing vector logo, with gentle motion and fine construction lines.
+Use the approved vector mark as the brand's geometric motif. Actual product screens illustrate the work. Each app keeps its own colors within the restrained studio identity. Services use visual examples from those same products. Motion should feel precise, useful, and optional; respect reduced-motion preferences. The hero uses the existing vector silhouette with a dimensional entrance, separated outline planes, a moving light sweep, and pointer-responsive perspective. Pause motion when it leaves the screen and offer a visitor-controlled pause. Static brand assets keep the original flat mark.

@@ -7,8 +7,36 @@ document.addEventListener('keydown',e=>{if(e.key==='Escape' && menu?.getAttribut
 document.querySelectorAll('[data-year]').forEach(el=>el.textContent=new Date().getFullYear());
 const reduced=window.matchMedia('(prefers-reduced-motion: reduce)');
 if(!reduced.matches && 'IntersectionObserver' in window){const obs=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('is-visible');obs.unobserve(e.target)}}),{threshold:.08});document.querySelectorAll('.section-heading,.project-card,.doodle-feature,.service-list>a,.studio-note').forEach(el=>{el.classList.add('reveal-ready');obs.observe(el)})}
+// Keep the signature responsive to the visitor without changing the approved mark.
 const hero=document.querySelector('.hero-stage');
-if(hero && matchMedia('(pointer: fine)').matches && !reduced.matches){hero.addEventListener('pointermove',e=>{const r=hero.getBoundingClientRect();hero.style.setProperty('--mx',`${((e.clientX-r.left)/r.width-.5)*16}px`);hero.style.setProperty('--my',`${((e.clientY-r.top)/r.height-.5)*12}px`)});hero.addEventListener('pointerleave',()=>{hero.style.setProperty('--mx','0px');hero.style.setProperty('--my','0px')})}
+const signature=document.querySelector('.signature-art');
+if(hero && signature){
+  const motionToggle=signature.querySelector('.logo-motion-toggle');
+  const finePointer=window.matchMedia('(pointer: fine)');
+  let paused=false;
+  const resetTilt=()=>{signature.style.setProperty('--rx','0deg');signature.style.setProperty('--ry','0deg')};
+  const syncMotionPreference=()=>{motionToggle.hidden=reduced.matches;resetTilt()};
+  syncMotionPreference();
+  reduced.addEventListener('change',syncMotionPreference);
+  hero.addEventListener('pointermove',e=>{
+    if(paused || reduced.matches || !finePointer.matches || e.pointerType==='touch')return;
+    const r=hero.getBoundingClientRect();
+    signature.style.setProperty('--ry',`${((e.clientX-r.left)/r.width-.5)*22}deg`);
+    signature.style.setProperty('--rx',`${(.5-(e.clientY-r.top)/r.height)*14}deg`);
+  });
+  hero.addEventListener('pointerleave',resetTilt);
+  motionToggle.addEventListener('click',()=>{
+    paused=!paused;
+    signature.classList.toggle('is-paused',paused);
+    motionToggle.setAttribute('aria-pressed',String(paused));
+    motionToggle.setAttribute('aria-label',paused?'Resume logo animation':'Pause logo animation');
+    resetTilt();
+  });
+  if('IntersectionObserver' in window){
+    const visibility=new IntersectionObserver(([entry])=>signature.classList.toggle('is-offscreen',!entry.isIntersecting));
+    visibility.observe(signature);
+  }
+}
 // Clipboard feedback always offers an honest fallback.
 async function copyText(text,status){try{await navigator.clipboard.writeText(text);status.textContent='Copied to clipboard.'}catch{status.textContent='Copy is unavailable in this browser. Select and copy the text directly.'}}
 document.querySelectorAll('[data-copy]').forEach(button=>button.addEventListener('click',()=>copyText(button.dataset.copy,document.querySelector('.copy-status'))));
