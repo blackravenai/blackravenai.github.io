@@ -1,0 +1,20 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": [
+          "TEAMID.com.blackravenai.waxandwane"
+        ],
+        "components": [
+          {
+            "/": "/apps/wax-and-wane/*",
+            "?": {
+              "kindred": "*"
+            },
+            "comment": "Wax & Wane Kindred invitations open in the app"
+          }
+        ]
+      }
+    ]
+  }
+}

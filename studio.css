@@ -120,3 +120,5 @@ strong,b{font-weight:500}.type-specimen>div:nth-child(2) h2{font-weight:400}.typ
  .service-category{font-size:16px;margin-bottom:20px}
 }
 @media(max-width:420px){.quiet-page .ai-window{top:45px;height:295px}}
+
+.wane .project-image{background:#141126}.wane .device{transform:rotate(7deg);left:50%;width:230px}@media(max-width:900px){.wane .device{width:200px;left:47%}}
