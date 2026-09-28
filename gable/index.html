@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>A ladder for you — GABLE</title>
+<meta name="description" content="Someone laid a ladder for you in GABLE, a one-thumb rooftop game where the ladders you earn can only be given away." />
+<meta property="og:title" content="A ladder is leaning against a roof for you" />
+<meta property="og:description" content="Someone laid it in GABLE. It waits in your run until you climb it." />
+<meta name="theme-color" content="#1e1b3a" />
+<link rel="icon" href="./icon.svg" type="image/svg+xml" />
+<style>
+  :root { --dusk:#1e1b3a; --deep:#120f26; --tile:#d9694f; --plaster:#f1e3c8; --dim:#c9bda6; --mantle:#dff5d0; --ink:#16132a;
+    --serif:'Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif; --sans:'Avenir Next','Helvetica Neue',system-ui,-apple-system,sans-serif; }
+  * { box-sizing: border-box; }
+  body { margin: 0; min-height: 100vh; background: linear-gradient(180deg, #1e1b3a 0%, #3a2f68 55%, #7a4a7e 82%, #c9694f 100%); color: var(--plaster); font-family: var(--sans); display: flex; justify-content: center; }
+  main { width: 100%; max-width: 440px; padding: 40px 18px 48px; }
+  .brand { display: flex; align-items: center; gap: 12px; margin-bottom: 26px; }
+  .brand img { width: 52px; height: 52px; border-radius: 12px; box-shadow: 0 6px 20px rgba(0,0,0,.4); }
+  .brand b { font-family: var(--serif); font-size: 30px; letter-spacing: .14em; font-weight: 400; }
+  .brand b span { color: var(--tile); }
+  h1 { font-family: var(--serif); font-weight: 400; font-size: 32px; line-height: 1.15; margin: 0 0 10px; }
+  p { font-size: 16px; line-height: 1.5; color: var(--dim); margin: 0 0 16px; }
+  .card { background: var(--plaster); color: var(--ink); border-radius: 14px; padding: 18px; margin: 18px 0; box-shadow: 0 12px 34px rgba(0,0,0,.4); }
+  .card small { display: block; font-size: 11px; letter-spacing: .22em; text-transform: uppercase; color: #a84a38; font-weight: 800; margin-bottom: 8px; }
+  .code { font-family: ui-monospace,'SF Mono',Menlo,monospace; font-size: 19px; letter-spacing: .06em; word-break: break-all; }
+  .btn { display: block; width: 100%; text-align: center; border: 0; border-radius: 14px; padding: 18px; font: 700 15px var(--sans); letter-spacing: .16em; text-transform: uppercase; cursor: pointer; text-decoration: none; margin-bottom: 10px; }
+  .primary { background: var(--tile); color: #fff8ee; box-shadow: 0 8px 24px rgba(0,0,0,.35); }
+  .ghost { background: rgba(241,227,200,.1); color: var(--plaster); border: 1px solid rgba(241,227,200,.3); }
+  ol { padding-left: 20px; margin: 8px 0 0; color: var(--plaster); line-height: 1.7; }
+  .none { display: none; }
+  footer { margin-top: 28px; font-size: 12px; color: var(--dim); text-align: center; }
+  footer a { color: var(--dim); }
+</style>
+</head>
+<body>
+<main>
+  <div class="brand"><img src="./icon.svg" alt="" /><b>GA<span>B</span>LE</b></div>
+
+  <section id="gift" class="none">
+    <h1>A ladder is leaning against a roof for you.</h1>
+    <p>Someone earned it on the roofs of GABLE — and in GABLE a ladder can never be used by the one who earned it. It waits in your run until you climb it.</p>
+    <div class="card"><small>your ladder code</small><div class="code" id="code"></div></div>
+    <a class="btn primary" id="open" href="#">Open in GABLE</a>
+    <button class="btn ghost" id="copy">Copy the code</button>
+    <p style="margin-top:18px"><b style="color:var(--plaster)">Don't have GABLE yet?</b> It's free on the App Store and Google Play — search for <b style="color:var(--plaster)">GABLE Lay a ladder</b>. Then:</p>
+    <ol><li>Open GABLE</li><li>Tap <b>Got a ladder code? Claim it</b></li><li>Tap <b>Paste</b> — the code you copied is found for you</li></ol>
+  </section>
+
+  <section id="plain">
+    <h1>Lay a ladder for someone.</h1>
+    <p>GABLE is a one-thumb rooftop game at blue hour. Hold to grow a ladder, let go to lay it across the gap. The ladders you earn can only be given — to a stranded traveller you watch cross home, or to a friend, where it waits inside their run with your name on it.</p>
+    <p>Free on the App Store and Google Play.</p>
+  </section>
+
+  <footer>BlackRaven AI LLC · <a href="/legal/gable/privacy">Privacy</a> · <a href="/legal/gable/terms">Terms</a> · <a href="/legal/gable/support">Support</a></footer>
+</main>
+<script>
+  // The code rides in the #fragment, so it never reaches a server log.
+  var m = /[#&?]L=([0-9A-Za-z-]{20,40})/.exec(location.hash)
+  if (m) {
+    var code = m[1].toUpperCase()
+    document.getElementById('gift').className = ''
+    document.getElementById('plain').className = 'none'
+    document.getElementById('code').textContent = code
+    document.getElementById('open').href = 'gable://claim#L=' + code
+    document.getElementById('copy').onclick = function () {
+      var b = this
+      var done = function () { b.textContent = 'Copied' }
+      if (navigator.clipboard) navigator.clipboard.writeText(code).then(done, function () { prompt('Copy your code', code) })
+      else prompt('Copy your code', code)
+    }
+  }
+</script>
+</body>
+</html>
