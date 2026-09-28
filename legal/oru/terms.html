@@ -8,9 +8,10 @@
 <meta name="description" content="Terms of Service for ORU by BlackRaven AI LLC." />
 <style>
   :root{
-    --bg:#f7f0e3; --surface:#ede6da; --text:#2b2620; --dim:#6b6154;
-    --accent:#c9a227; --accent2:#c93a22; --border:#544e47;
-    --font:'Iowan Old Style', 'Palatino Nova', Palatino, 'Book Antiqua', Georgia, serif;
+    --bg:#F7F0E3; --surface:#FBF7EE; --text:#2B2620; --dim:#6B6152;
+    --accent:#C93A22; --accent2:#E8A13C; --border:#D9CCB0;
+    --font:'Iowan Old Style', Palatino, Georgia, serif;
+    --display:'Iowan Old Style', Palatino, Georgia, serif;
   }
   *{box-sizing:border-box}
   html{ -webkit-text-size-adjust:100% }
@@ -23,15 +24,15 @@
   header.mast{ display:flex; align-items:center; gap:14px; padding-bottom:22px; margin-bottom:26px; border-bottom:1px solid var(--border) }
   .mast img{ width:44px; height:44px; border-radius:22%; flex:0 0 auto; background:var(--surface) }
   .mast .who{ display:flex; flex-direction:column; gap:2px }
-  .mast .app{ font-size:19px; font-weight:700; letter-spacing:.01em }
+  .mast .app{ font-family:var(--display); font-size:19px; font-weight:400; letter-spacing:.03em }
   .mast .by{ font-size:12px; color:var(--dim); letter-spacing:.02em }
   nav.doc{ display:flex; gap:8px; flex-wrap:wrap; margin-bottom:26px; font-size:13px }
   nav.doc a, nav.doc .on{ padding:6px 12px; border-radius:999px; text-decoration:none; border:1px solid var(--border) }
   nav.doc a{ color:var(--dim) }
   nav.doc a:hover{ color:var(--text); border-color:var(--accent) }
-  nav.doc .on{ color:var(--bg); background:var(--accent); border-color:var(--accent); font-weight:600 }
-  h1{ font-size:26px; letter-spacing:.01em; margin:0 0 6px }
-  .updated{ color:var(--dim); font-size:12.5px; margin:0 0 22px }
+  nav.doc .on{ color:#FBF7EE; background:var(--accent); border-color:var(--accent); font-weight:600 }
+  h1{ font-family:var(--display); font-size:26px; font-weight:400; letter-spacing:.01em; margin:0 0 6px }
+  .updated{ color:var(--dim); font-size:12.5px; margin:0 0 22px; font-variant-numeric:tabular-nums }
   .lead{ font-size:16px; color:var(--text); margin:0 0 8px }
   section{ margin:24px 0 }
   h2{ font-size:14px; text-transform:uppercase; letter-spacing:.09em; color:var(--accent); margin:0 0 8px }
@@ -45,17 +46,17 @@
 <body>
   <div class="wrap">
     <header class="mast">
-      <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDI0IDEwMjQiPgogIDxyZWN0IHdpZHRoPSIxMDI0IiBoZWlnaHQ9IjEwMjQiIGZpbGw9IiNGN0YwRTMiLz4KICA8cmVjdCB4PSI2NCIgeT0iNjQiIHdpZHRoPSI4OTYiIGhlaWdodD0iODk2IiByeD0iNDgiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzJCMjYyMCIgc3Ryb2tlLXdpZHRoPSIxNCIgb3BhY2l0eT0iLjIiLz4KICA8IS0tIGNyYW5lIC0tPgogIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDUxMiA0NzApIHNjYWxlKDEzLjUpIiBzdHJva2U9IiM0QTQyMzgiIHN0cm9rZS13aWR0aD0iMS4xIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj4KICAgIDxwb2x5Z29uIHBvaW50cz0iNCwtMiAtNywtMjcgLTE5LC02IiBmaWxsPSIjRDlDQ0IwIi8+CiAgICA8cG9seWdvbiBwb2ludHM9Ii0xMywtMyAtMjUsLTExIC05LDMiIGZpbGw9IiNFREUyQ0MiLz4KICAgIDxwb2x5Z29uIHBvaW50cz0iMTcsMCAzLC02IC0xNCwtMyAtMiw4IiBmaWxsPSIjRkJGNUU4Ii8+CiAgICA8cG9seWdvbiBwb2ludHM9IjEyLC0yIDIxLC0xNSAyNSwtMTIgMTUsMiIgZmlsbD0iI0YzRUFENiIvPgogICAgPHBvbHlnb24gcG9pbnRzPSI3LC0zIC0yLC0zMSAtMTUsLTUiIGZpbGw9IiNGRkZERjYiLz4KICAgIDxwb2x5Z29uIHBvaW50cz0iMjQuNSwtMTIuNSAzMSwtMTAuNSAyMy41LC05IiBmaWxsPSIjRThBMTNDIi8+CiAgICA8Y2lyY2xlIGN4PSIyMS41IiBjeT0iLTEyIiByPSIxLjQiIGZpbGw9IiM0QTQyMzgiIHN0cm9rZT0ibm9uZSIvPgogICAgPGNpcmNsZSBjeD0iMTgiIGN5PSItMTQiIHI9IjEuNiIgZmlsbD0iI0M5M0EyMiIgc3Ryb2tlPSJub25lIi8+CiAgPC9nPgogIDwhLS0gaGFua28gLS0+CiAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNTEyIDgwMCkgcm90YXRlKDYpIj4KICAgIDxyZWN0IHg9Ii04NCIgeT0iLTg0IiB3aWR0aD0iMTY4IiBoZWlnaHQ9IjE2OCIgcng9IjE4IiBmaWxsPSIjQzkzQTIyIi8+CiAgICA8dGV4dCB4PSIwIiB5PSIzNCIgZm9udC1mYW1pbHk9IlBhbGF0aW5vLCBHZW9yZ2lhLCBzZXJpZiIgZm9udC1zaXplPSIxMDgiIGZvbnQtd2VpZ2h0PSI3MDAiIGZpbGw9IiNGN0YwRTMiIHRleHQtYW5jaG9yPSJtaWRkbGUiPuaKmDwvdGV4dD4KICA8L2c+Cjwvc3ZnPgo=" alt="" />
+      <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDI0IDEwMjQiPgogIDxkZWZzPgogICAgPHJhZGlhbEdyYWRpZW50IGlkPSJiZyIgY3g9IjUwJSIgY3k9IjQyJSIgcj0iNzglIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjRkZGQkYyIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iLjU4IiBzdG9wLWNvbG9yPSIjRjdGMEUzIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI0U0RDZCQyIvPgogICAgPC9yYWRpYWxHcmFkaWVudD4KICAgIDxyYWRpYWxHcmFkaWVudCBpZD0iaCIgY3g9IjUwJSIgY3k9IjUwJSIgcj0iNTAlIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjRThBMTNDIiBzdG9wLW9wYWNpdHk9Ii40MiIvPgogICAgICA8c3RvcCBvZmZzZXQ9Ii41NSIgc3RvcC1jb2xvcj0iI0M5M0EyMiIgc3RvcC1vcGFjaXR5PSIuMTQiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjQzkzQTIyIiBzdG9wLW9wYWNpdHk9IjAiLz4KICAgIDwvcmFkaWFsR3JhZGllbnQ+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9InciIHgxPSIwIiB5MT0iMCIgeDI9IjEiIHkyPSIxIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjRkZGRkZGIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI0VGRTRDRCIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICA8L2RlZnM+CiAgPHJlY3Qgd2lkdGg9IjEwMjQiIGhlaWdodD0iMTAyNCIgZmlsbD0idXJsKCNiZykiLz4KICA8Y2lyY2xlIGN4PSI1MTIiIGN5PSI1MDAiIHI9IjQ0MCIgZmlsbD0idXJsKCNoKSIvPgogIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDQ4OCA1NjApIHNjYWxlKDEyLjYpIiBzdHJva2U9IiMzRTM2MkQiIHN0cm9rZS13aWR0aD0iMS4wNSIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCI+CiAgICA8cG9seWdvbiBwb2ludHM9IjQsLTIgLTcsLTI3IC0xOSwtNiIgZmlsbD0iI0Q5Q0NCMCIvPgogICAgPHBvbHlnb24gcG9pbnRzPSItMTMsLTMgLTI1LC0xMSAtOSwzIiBmaWxsPSIjRURFMkNDIi8+CiAgICA8cG9seWdvbiBwb2ludHM9IjE3LDAgMywtNiAtMTQsLTMgLTIsOCIgZmlsbD0iI0ZCRjVFOCIvPgogICAgPHBvbHlnb24gcG9pbnRzPSIxMiwtMiAyMSwtMTUgMjUsLTEyIDE1LDIiIGZpbGw9IiNGM0VBRDYiLz4KICAgIDxwb2x5Z29uIHBvaW50cz0iNywtMyAtMiwtMzEgLTE1LC01IiBmaWxsPSJ1cmwoI3cpIi8+CiAgICA8cG9seWdvbiBwb2ludHM9IjI0LjUsLTEyLjUgMzEsLTEwLjUgMjMuNSwtOSIgZmlsbD0iI0U4QTEzQyIvPgogICAgPGNpcmNsZSBjeD0iMjEuNSIgY3k9Ii0xMiIgcj0iMS40IiBmaWxsPSIjM0UzNjJEIiBzdHJva2U9Im5vbmUiLz4KICAgIDxjaXJjbGUgY3g9IjE4IiBjeT0iLTE0LjIiIHI9IjEuOCIgZmlsbD0iI0M5M0EyMiIgc3Ryb2tlPSJub25lIi8+CiAgPC9nPgo8L3N2Zz4K" alt="" />
       <div class="who"><span class="app">ORU</span><span class="by">by BlackRaven AI LLC</span></div>
     </header>
     <nav class="doc"><a href="privacy.html">Privacy</a><a href="support.html">Support</a><span class="on">Terms</span></nav>
     <main>
       <h1>Terms of Service</h1>
-      <p class="updated">Last updated 2026-07-08</p>
+      <p class="updated">Last updated 2026-09-28</p>
       <p class="lead">These terms are the agreement between you and BlackRaven AI LLC ("we", "us") for your use of ORU (the "App"). By downloading or using the App, you agree to these terms. If you don't agree, please don't use the App.</p>
       <section>
         <h2>License</h2>
-        <p>We grant you a personal, non-exclusive, non-transferable, revocable license to install and use the App on devices you own or control, for your own non-commercial entertainment, subject to these terms and the rules of the app store you downloaded it from.</p>
+        <p>We grant you a personal, non-exclusive, non-transferable, revocable license to install and use the App on devices you own or control, for your own personal, non-commercial entertainment, subject to these terms and the rules of the app store you downloaded it from.</p>
       </section>
       <section>
         <h2>Acceptable use</h2>
@@ -82,7 +83,7 @@
       </section>
       <section>
         <h2>Intellectual property</h2>
-        <p>The App, including its code, art, audio, and name, is owned by BlackRaven AI LLC and protected by intellectual-property laws. These terms don't transfer any ownership to you.</p>
+        <p>The App, including its code, art, audio, and name, is owned by BlackRaven AI LLC and protected by intellectual-property laws. These terms don't transfer any ownership to you. Work you create with the App (for example files you export) is yours.</p>
       </section>
       <section>
         <h2>Disclaimer of warranties</h2>
