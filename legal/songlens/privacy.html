@@ -51,16 +51,16 @@
     <nav class="doc"><span class="on">Privacy</span><a href="support.html">Support</a><a href="terms.html">Terms</a></nav>
     <main>
       <h1>Privacy Policy</h1>
-      <p class="updated">Last updated 2026-07-08</p>
+<p class="updated">Last updated 2026-10-02</p>
       <p class="lead">Songlens is a music-practice tool made by BlackRaven AI LLC. It runs on your device. We designed it to need as little of your information as possible — there are no accounts and no sign-in.</p>
       <section>
         <h2>The short version</h2>
         <ul>
       <li>No account, no login, no name or email required.</li>
-      <li>Your data is saved <b>on your device</b>, not on our servers.</li>
+<li>Your transcriptions, practice history and settings are saved <b>on your device</b>. Recognition and purchase services are described below.</li>
       <li>We don't run our own analytics or tracking.</li>
-      <li>The microphone is used <b>only when you start a listening session</b>, and audio is analyzed on-device — never recorded to the cloud.</li>
-      <li>Songlens shows no ads. Store versions may offer purchases (via RevenueCat and the app store); those partners have their own privacy policies, linked below.</li>
+<li>The microphone is used when you start listening, tuning or voice practice. Audio analysis runs on-device. On iOS, song recognition sends an audio fingerprint to Apple, not your recording.</li>
+<li>Songlens shows no ads. Apple and RevenueCat process purchases and anonymous purchase records; their policies are linked below.</li>
     </ul>
       </section>
       <section>
@@ -73,7 +73,12 @@
       </section>
       <section>
         <h2>Microphone & audio</h2>
-        <p>Songlens asks for microphone access only when you start a listening session, and only to hear the music you want analyzed. All listening and analysis happen <b>entirely on your device</b>: audio is processed in memory to produce your result and is then discarded. Songlens never records to the cloud, never uploads audio, and never listens in the background. Audio files you choose to open are read on-device the same way and are never transmitted anywhere.</p>
+<p>Microphone access supports listening, the tuner and voice practice when you start those features. Audio analysis and stem separation run on-device. Songlens does not upload raw recordings or imported audio to an analysis server. Audio used for a session is processed locally; transcriptions are saved locally, and exports or backups you choose to share go to the destination you select.</p>
+      </section>
+      <section>
+        <h2>Song recognition and model downloads</h2>
+        <p>On iOS, after a listening take or file import, Songlens uses Apple ShazamKit to try to identify the song. A short audio sample is converted locally into a non-reversible acoustic signature (fingerprint), which is sent to Apple for matching. The raw audio is not sent to Apple. A match can return the title, artist, artwork and an Apple Music link. Recognition requires connectivity; if it fails, you can name the song yourself. Apple handles service requests under its <a href="https://www.apple.com/legal/privacy/">Privacy Policy</a>.</p>
+        <p>Optional studio separation models are downloaded from BlackRaven-hosted resources served by GitHub Pages and run on-device. Requests for models, artwork and website links necessarily send network information such as an IP address to the hosting provider. They do not send your audio for processing. See <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub’s privacy statement</a>. Model downloads are optional; the local quick-separation engine remains available.</p>
       </section>
       <section>
         <h2>Advertising</h2>
@@ -81,11 +86,11 @@
       </section>
       <section>
         <h2>Purchases</h2>
-        <p>If Songlens offers in-app purchases, the transaction is handled by the app store (Apple App Store or Google Play) and processed for us by <b>RevenueCat</b>, which manages entitlements and receipts. We never see or store your payment card details. RevenueCat may process a purchase/receipt identifier to unlock what you bought and restore it across your devices. See the <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">RevenueCat Privacy Policy</a>, the <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple Privacy Policy</a>, and the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>.</p>
+<p>On iOS, Apple processes payments and <b>RevenueCat</b> validates purchases, restores access and provides subscription reporting. RevenueCat processes an anonymous app-user identifier and purchase records, including product and transaction identifiers and subscription status. These are used for app functionality and purchase analytics, not cross-app advertising tracking. We do not supply RevenueCat with your name, email, recordings or transcriptions, and we do not receive your payment card details. See the <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">RevenueCat Privacy Policy</a> and <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple Privacy Policy</a>. Deleting local app data does not cancel subscriptions or erase records retained by purchase providers.</p>
       </section>
       <section>
         <h2>Analytics</h2>
-        <p>Songlens does not include our own third-party analytics or tracking SDKs. Any limited, aggregated diagnostics you receive come from the app stores' standard reporting (for example crash counts), which is governed by Apple's and Google's policies, not ours.</p>
+<p>We do not use advertising trackers or a separate behavioral analytics SDK. RevenueCat provides purchase and subscription analytics as described above. Apple may provide aggregated diagnostics through its standard app reporting, subject to your device settings and Apple's policies.</p>
       </section>
       <section>
         <h2>Children</h2>
