@@ -76,5 +76,18 @@
    "No ads, no account, works offline"
   ],
   "accent": "#f2c34e"
+ },
+ {
+  "slug": "become-him",
+  "name": "Become Him",
+  "kind": "Mobile style and grooming academy",
+  "tagline": "Man is made, not found.",
+  "description": "Six questions, ninety seconds, no photos and no account — then one thing to do tonight. 90+ short briefings across 13 Disciplines, each ending in exactly one real-world Mission you carry out off the phone.",
+  "features": [
+   "Briefings with numbered steps and real numbers",
+   "Merit earned on proof, never on reading",
+   "20 Instruments, all free, from the Barber Script to the Upkeep"
+  ],
+  "accent": "#b8934d"
  }
 ]

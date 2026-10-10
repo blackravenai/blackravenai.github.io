@@ -68,7 +68,7 @@
 </head>
 <body class="app-document"><a class="skip" href="#main">Skip to content</a><header class="site-header"><div class="nav-wrap"><a class="wordmark" href="/" aria-label="BlackRaven home"><img src="/assets/brand/mark-ivory.svg" width="38" height="36" alt=""><span>BLACKRAVEN<small>MAKE SOMETHING MATTER.</small></span></a><button class="menu-toggle" aria-expanded="false" aria-controls="navigation">Menu <span></span></button><nav id="navigation" aria-label="Main navigation"><a href="/#work">Our work</a><a href="/apps/">Our apps</a><a href="/services.html">What we do</a><a href="/#studio">The studio</a><a class="nav-cta" href="/contact.html">Let’s make something <span aria-hidden="true">↗</span></a></nav></div></header><div class="app-doc-wrap"><nav class="app-document-nav" aria-label="Squeezy Fish information"><a href="/apps/squeezy-fish/">← Squeezy Fish</a><a href="privacy.html" aria-current="page">Privacy</a><a href="terms.html">Terms</a><a href="support.html">Support</a></nav><main id="main">
       <h1>Privacy Policy</h1>
-      <p class="updated">Last updated September 22, 2026 — iOS release</p>
+      <p class="updated">Last updated October 8, 2026 — iOS and Android release</p>
       <p class="lead">Squeezy Fish is a single-player game/app made by BlackRaven AI LLC. It runs on your device. We designed it to need as little of your information as possible — there are no accounts and no sign-in.</p>
       <section>
         <h2>The short version</h2>
@@ -76,7 +76,7 @@
           <li>No account, no login, no name or email required to play.</li>
           <li>Your progress is saved <b>on your device</b>, not on our servers.</li>
           <li>We don't run our own analytics or tracking.</li>
-          <li>The iOS release uses Google AdMob for ads and Apple's StoreKit for the optional monthly ad-removal subscription. Advertising and purchase services process data as described below.</li>
+          <li>Both releases use Google AdMob for family-safe, non-personalized ads. The optional monthly ad-removal subscription uses Apple's StoreKit on iOS and Google Play Billing (verified through RevenueCat) on Android. Advertising and purchase services process data as described below.</li>
         </ul>
       </section>
       <section>
@@ -85,31 +85,51 @@
       </section>
       <section>
         <h2>Data stored on your device</h2>
-        <p>Scores, settings, earned bubbles, cosmetics, streaks, and a coarse player-age choice are stored locally in the app. We do not request a birth date or send that age choice to our own server. Use Change Player when someone else uses the device. Removing app data removes local game progress; it does not cancel an Apple subscription or delete records held by Apple or Google.</p>
+        <p>Scores, settings, earned bubbles, cosmetics, streaks, and a coarse player-age choice are stored locally in the app. We do not request a birth date or send that age choice to our own server. Use Change Player when someone else uses the device. Removing app data removes local game progress; it does not cancel a subscription or delete records held by Apple, Google or RevenueCat. Your device's own backup (iCloud, or Android backup to your Google account) may include this local data.</p>
       </section>
       <section>
         <h2>Advertising</h2>
-        <p>The iOS release requests <b>Google AdMob</b> ads with child-directed and under-age treatment, a General content rating, and personalization disabled for all player-age choices. The app does not request Apple's tracking permission. Ad requests are blocked if Google's consent response does not permit them; children are not shown a form asking them to authorize data processing.</p>
+        <p>Both releases request <b>Google AdMob</b> ads through the Google Mobile Ads SDK with child-directed and under-age treatment, a General content rating, and personalization disabled for all player-age choices. The iOS app does not request Apple's tracking permission. The Android app removes the advertising ID permission (<code>AD_ID</code>) and the Android Privacy Sandbox ad permissions, so the ad SDK cannot read the device's advertising ID or Topics. Ad requests are blocked if Google's consent response does not permit them; children are not shown a form asking them to authorize data processing.</p>
         <p>Child-directed and non-personalized settings do not mean that advertising processes no data. Google's SDK documentation describes potential processing of IP address (including approximate location), app/device identifiers, ad views and interactions, and diagnostic/performance information to serve, measure, secure, and troubleshoot ads. The fields and uses depend on Google's age/privacy treatment and applicable settings. We do not provide a name, email, birth date, or precise GPS location to the ad service.</p>
         <p>Ad Privacy Options and Report an Ad are in the Reef Shop. External links and reporting controls are parent-gated for children and unknown ages. An active ad-removal subscription suppresses ad presentation; ad availability also depends on Google's service and approval.</p>
          <p>See Google's <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">Advertising / Privacy &amp; Terms</a> and how <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">Google uses information from sites/apps that use its services</a>.</p>
       </section>
       <section>
         <h2>Purchases</h2>
-        <p>Apple processes the iOS Ad-Free Monthly subscription. The app uses Apple's verified subscription status to remove ads, restore purchases, and respond to changes such as refunds. We do not receive payment-card details. Purchases and restores are parent-gated for children and unknown ages; Apple's purchase authorization is separate from that gate.</p>
-        <p>The iOS release does not initialize the RevenueCat purchase SDK or create a RevenueCat customer identity on the device. Our existing Apple server-notification connection to RevenueCat remains configured for subscription events such as renewals, cancellations, and refunds; it is separate from the app's StoreKit purchase flow. See the <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple Privacy Policy</a> and <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">RevenueCat Privacy Policy</a>.</p>
+        <p><b>iOS.</b> Apple processes the iOS Ad-Free Monthly subscription. The app uses Apple's verified subscription status to remove ads, restore purchases, and respond to changes such as refunds. We do not receive payment-card details. Purchases and restores are parent-gated for children and unknown ages; Apple's purchase authorization is separate from that gate.</p>
+        <p>The iOS release does not initialize the RevenueCat purchase SDK or create a RevenueCat customer identity on the device. Our existing Apple server-notification connection to RevenueCat remains configured for subscription events such as renewals, cancellations, and refunds; it is separate from the app's StoreKit purchase flow.</p>
+        <p><b>Android.</b> Google Play Billing processes the Android subscription; we do not receive payment-card details. The app uses the RevenueCat SDK to validate the Google Play purchase, check whether it is active, and restore it. RevenueCat assigns a random, anonymous app-user ID (not your name or email) and processes the purchase token, product, transaction and subscription status, and basic technical information such as app version, platform and IP address. We do not send game progress or the age choice to RevenueCat. The same parent gate applies before purchase and restore.</p>
+        <p>See the <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple Privacy Policy</a> <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>, and <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">RevenueCat Privacy Policy</a>.</p>
+      </section>
+      <section>
+        <h2>Permissions and notifications</h2>
+        <p>The app uses network access for ads and purchases. It does not send notifications; the Android app removes the notification, exact-alarm and boot permissions. It does not access your camera, microphone, contacts, photos or location.</p>
       </section>
       <section>
         <h2>Analytics</h2>
-        <p>The release does not start our optional growth analytics, attribution, or marketing SDKs. Apple provides store reporting, and Google processes advertising measurement and diagnostics described above. We do not describe an advertising-supported app as collecting no data.</p>
+        <p>The release does not start our optional growth analytics, attribution, or marketing SDKs. Apple and Google provide store reporting, and Google processes advertising measurement and diagnostics described above. We do not describe an advertising-supported app as collecting no data.</p>
       </section>
       <section>
         <h2>Children</h2>
         <p>Squeezy Fish is intended for children and adults. A local age-range choice controls parent gates; it is not identity verification. The arithmetic gate is an access barrier, not verifiable parental consent to data collection. We do not offer child accounts, chat, or user uploads. Parents can contact support about data concerns, inappropriate ads, or deletion requests; please provide only what is necessary to identify the concern.</p>
       </section>
       <section>
+        <h2>Data summary (Google Play Data safety)</h2>
+        <ul>
+          <li><b>Collected by the app's SDKs, not by us:</b> approximate location derived from IP address; device or other identifiers (app-scoped — not the advertising ID on Android); ad interactions; crash, diagnostic and performance data. Processed by Google for advertising, ad measurement, fraud prevention and security.</li>
+          <li><b>Purchase history</b> (subscription status and purchase token): processed by Apple, Google and RevenueCat to provide and restore the subscription.</li>
+          <li><b>Shared:</b> the ad data above goes to Google as the ad provider. We do not sell data.</li>
+          <li><b>Not collected:</b> name, email, contacts, photos, precise location, messages or game progress.</li>
+          <li><b>Security:</b> data sent by these SDKs is encrypted in transit.</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Deleting your data</h2>
+        <p>There is no account to delete. Change Player → New Player · Start Fresh erases progress on the device, and uninstalling the App deletes all of its local data (on Android, Settings → Apps → Squeezy Fish → Storage → Clear storage also works). To ask us to delete anything held for this App outside your device — the anonymous RevenueCat purchase record or your support emails — email <a href="mailto:support@blackravenai.com?subject=Squeezy%20Fish%20data%20deletion">support@blackravenai.com</a> with the subject "Data deletion"; if possible include the order ID from your store receipt so we can find the record. Deleting data does not cancel a subscription. Apple and Google keep their own transaction records, and Google handles advertising data, under their own policies.</p>
+      </section>
+      <section>
         <h2>Your choices and rights</h2>
-        <p>You can change the local player setting, remove local app data, manage subscriptions through your Apple account, and contact us about information processed in connection with the app. Depending on your location, you may have rights to access, correct, delete, restrict, or object to processing and to complain to a data-protection authority. Contact support@blackravenai.com to make a request; we will review the request and explain any information needed to process it. Apple's and Google's own privacy controls also apply to their services.</p>
+        <p>You can change the local player setting, remove local app data, manage subscriptions through your Apple account or Google Play, and contact us about information processed in connection with the app. Depending on your location, you may have rights to access, correct, delete, restrict, or object to processing and to complain to a data-protection authority. Contact support@blackravenai.com to make a request; we will review the request and explain any information needed to process it. Apple's and Google's own privacy controls also apply to their services.</p>
       </section>
       <section>
         <h2>International users</h2>
