@@ -26,19 +26,6 @@
   "accent": "#b3f18a"
  },
  {
-  "slug": "averted",
-  "name": "AVERTED",
-  "kind": "Mobile astronomy planner",
-  "tagline": "Make a plan for the night sky.",
-  "description": "Plan deep-sky observing around your telescope, eyepieces and observing conditions. Explore targets, arrange your night and keep an observation log.",
-  "features": [
-   "Targets ranked for your equipment and sky",
-   "An observing plan from dusk to dawn",
-   "A log of the objects you have observed"
-  ],
-  "accent": "#c3b7ff"
- },
- {
   "slug": "wax-and-wane",
   "name": "Wax & Wane",
   "kind": "Mobile moon-phase journal",
@@ -62,7 +49,8 @@
    "Lock-ins that pay out when your phone is down",
    "Research-backed tools like urge surfing and check-ins"
   ],
-  "accent": "#c8ff1e"
+  "accent": "#c8ff1e",
+  "page": "/apps/stop-brain-rot/"
  },
  {
   "slug": "gnash",
@@ -76,5 +64,31 @@
    "No ads, no account, works offline"
   ],
   "accent": "#f2c34e"
+ },
+ {
+  "slug": "mochi-pup",
+  "name": "Mochi Pup",
+  "kind": "Mobile dog-training game",
+  "tagline": "Your real dog, as a game.",
+  "description": "Snap a photo and your dog becomes a squishy Mochi twin. Real training lessons, walks, meals and cuddles make it thrive.",
+  "features": [
+   "Picture-led, force-free training lessons",
+   "A Trick Path of 36 tricks and life skills",
+   "Care and safety tools, free forever"
+  ],
+  "accent": "#ff7aa2"
+ },
+ {
+  "slug": "songlens",
+  "name": "Songlens",
+  "kind": "Mobile music-learning app",
+  "tagline": "Hear it. See it. Play it.",
+  "description": "Play any song out loud and see its chords and notes on guitar, piano, drums or bass, transcribed entirely on your phone.",
+  "features": [
+   "Listens through the mic, analyses on-device",
+   "Fretboard, keys, drum lanes and bass neck",
+   "Slow down, loop and play along"
+  ],
+  "accent": "#ffb84d"
  }
 ]
