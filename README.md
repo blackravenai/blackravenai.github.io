@@ -16,7 +16,7 @@ From this folder, run `python3 -m http.server 4177 --bind 127.0.0.1` and open ht
 - `/brand.html` — direct-access brand guide, logo downloads, copyable swatches, downloadable brand kit (not linked in the public footer)
 - Existing legal URLs and `app-ads.txt` preserved
 
-`studio.css` and `js/studio.js` power the studio pages. All 20 connected studio, product, and app policy/support pages share `css/site-chrome.css`, `js/navigation.js`, and static header/footer partials. Run `python3 scripts/sync-site-chrome.py` after editing `partials/site-header.html` or `partials/site-footer.html`. The app scaffold generator also reads those partials. The bespoke mobile app pages retain their individual visual identities. Fonts and images are served locally. No new analytics, tracking cookies, or remote font requests are added to the studio pages.
+`studio.css` and `js/studio.js` power the studio pages. All 20 connected studio, product, and app policy/support pages share `css/site-chrome.css`, `js/navigation.js`, and static header/footer partials. Run `python3 scripts/sync-site-chrome.py` after editing `partials/site-header.html` or `partials/site-footer.html`. The app scaffold generator also reads those partials. The bespoke mobile app pages retain their individual visual identities. Fonts and images are served locally. Optional PostHog website analytics loads only after visitor consent. The local preference is remembered; event identity uses memory persistence. No remote fonts are loaded.
 
 ## Contact behavior
 
