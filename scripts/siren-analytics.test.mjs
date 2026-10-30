@@ -3,10 +3,10 @@ import assert from 'node:assert/strict';
 import vm from 'node:vm';
 import fs from 'node:fs';
 const script=fs.readFileSync(new URL('../js/siren-analytics.js', import.meta.url),'utf8');
-function harness(choice){
+function harness(choice, optedOut = false){
  const store=new Map(choice===undefined?[]:[['blackraven.website.analytics.v1',choice]]), nodes=[], handlers={}, sent=[];
  let config,initCount=0;
- const sdk={__SV:1,init(k,c){initCount++;config=c;c.loaded(sdk)},register(p){sdk.props=p},capture(e,p){const event=config.before_send({event:e,properties:{...sdk.props,...p,$current_url:'https://private/?kindred=secret',$set:{email:'secret'}}});if(event)sent.push(event)},opt_out_capturing(){},opt_in_capturing(){}};
+ const sdk={__SV:1,init(k,c){initCount++;config=c;c.loaded(sdk)},register(p){sdk.props=p},capture(e,p){if(optedOut)return;const event=config.before_send({event:e,properties:{...sdk.props,...p,$current_url:'https://private/?kindred=secret',$set:{email:'secret'}}});if(event)sent.push(event)},opt_out_capturing(){optedOut=true},opt_in_capturing(){optedOut=false}};
  function el(tag){return {tag,children:[],style:{},setAttribute(){},append(n){this.children.push(n)},addEventListener(n,f){this[n]=f},showModal(){},close(){},remove(){}}}
  const footer=el('footer');const document={getElementById(){return null},querySelector(){return footer},createElement:el,body:{append(n){nodes.push(n)}},addEventListener(k,f){handlers[k]=f}};
  const context={window:{posthog:sdk},document,location:{hostname:'www.blackravenai.com',origin:'https://www.blackravenai.com',pathname:'/apps/squeezy-fish/',search:'?utm_source=tiktok&utm_campaign=launch&kindred=private'},localStorage:{getItem:k=>store.get(k)??null,setItem:(k,v)=>store.set(k,v)},URL,URLSearchParams};
@@ -25,3 +25,5 @@ test('footer lets a visitor revoke consent; further clicks are dropped',()=>{
  const h=harness('yes');h.footer.children[0].onclick();h.nodes[0].children[1].onclick();
  h.handlers.click({target:{closest:()=>({href:'https://apps.apple.com/app/id123'})}});assert.equal(h.sent.length,1);
 });
+
+test("new consent clears an old SDK opt-out",()=>{const h=harness("yes",true);assert.equal(h.sent.length,1);assert.equal(h.sent[0].event,"$pageview")});

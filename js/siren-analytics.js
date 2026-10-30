@@ -14,7 +14,8 @@
     if (value && /^[a-zA-Z0-9_.-]{1,100}$/.test(value)) tags[key] = value;
   }
   const match = location.pathname.match(/^\/apps\/([a-z0-9-]+)(?:\/|$)/);
-  const app = match ? match[1] : 'studio';
+  const slug = match ? match[1] : 'studio';
+  const app = ({'stop-brain-rot': 'stopbrainrot', volta: 'circuit-quest'})[slug] || slug;
   function start() {
     if (!consent || !production) return;
     if (started) { if (ready) window.posthog.opt_in_capturing({captureEventName: false}); return; }
@@ -38,6 +39,7 @@
       loaded: function (sdk) {
         ready = true;
         if (!consent) { sdk.opt_out_capturing(); return; }
+        sdk.opt_in_capturing({captureEventName: false});
         sdk.register({app: app, platform: 'web'});
         sdk.capture('$pageview', tags);
       }
