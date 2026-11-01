@@ -66,16 +66,16 @@
         <h2>The short version</h2>
         <div class="card"><ul>
           <li><span class="ok">No account, no login</span> — we never ask for your name, email, or anything else.</li>
-          <li>Your circuits, progress and settings are saved <b>on your device</b>, not on our servers. We don't have servers that hold user data.</li>
+          <li>Your circuits, progress and settings are saved <b>on your device</b>, not on our servers. Purchase records and optional usage analytics are processed separately as described below.</li>
           <li><b>No ads.</b> No advertising SDKs, no advertising identifiers.</li>
-          <li><b>No analytics or tracking SDKs</b> inside the app.</li>
-          <li><b>One optional subscription.</b> Circuit Quest Plus is sold through Apple or Google; its status is checked via RevenueCat using an anonymous app user ID — no account, no personal information.</li>
+          <li><b>Optional usage analytics.</b> PostHog is off until you opt in. No cross-app advertising tracking.</li>
+          <li><b>One optional subscription.</b> Circuit Quest Plus is sold through Apple or Google; its status is checked via RevenueCat using an anonymous app user ID — no Circuit Quest account required.</li>
         </ul></div>
       </section>
 
       <section>
         <h2>Information we do not collect</h2>
-        <p>We do not ask for, collect, or store personal information: no name, email address, phone number, location, contacts, or browsing history. There are no user accounts and no server-side profile of you. The only time we see your email address is if <em>you</em> choose to write to our support address.</p>
+        <p>The native app does not ask for your name, email address, phone number, contacts or browsing history. It has no user account. Anonymous purchase identifiers and, if enabled, usage events are processed as described below; these may qualify as personal data under applicable law. The only time we see your email address is if <em>you</em> choose to write to our support address.</p>
       </section>
 
       <section>
@@ -90,19 +90,19 @@
 
       <section>
         <h2>Sharing circuits</h2>
-        <p>When you share a build, the entire circuit is encoded into the file, link, or QR code itself — nothing is uploaded to or stored on a server of ours. Whoever you give it to gets their own local copy. Like any website, the server that delivers the web app may keep standard, short-lived technical logs of requests (such as IP address and browser type) for security and operations; these are not used to identify or profile you.</p>
+        <p>When you share a build file, the circuit is included in that file. The recipient gets their own local copy. Web sharing links and QR codes are disabled in this iOS release. Any service you choose to send a file through processes it under its own privacy policy.</p>
       </section>
 
       <section>
         <h2>Purchases</h2>
-        <p>Circuit Quest offers one optional in-app purchase: <b>Circuit Quest Plus</b>, an auto-renewing subscription (monthly or yearly, with a free trial when the store offers one) that unlocks the Missions builds, the monthly Plus drops and the Showcase builds. Everything else in Circuit Quest is free. Payment is processed entirely by Apple (App Store) or Google (Google Play) — we never see or store your card details, name, or email address.</p>
+        <p>Circuit Quest offers one optional in-app purchase: <b>Circuit Quest Plus</b>, an auto-renewing subscription (monthly or yearly, with a free trial when the store offers one) that unlocks the advanced Missions templates and the included bonus and Showcase builds. Everything else in Circuit Quest is free. Payment is processed entirely by Apple (App Store) or Google (Google Play) — we never see or store your card details, name, or email address.</p>
         <p>To know whether Circuit Quest Plus is active on your device, the app uses <b>RevenueCat</b> (RevenueCat, Inc.), a purchase-management service. RevenueCat receives a random, anonymous app user ID that the app generates (it is not linked to your name, email, or any account), the purchase and subscription records the store provides for that ID, and basic technical details needed to talk to the store (such as app version, OS version, and store country). It does not receive your circuits, progress, or anything else you make. RevenueCat's handling of this data is described in its privacy policy at <a href="https://www.revenuecat.com/privacy">revenuecat.com/privacy</a>. If you never open the Plus screen or subscribe, Circuit Quest still checks the store once at launch on the iOS and Android apps so a subscription you already own is recognised; on the web there is no store connection at all.</p>
-        <p>We use these records only to unlock Plus, restore it on your other devices signed in to the same store account, and handle support questions. We do not use them for advertising or to profile you.</p>
+        <p>We use these records to unlock Plus, restore it on devices signed in to the same store account, understand subscription performance and handle support questions. We do not use them for advertising or to profile you.</p>
       </section>
 
       <section>
-        <h2>The monthly feed</h2>
-        <p>Once per launch Circuit Quest downloads a small public file (<code>circuitquest.blackravenai.com/feed.json</code>; the app also carries a copy of it) listing that month's new builds and Showcase picks. It is the same file for everyone and is requested without cookies, accounts or any identifier; like any website, the host may keep standard short-lived request logs (such as IP address). A copy is cached on your device so the app works offline.</p>
+        <h2>Included curated content</h2>
+        <p>This iOS release reads the curated bonus and Showcase content bundled with the app. Remote content downloads are disabled while the content website is unavailable.</p>
       </section>
 
       <section>
@@ -112,7 +112,7 @@
 
       <section>
         <h2>Analytics</h2>
-        <p>Optional PostHog usage analytics is described below. Any aggregated statistics we receive (such as crash counts or install numbers) come from the app stores' standard developer reporting, which is governed by Apple's and Google's own policies.</p>
+        <p>Optional PostHog usage analytics is described below. We also receive aggregated statistics (such as crash counts or install numbers) from the app stores' standard developer reporting, which is governed by Apple's and Google's own policies.</p>
       </section>
 
       <section>
@@ -122,12 +122,12 @@
 
       <section>
         <h2>Your choices and rights</h2>
-        <p>Because we hold no personal data about you, nearly all control lives on your device: reset everything in Settings, clear the app's data, or uninstall. Depending on where you live you may have rights under laws such as the GDPR or CCPA/CPRA; since we process no personal data, there is typically nothing for us to access, correct, or delete — but if you believe otherwise, contact us and we will help.</p>
+        <p>You can reset local progress in Settings, clear app data or uninstall, and turn optional analytics off in Settings. Depending on where you live, you may have rights to access, correct or delete data under applicable privacy laws. Contact support@blackravenai.com for help with purchase or analytics records; we may need information to locate records associated with an anonymous identifier. Uninstalling does not itself cancel a subscription or delete records held by purchase or analytics providers.</p>
       </section>
 
       <section>
         <h2>International users</h2>
-        <p>BlackRaven AI LLC operates the app and support from Wyoming, United States. Because Circuit Quest keeps your data on your device, nothing you create is transferred to us in any country.</p>
+        <p>BlackRaven AI LLC operates the app and support from Wyoming, United States. Your circuit content stays on your device unless you deliberately share it. RevenueCat purchase processing and optional PostHog analytics may involve processing in the United States; see the provider policies linked on this page.</p>
       </section>
 
       <section>
