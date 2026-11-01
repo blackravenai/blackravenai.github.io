@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<meta name="robots" content="index,follow" />
+<title>Circuit Quest — Terms of Use</title>
+<meta name="description" content="Terms of Use for Circuit Quest by BlackRaven AI LLC." />
+<link rel="icon" href="icon.svg" type="image/svg+xml" />
+<style>
+  :root{
+    --bench:#0a0c10; --pit:#0d1016; --panel:#12161f;
+    --line:rgba(233,239,250,0.08); --line-strong:rgba(233,239,250,0.16);
+    --bright:#eef2f9; --muted:#9aa6bd; --faint:#5f6a82;
+    --flux:#ffb020; --flux-soft:rgba(255,176,32,0.14);
+    --signal:#35dcdc; --fault:#ff5a4d; --fault-soft:rgba(255,90,77,0.13);
+    --sans:"Inter Variable","Inter",system-ui,-apple-system,sans-serif;
+    --display:"Sora Variable","Sora",var(--sans);
+    --mono:ui-monospace,"SF Mono",SFMono-Regular,Menlo,monospace;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0; background:var(--bench); color:var(--bright); font-family:var(--sans);
+    font-size:15px; line-height:1.7; -webkit-font-smoothing:antialiased;
+    padding:max(env(safe-area-inset-top),28px) 22px calc(64px + env(safe-area-inset-bottom));
+  }
+  .wrap{max-width:680px; margin:0 auto}
+  header.mast{display:flex; align-items:center; gap:14px; padding-bottom:22px; margin-bottom:24px; border-bottom:1px solid var(--line)}
+  .mast img{width:46px; height:46px; border-radius:24%; flex:0 0 auto}
+  .mast .app{font-family:var(--display); font-size:20px; font-weight:700; letter-spacing:-0.01em}
+  .mast .by{display:block; font-size:12px; color:var(--faint); letter-spacing:.02em}
+  nav.doc{display:flex; gap:8px; flex-wrap:wrap; margin-bottom:30px; font-size:13px}
+  nav.doc a, nav.doc .on{padding:6px 13px; border-radius:999px; text-decoration:none; border:1px solid var(--line)}
+  nav.doc a{color:var(--muted); background:var(--pit)}
+  nav.doc a:hover{color:var(--bright); border-color:var(--line-strong)}
+  nav.doc .on{color:var(--bench); background:var(--flux); border-color:var(--flux); font-weight:600}
+  h1{font-family:var(--display); font-size:27px; font-weight:700; letter-spacing:-0.01em; margin:0 0 6px}
+  .updated{color:var(--faint); font-family:var(--mono); font-size:12px; margin:0 0 22px}
+  .lead{font-size:16px; color:var(--bright); margin:0 0 8px}
+  section{margin:26px 0}
+  h2{font-size:12px; font-weight:600; text-transform:uppercase; letter-spacing:.12em; color:var(--flux); margin:0 0 8px}
+  p{margin:0 0 12px; color:var(--muted)} b, strong{color:var(--bright); font-weight:600}
+  ul{margin:0 0 12px; padding-left:20px; color:var(--muted)} li{margin:6px 0}
+  a{color:var(--signal); text-decoration:underline; text-underline-offset:2px}
+  .danger{background:var(--fault-soft); border:1px solid rgba(255,90,77,0.35); border-radius:16px; padding:16px 18px; margin:0 0 12px}
+  .danger h3{margin:0 0 8px; font-family:var(--display); font-size:15px; color:var(--fault)}
+  .danger p, .danger ul{color:var(--bright)}
+  footer{margin-top:44px; padding-top:18px; border-top:1px solid var(--line); display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap; font-size:12.5px; color:var(--faint)}
+  footer a{color:var(--faint)}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="mast">
+      <img src="icon.svg" alt="" />
+      <div><span class="app">Circuit Quest</span><span class="by">by BlackRaven AI LLC</span></div>
+    </header>
+    <nav class="doc"><a href="privacy.html">Privacy</a><a href="support.html">Support</a><span class="on">Terms</span></nav>
+    <main>
+      <h1>Terms of Use</h1>
+      <p class="updated">Last updated 2026-10-06</p>
+      <p class="lead">These terms are a plain-language agreement between you and BlackRaven AI LLC ("we", "us") for using the Circuit Quest app on the web, iOS, or Android. By using Circuit Quest you accept them.</p>
+
+      <section>
+        <h2>What Circuit Quest is</h2>
+        <p>Circuit Quest is an educational tool for designing, simulating, and learning to build hobby electronics around the Arduino Uno. Its safety checks, simulations, numbers, and build instructions are teaching aids — carefully sourced and tested, but <b>not a substitute for component datasheets, product manuals, or your own judgment</b>.</p>
+      </section>
+
+      <section>
+        <h2>Real electronics are real</h2>
+        <div class="danger">
+          <h3>Read this part twice</h3>
+          <p>Circuit Quest helps you build physical circuits with real electrical current. Even at hobby voltages, mistakes can damage your Arduino, your components, other property — or, with batteries, hot parts, and soldering irons involved, hurt you.</p>
+          <ul>
+            <li>You build real-world circuits <b>at your own risk</b>. Circuit Quest's checks reduce risk; they cannot eliminate it, and they only know about what you told the app.</li>
+            <li>Work only with low-voltage projects of the kind Circuit Quest shows. <b>Never</b> connect anything to mains/wall power.</li>
+            <li>Verify parts against their official datasheets before powering anything you care about.</li>
+            <li>Children should build with adult supervision.</li>
+            <li>Unplug power before rewiring. If something smells hot, disconnect first, debug second.</li>
+          </ul>
+        </div>
+        <p>To the maximum extent permitted by law, we are not liable for damage to boards, components, devices, or property, or for injury, arising from circuits you assemble or power — whether or not Circuit Quest's checks flagged a problem.</p>
+      </section>
+
+      <section>
+        <h2>Your license to use Circuit Quest</h2>
+        <p>We grant you a personal, non-exclusive, non-transferable license to use Circuit Quest. Don't resell it, rip out and redistribute its content or catalog as your own, or scrape it to build a competing dataset. The app, its design, its parts catalog, and its lesson content belong to BlackRaven AI LLC.</p>
+      </section>
+
+      <section>
+        <h2>Your circuits are yours</h2>
+        <p>Circuits, projects, and code you create in Circuit Quest belong to you. Sharing is peer-to-peer: a build file, link, or QR code you send carries the circuit itself, and whoever receives it gets their own copy. We host nothing and moderate nothing — share responsibly.</p>
+      </section>
+
+      <section>
+        <h2>Circuit Quest Plus (in-app purchase)</h2>
+        <p>Circuit Quest is free to use. <b>Circuit Quest Plus</b> is an optional auto-renewing subscription (monthly or yearly), sold through the Apple App Store or Google Play, that unlocks the Missions builds, the monthly Plus drops and the Showcase builds. The monthly content is curated by us and may change from month to month. The price and billing period are shown in the app before you buy. Payment is charged to your Apple ID or Google account when you confirm the purchase. The subscription <b>renews automatically</b> at the same price and period unless it is cancelled at least 24 hours before the end of the current period; you can manage or cancel it in your Apple ID subscription settings or in Google Play → Subscriptions. If a free trial is offered, any unused part of it ends when you subscribe.</p>
+        <p>Plus is tied to the store account that bought it, not to a Circuit Quest account (there are none). You can restore it on other devices signed in to the same store account with <b>Restore purchase</b> in Settings. When a subscription ends or is refunded, the mission templates lock again; nothing you made is deleted — copies of missions you saved stay yours and keep working. Everything that is free in Circuit Quest stays free. Refunds are handled by Apple or Google under their policies, and their terms also apply to your purchase.</p>
+      </section>
+
+      <section>
+        <h2>Showcase submissions</h2>
+        <p>If you send us a design for the Monthly Showcase, you confirm it's your own work and you grant BlackRaven AI LLC a free, non-exclusive, worldwide license to feature it — the build and the display name you gave — in Circuit Quest and our related materials. You keep ownership. We choose what to feature, may decline anything, and will remove a featured design on request. Don't submit anything that isn't yours or that you wouldn't want shown publicly.</p>
+      </section>
+
+      <section>
+        <h2>Flashing real hardware</h2>
+        <p>The "upload to my board" feature writes machine code to a physical Arduino Uno over USB. Interrupting an upload can leave the board with a half-written sketch (re-uploading fixes it). You are responsible for using it with compatible hardware; we are not liable for damage to boards or connected equipment.</p>
+      </section>
+
+      <section>
+        <h2>No warranty</h2>
+        <p>Circuit Quest is provided <b>"as is" and "as available"</b>, without warranties of any kind, express or implied — including fitness for a particular purpose and non-infringement. We don't promise the app will be uninterrupted, error-free, or that simulated behavior will always match physical reality.</p>
+      </section>
+
+      <section>
+        <h2>Limitation of liability</h2>
+        <p>To the maximum extent permitted by law, BlackRaven AI LLC's total liability for any claim arising out of or relating to Circuit Quest is limited to the amount you paid us for the app in the twelve months before the claim (zero if you have never bought Circuit Quest Plus), and we are not liable for indirect, incidental, special, or consequential damages.</p>
+      </section>
+
+      <section>
+        <h2>Changes</h2>
+        <p>We may update Circuit Quest and these terms. If we change the terms we will change the date at the top and post the new version at this URL; continued use after a change means you accept it. If you don't, stop using the app and delete it — your data is on your device, so it leaves with you.</p>
+      </section>
+
+      <section>
+        <h2>Governing law</h2>
+        <p>These terms are governed by the laws of the State of Wyoming, United States, without regard to conflict-of-law rules, except where the law of your place of residence necessarily applies.</p>
+      </section>
+
+      <section>
+        <h2>Contact</h2>
+        <p>Questions about these terms? Email <a href="mailto:support@blackravenai.com">support@blackravenai.com</a>.</p>
+      </section>
+    </main>
+    <footer>
+      <span>&copy; 2026 BlackRaven AI LLC</span>
+      <span><a href="privacy.html">Privacy</a> &middot; <a href="support.html">Support</a> &middot; <a href="terms.html">Terms</a></span>
+    </footer>
+  </div>
+</body>
+</html>
