@@ -1,0 +1,22 @@
+CIRCUIT QUEST — PRESS FACT SHEET
+
+Circuit Quest: Learn & Build is an independent electronics-learning app from BlackRaven AI LLC. It combines an Arduino circuit simulator, 3D breadboard design, guided builds and pixel-art quests.
+
+Available on iPhone and iPad, iOS 15 or later:
+https://apps.apple.com/us/app/circuit-quest-learn-build/id6819515995
+
+Free download with optional in-app purchases. The core designer, simulator, lessons, progression and 46 templates are free. No account or hardware is required to begin. There are no ads. Circuit Quest Plus offers monthly/yearly subscriptions for advanced missions and included bonus and Showcase builds; prices and eligible offers appear in the app.
+
+Try a first puzzle: Hub > Playground > Repair Shop > It never lit.
+
+Physical builds require compatible components, sold separately. Follow component specifications and appropriate supervision. Simulation is a learning aid, not a guarantee of electrical safety. The iOS app does not directly program a physical Arduino board. Circuit Quest is not affiliated with Arduino.
+
+MEDIA
+simulation.png, puzzle-bench.png, quest-map.png: original app captures, November 18, 2026.
+build-steps.png: original guided-build capture, November 1, 2026.
+icon.png: 512 by 512 app icon.
+Please credit Circuit Quest / BlackRaven AI LLC when using these assets to cover the app. No testimonials or ratings are supplied.
+
+Contact: support@blackravenai.com
+Product page: https://www.blackravenai.com/apps/circuit-quest/
+Prepared November 24, 2026.

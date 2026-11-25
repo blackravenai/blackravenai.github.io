@@ -24,11 +24,44 @@
     "image": "studio", "sitemap": true
   },
   {
-    "file": "apps/index.html", "url": "/apps/", "type": "CollectionPage",
+    "file": "apps/index.html",
+    "url": "/apps/",
+    "type": "CollectionPage",
     "title": "Mobile Apps & Games by BlackRaven",
-    "description": "Meet Squeezy Fish, DoodleLegs, and AVERTED: original mobile games and an astronomy planner in development at BlackRaven. Explore gameplay and product details.",
-    "image": "studio", "sitemap": true
-  },
+    "description": "Explore BlackRaven’s mobile apps and games. Learn electronics with Circuit Quest, available free on iPhone and iPad, and discover our other projects.",
+    "image": "studio",
+    "sitemap": true,
+    "apps": [
+        [
+            "circuit-quest",
+            "Circuit Quest"
+        ],
+        [
+            "squeezy-fish",
+            "Squeezy Fish"
+        ],
+        [
+            "doodlegs",
+            "DoodleLegs"
+        ],
+        [
+            "wax-and-wane",
+            "Wax & Wane"
+        ],
+        [
+            "mochi-pup",
+            "Mochi Pup"
+        ],
+        [
+            "songlens",
+            "Songlens"
+        ],
+        [
+            "stop-brain-rot",
+            "STOPBRAINROT"
+        ]
+    ]
+},
   {
     "file": "apps/squeezy-fish/index.html", "url": "/apps/squeezy-fish/", "type": "WebPage",
     "title": "Squeezy Fish | One-Touch Ocean Survival Game | BlackRaven",
@@ -58,5 +91,6 @@
   {"file": "legal/squeezy-fish/support.html", "url": "/legal/squeezy-fish/support.html", "type": "ContactPage", "sitemap": true},
   {"file": "brand.html", "url": "/brand.html", "type": "WebPage", "robots": "noindex, follow"},
   {"file": "404.html", "url": "/404.html", "robots": "noindex, follow"},
-  {"file": "apply.html", "url": "/contact.html", "redirect": "/contact.html"}
+  {"file": "apply.html", "url": "/contact.html", "redirect": "/contact.html"},
+  {"file": "apps/circuit-quest/index.html", "url": "/apps/circuit-quest/", "type": "WebPage", "title": "Circuit Quest | Learn Electronics on iPhone & iPad", "description": "Make an LED blink, repair a circuit and learn Arduino electronics in Circuit Quest. Free core lessons and simulation for iPhone and iPad. No hardware needed to start.", "image": "circuit-quest", "sitemap": true}
 ]

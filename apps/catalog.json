@@ -90,5 +90,6 @@
    "Slow down, loop and play along"
   ],
   "accent": "#ffb84d"
- }
+ },
+ {"slug": "circuit-quest", "name": "Circuit Quest", "kind": "Electronics learning for iPhone and iPad", "tagline": "A tiny circuit. A real first win.", "description": "Learn Arduino electronics with a 3D breadboard, circuit simulation, guided builds and pixel-art quests. Free core lessons; no hardware needed to start.", "features": ["Free core designer, simulator and lessons", "Circuit puzzles and guided wiring", "Available on iPhone and iPad with optional Plus"], "accent": "#ffda60"}
 ]

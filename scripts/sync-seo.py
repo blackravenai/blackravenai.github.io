@@ -25,6 +25,7 @@ SITE = {'@type': 'WebSite', '@id': ORIGIN + '/#website', 'url': ORIGIN + '/',
         'name': 'BlackRaven', 'alternateName': 'BlackRaven AI', 'inLanguage': 'en',
         'publisher': {'@id': ORGANIZATION['@id']}}
 IMAGES = {
+    'circuit-quest': 'Circuit Quest electronics learning app, with an actual circuit puzzle and free iPhone and iPad availability.',
     'studio': 'BlackRaven raven symbol with Make something matter, software, design and AI.',
     'squeezy-fish': 'Squeezy Fish ocean survival gameplay by BlackRaven.',
     'doodlegs': 'DoodleLegs draw-and-run gameplay by BlackRaven.',
@@ -68,7 +69,7 @@ def schema(page, title, description, image):
         graph.append({'@type': 'ItemList', '@id': url + '#apps', 'name': 'Original BlackRaven apps',
                       'itemListElement': [{'@type': 'ListItem', 'position': i, 'name': name,
                                            'url': ORIGIN + '/apps/' + slug + '/'}
-                                          for i, (slug, name) in enumerate([('squeezy-fish', 'Squeezy Fish'), ('doodlegs', 'DoodleLegs'), ('averted', 'AVERTED')], 1)]})
+                                          for i, (slug, name) in enumerate(page.get('apps', [('squeezy-fish', 'Squeezy Fish'), ('doodlegs', 'DoodleLegs'), ('averted', 'AVERTED')]), 1)]})
         item['mainEntity'] = {'@id': url + '#apps'}
     # Unreleased apps have no invented ratings, prices, store URLs, or rich-result offers.
     return {'@context': 'https://schema.org', '@graph': graph}
