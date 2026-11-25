@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#140c24">
+<meta name="color-scheme" content="dark">
+
+
+<style>
+@font-face{font-family:Pixelify;src:url('assets/pixelify.woff2') format('woff2');font-weight:400 700;font-display:swap}
+:root{color-scheme:dark;--bg:#140c24;--panel:#1d1232;--line:#49345e;--text:#f5f0ff;--muted:#c0b2d4;--yellow:#ffda60;--cyan:#83d8f4;font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;font-synthesis:none}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font-size:17px;line-height:1.7}a{color:var(--cyan);text-underline-offset:4px}a:hover{color:var(--yellow)}a:focus-visible,summary:focus-visible{outline:3px solid var(--cyan);outline-offset:5px}img{display:block;max-width:100%;height:auto}h1,h2,h3,p,figure{margin-top:0}p{margin-bottom:20px}strong{font-weight:650}code{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;color:var(--yellow);font-size:.94em}h1,h2{font-family:Pixelify,Inter,system-ui,sans-serif;font-weight:500;letter-spacing:-.025em}h1{font-size:clamp(2.9rem,9vw,4.5rem);line-height:1.03;margin-bottom:24px;max-width:700px}h2{font-size:clamp(1.85rem,5.6vw,2.5rem);line-height:1.12;margin-bottom:0}h3{font-size:1.1rem;line-height:1.4}.wrap{width:min(740px,calc(100% - 44px));margin-inline:auto}.masthead{padding:30px 0 24px;border-bottom:1px solid var(--line);font-family:Pixelify,system-ui,sans-serif;font-size:1.5rem;display:flex;gap:12px;align-items:center}.brand-link{color:inherit;text-decoration:none}.brand-dot{width:12px;height:12px;background:var(--yellow);box-shadow:5px 5px 0 #49345e}.hero{padding:44px 0 35px}.eyebrow{color:var(--cyan);font-size:.75rem;letter-spacing:.1em;text-transform:uppercase;margin-bottom:16px}.lead{font-size:1.15rem;line-height:1.65}.muted{color:var(--muted)}.watch{font-size:.9rem;margin-top:24px;margin-bottom:0}.step{padding:35px 0 36px;border-top:1px solid var(--line)}.step-heading{display:flex;gap:16px;align-items:baseline;margin-bottom:25px}.step-number{color:var(--yellow);font-family:Pixelify,system-ui,sans-serif;font-size:1.65rem;flex:none}figure{margin:24px 0 28px;padding:12px;background:var(--panel);border:1px solid var(--line);border-radius:10px}figure img{width:100%;border-radius:4px}figcaption{font-size:.79rem;color:var(--muted);line-height:1.55;padding:13px 4px 2px}.guide-image{max-width:460px;margin-inline:auto}.connection{padding:16px 18px;background:var(--panel);border-left:3px solid var(--cyan);border-radius:0 7px 7px 0;margin-bottom:24px}.connection strong{display:block;margin-top:5px;color:var(--text);font-size:.9rem}.connection code{white-space:normal;line-height:1.8}ol{padding-left:24px;margin:0 0 24px}li{padding-left:5px;margin-bottom:10px}.small{font-size:.92rem;color:var(--muted)}.question{padding:22px;background:var(--panel);border:1px solid var(--line);border-radius:8px}.question .eyebrow{margin-bottom:10px;color:var(--yellow)}.question>p:last-of-type{margin-bottom:0}details{margin-top:20px;border-top:1px solid var(--line)}summary{padding:16px 0;color:var(--yellow);cursor:pointer;font-weight:650}details p{margin-bottom:0;padding-bottom:4px}.takeaway{font-size:1.15rem;border-left:3px solid var(--yellow);padding-left:18px;margin-bottom:0}.notes{padding:28px 0;border-top:1px solid var(--line);color:var(--muted);font-size:.9rem}.notes h3{color:var(--text);margin-bottom:12px}.notes p:last-child{margin-bottom:0}.app-note{padding:26px;background:var(--panel);border:1px solid var(--line);border-radius:10px;margin:5px 0 32px}.app-note h3{margin-bottom:10px}.app-note p{color:var(--muted);font-size:.92rem}.button{display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:12px 18px;border-radius:7px;background:var(--yellow);color:#251731;font-weight:650;text-decoration:none;line-height:1.4;font-size:.95rem}.button:hover{background:#ffe68f;color:#251731}.footer{padding:0 0 35px;color:var(--muted);font-size:.8rem}.skip{position:absolute;left:16px;top:-70px;background:var(--panel);padding:12px;z-index:10}.skip:focus{top:12px}
+@media(max-width:420px){body{font-size:16px}.wrap{width:calc(100% - 36px)}.masthead{padding-block:24px 20px}.hero{padding-block:32px}.lead{font-size:1.06rem}.step{padding-block:28px}.step-heading{gap:12px}.step-number{font-size:1.4rem}.question{padding:18px}figure{padding:8px}.app-note{padding:20px}.button{width:100%}.connection{padding:14px}}
+</style>
+<!-- Search metadata -->
+<title>Two holes can be one connection | Breadboard basics | Circuit Quest</title>
+<meta name="description" content="Learn which breadboard holes are connected, why a resistor uses separate strips, and how to spot a bypass. A short walkthrough with actual Circuit Quest screenshots.">
+<link rel="canonical" href="https://www.blackravenai.com/apps/circuit-quest/breadboard-basics/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="BlackRaven">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Two holes can be one connection | Breadboard basics | Circuit Quest">
+<meta property="og:description" content="Learn which breadboard holes are connected, why a resistor uses separate strips, and how to spot a bypass. A short walkthrough with actual Circuit Quest screenshots.">
+<meta property="og:url" content="https://www.blackravenai.com/apps/circuit-quest/breadboard-basics/">
+<meta property="og:image" content="https://www.blackravenai.com/assets/social/circuit-quest.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:alt" content="Circuit Quest electronics learning app, with an actual circuit puzzle and free iPhone and iPad availability.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Two holes can be one connection | Breadboard basics | Circuit Quest">
+<meta name="twitter:description" content="Learn which breadboard holes are connected, why a resistor uses separate strips, and how to spot a bypass. A short walkthrough with actual Circuit Quest screenshots.">
+<meta name="twitter:image" content="https://www.blackravenai.com/assets/social/circuit-quest.png">
+<meta name="twitter:image:alt" content="Circuit Quest electronics learning app, with an actual circuit puzzle and free iPhone and iPad availability.">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://www.blackravenai.com/#organization","name":"BlackRaven","alternateName":"BlackRaven AI","legalName":"BlackRaven AI LLC","url":"https://www.blackravenai.com/","logo":"https://www.blackravenai.com/assets/brand/mono/tile-light.png","email":"support@blackravenai.com","slogan":"Make something matter.","description":"An independent software studio designing and developing web and mobile apps, games, and AI experiences.","contactPoint":{"@type":"ContactPoint","contactType":"customer support","email":"support@blackravenai.com","url":"https://www.blackravenai.com/contact.html"}},{"@type":"WebSite","@id":"https://www.blackravenai.com/#website","url":"https://www.blackravenai.com/","name":"BlackRaven","alternateName":"BlackRaven AI","inLanguage":"en","publisher":{"@id":"https://www.blackravenai.com/#organization"}},{"@type":"WebPage","@id":"https://www.blackravenai.com/apps/circuit-quest/breadboard-basics/#webpage","url":"https://www.blackravenai.com/apps/circuit-quest/breadboard-basics/","name":"Two holes can be one connection | Breadboard basics | Circuit Quest","description":"Learn which breadboard holes are connected, why a resistor uses separate strips, and how to spot a bypass. A short walkthrough with actual Circuit Quest screenshots.","inLanguage":"en","isPartOf":{"@id":"https://www.blackravenai.com/#website"},"about":{"@id":"https://www.blackravenai.com/#organization"},"primaryImageOfPage":{"@type":"ImageObject","url":"https://www.blackravenai.com/assets/social/circuit-quest.png","width":1200,"height":630}}]}</script>
+<!-- /Search metadata -->
+</head>
+<body>
+<a class="skip" href="#article">Skip to the lesson</a>
+<div class="wrap">
+<header class="masthead"><span class="brand-dot" aria-hidden="true"></span><a class="brand-link" href="/apps/circuit-quest/">Circuit Quest</a></header>
+<main id="article">
+<article>
+<header class="hero">
+<p class="eyebrow">Breadboard basics · 3 minute read</p>
+<h1>Two holes can be<br>one connection.</h1>
+<p class="lead">A breadboard looks like a grid of separate holes. Under the plastic, groups of them are already joined. That hidden wiring explains a common mistake: a resistor can sit neatly on the board while a metal strip connects around it.</p>
+<p class="muted">Follow these actual Circuit Quest screenshots to see why. You can read the connections without a kit or an app download.</p>
+<p class="watch"><a href="https://youtube.com/shorts/dRjgtmLMZXU">Watch the 23-second demonstration →</a></p>
+</header>
+
+<section class="step" aria-labelledby="read-labels">
+<div class="step-heading"><span class="step-number" aria-hidden="true">01</span><h2 id="read-labels">Read the letter and number together.</h2></div>
+<figure>
+<img src="assets/01-empty-breadboard.png" width="650" height="470" alt="Empty breadboard in Circuit Quest. Letters a through e sit above the center groove, f through j below, with numbered positions along the edges." fetchpriority="high">
+<figcaption>Actual app screenshot: the empty board shows the labels before a component covers them.</figcaption>
+</figure>
+<p>Find <strong>9</strong> along the edge, then <strong>e</strong> just above the center groove. Their intersection is <code>e9</code>.</p>
+<div class="connection"><code>a9 · b9 · c9 · d9 · e9</code><strong>Five holes. One connected metal strip.</strong></div>
+<p>Moving a leg from <code>e9</code> to <code>a9</code> changes its position but keeps it on that same electrical connection.</p>
+<p>The center groove separates the halves. <code>f9</code> through <code>j9</code> form a different strip, so <code>e9</code> and <code>f9</code> are not joined through the board. The outer power rails are separate again; this five-hole rule describes the middle terminal area.</p>
+<p class="small">Trace a9 to e9 with your finger. You’re following one connection through five holes.</p>
+</section>
+
+<section class="step" aria-labelledby="place-resistor">
+<div class="step-heading"><span class="step-number" aria-hidden="true">02</span><h2 id="place-resistor">Give the resistor two connections.</h2></div>
+<p>The recorded guide calls for a <strong>220 Ω resistor</strong>, with one leg in <code>e9</code> and the other in <code>e12</code>. The two legs land on separate strips.</p>
+<figure class="guide-image">
+<img src="assets/02-resistor-build-step.png" width="1320" height="1980" alt="Circuit Quest build step three names a 220-ohm resistor and labels its two leg positions e9 and e12." loading="lazy">
+<figcaption>The guide gives both hole addresses and shows the intended placement.</figcaption>
+</figure>
+<ol>
+<li>Locate <code>e9</code> and identify its five-hole group.</li>
+<li>Locate <code>e12</code> and identify that separate group.</li>
+<li>Check that the resistor spans between them, with one leg in each group.</li>
+</ol>
+<p>For this ordinary resistor, either end can go in either specified hole. The guide also states that either way round works. The important detail here is which connections its legs touch.</p>
+<p class="small">These coordinates belong to this example. They are not a universal resistor position, and this placement alone is not a complete powered circuit.</p>
+</section>
+
+<section class="step" aria-labelledby="check-connection">
+<div class="step-heading"><span class="step-number" aria-hidden="true">03</span><h2 id="check-connection">Try the two-hole question.</h2></div>
+<div class="question">
+<p class="eyebrow">Quick check</p>
+<p><strong>Would <code>a9</code> and <code>e9</code> be a good replacement for <code>e9</code> and <code>e12</code>?</strong></p>
+<details>
+<summary>Show the answer</summary>
+<p><strong>No.</strong> a9 and e9 share the same strip. Put one resistor leg in each and the metal strip connects its ends together, bypassing the resistor. The part still looks installed, but the circuit’s connections have changed.</p>
+</details>
+</div>
+<figure>
+<img src="assets/03-resistor-strips-closeup.png" width="650" height="470" alt="Close-up of the recorded guide’s resistor, spanning separate highlighted strips at positions 9 and 12." loading="lazy">
+<figcaption>The guide’s intended placement spans two highlighted strips.</figcaption>
+</figure>
+<p class="takeaway">Before adding another wire, ask: <strong>“Which metal strip does each leg actually touch?”</strong></p>
+</section>
+
+<aside class="notes" aria-labelledby="scope">
+<h3 id="scope">What these screenshots show</h3>
+<p>These are real app screenshots, cropped for readability. Hardware was not assembled or tested for this walkthrough. This explains one connection rule; it does not verify a finished physical circuit.</p>
+<p>For another view of the hidden strips, see <a href="https://learn.sparkfun.com/tutorials/how-to-use-a-breadboard/">SparkFun’s breadboard guide</a>.</p>
+</aside>
+
+<aside class="app-note" aria-labelledby="app-guide">
+<h3 id="app-guide">Follow a build guide in Circuit Quest</h3>
+<p>Our electronics learning app for iPhone and iPad includes free core tools and optional Plus missions.</p>
+<a class="button" href="https://apps.apple.com/app/apple-store/id6819515995?pt=128392373&amp;ct=cq_owned_landing&amp;mt=8">Get Circuit Quest on the App Store</a>
+</aside>
+</article>
+</main>
+<footer class="footer">Circuit Quest · Breadboard basics</footer>
+</div>
+</body>
+</html>

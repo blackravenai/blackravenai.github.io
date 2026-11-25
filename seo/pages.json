@@ -92,5 +92,6 @@
   {"file": "brand.html", "url": "/brand.html", "type": "WebPage", "robots": "noindex, follow"},
   {"file": "404.html", "url": "/404.html", "robots": "noindex, follow"},
   {"file": "apply.html", "url": "/contact.html", "redirect": "/contact.html"},
-  {"file": "apps/circuit-quest/index.html", "url": "/apps/circuit-quest/", "type": "WebPage", "title": "Circuit Quest | Learn Electronics on iPhone & iPad", "description": "Make an LED blink, repair a circuit and learn Arduino electronics in Circuit Quest. Free core lessons and simulation for iPhone and iPad. No hardware needed to start.", "image": "circuit-quest", "sitemap": true}
+  {"file": "apps/circuit-quest/index.html", "url": "/apps/circuit-quest/", "type": "WebPage", "title": "Circuit Quest | Learn Electronics on iPhone & iPad", "description": "Make an LED blink, repair a circuit and learn Arduino electronics in Circuit Quest. Free core lessons and simulation for iPhone and iPad. No hardware needed to start.", "image": "circuit-quest", "sitemap": true},
+  {"file": "apps/circuit-quest/breadboard-basics/index.html", "url": "/apps/circuit-quest/breadboard-basics/", "type": "WebPage", "title": "Two holes can be one connection | Breadboard basics | Circuit Quest", "description": "Learn which breadboard holes are connected, why a resistor uses separate strips, and how to spot a bypass. A short walkthrough with actual Circuit Quest screenshots.", "image": "circuit-quest", "sitemap": true}
 ]
